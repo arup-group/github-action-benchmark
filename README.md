@@ -1,3 +1,7 @@
+*This fork makes the catch2 benchmarks always report in ms (to avoid issues with charts and false alerts)*
+
+*See branch `consistent-duration-units-catch2`*
+
 GitHub Action for Continuous Benchmarking
 =========================================
 [![Action Marketplace][release-badge]][marketplace]
