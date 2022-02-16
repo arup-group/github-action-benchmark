@@ -242,8 +242,26 @@ function extractCatch2Result(output) {
         if (!mean) {
             throw new Error(`Mean values cannot be retrieved for benchmark '${name}' on parsing input '${meanLine !== null && meanLine !== void 0 ? meanLine : 'EOF'}' at line ${meanLineNum}`);
         }
-        const value = parseFloat(mean[1]);
-        const unit = mean[2];
+        let unit = 'ms';
+        let factor = 1;
+        switch (mean[2]) {
+            case 'ns':
+                factor = 1/1000000;
+                break;
+            case 'us':
+                factor = 1/1000;
+                break;
+            case 's':
+                factor = 1000;
+                break;
+            case 'm':
+                factor = 60 * 1000;
+                break;
+            default:
+                unit = mean[2];
+        }
+        const value = factor * parseFloat(mean[1]);
+        
         const [stdDevLine, stdDevLineNum] = nextLine();
         const stdDev = stdDevLine === null || stdDevLine === void 0 ? void 0 : stdDevLine.match(reBenchmarkValues);
         if (!stdDev) {
