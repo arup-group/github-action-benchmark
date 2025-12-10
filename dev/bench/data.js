@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765379536946,
+  "lastUpdate": 1765379543185,
   "entries": {
     "Rust Benchmark": [
       {
@@ -35691,6 +35691,44 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci 20",
             "value": 8.49732,
             "range": "± 1.19325",
+            "unit": "us",
+            "extra": "100 samples\n4 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a34e53c4f90b57589b2342f4aed535eecacddfc2",
+          "message": "Merge pull request #4 from arup-group/fix/change-repo-path\n\nFix typo",
+          "timestamp": "2025-12-10T15:11:44Z",
+          "tree_id": "c7bdd3e25ea7e301eb97eec1d0937f316f41989a",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/a34e53c4f90b57589b2342f4aed535eecacddfc2"
+        },
+        "date": 1765379541911,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 80.2299,
+            "range": "± 5.56161",
+            "unit": "ns",
+            "extra": "100 samples\n358 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 7.67801,
+            "range": "± 440.006",
             "unit": "us",
             "extra": "100 samples\n4 iterations"
           }
