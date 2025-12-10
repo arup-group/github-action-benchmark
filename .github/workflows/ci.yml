@@ -488,6 +488,10 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: npm run coverage
+      - name: Ensure data.js exists
+        run: |
+          mkdir -p new-data-dir
+          touch new-data-dir/data.js
       - name: Apply yamllint
         run: |
           sudo pip install yamllint
