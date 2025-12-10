@@ -22,27 +22,12 @@ jobs:
         uses: arup-group/github-action-benchmark@v1
         with:
           name: Criterion.rs Benchmark
-          tool: 'cargo'
+          tool: "cargo"
           output-file-path: examples/criterion-rs/output.txt
           github-token: ${{ secrets.GITHUB_TOKEN }}
           auto-push: true
           # Show alert with commit comment on detecting possible performance regression
-          alert-threshold: '200%'
+          alert-threshold: "200%"
           comment-on-alert: true
           fail-on-alert: true
-          alert-comment-cc-users: '@ktrz'
-
-      - name: Store benchmark result - separate results repo
-        uses: arup-group/github-action-benchmark@v1
-        with:
-          name: Criterion.rs Benchmark
-          tool: 'cargo'
-          output-file-path: examples/criterion-rs/output.txt
-          github-token: ${{ secrets.BENCHMARK_ACTION_BOT_TOKEN }}
-          auto-push: true
-          # Show alert with commit comment on detecting possible performance regression
-          alert-threshold: '200%'
-          comment-on-alert: true
-          fail-on-alert: true
-          alert-comment-cc-users: '@ktrz'
-          gh-repository: 'github.com/arup-group/github-action-benchmark-results'
+          alert-comment-cc-users: "@ktrz"
