@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765382487489,
+  "lastUpdate": 1765411138598,
   "entries": {
     "Rust Benchmark": [
       {
@@ -33453,6 +33453,42 @@ window.BENCHMARK_DATA = {
             "value": 22292.170685097357,
             "unit": "ns/iter",
             "extra": "iterations: 31397\ncpu: 22291.465044430995 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "336b2ce472510023f32d89baaf19aeff6dfa5012",
+          "message": "Merge pull request #8 from arup-group/fix/cicd_after_update\n\nRestore jmh benchmark to upstream version",
+          "timestamp": "2025-12-10T23:58:40Z",
+          "tree_id": "3c60612df80d77daaea95857574d6393adbe5eef",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/336b2ce472510023f32d89baaf19aeff6dfa5012"
+        },
+        "date": 1765411137350,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 177.42635650868263,
+            "unit": "ns/iter",
+            "extra": "iterations: 3949772\ncpu: 177.38851432437116 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 22335.758520458334,
+            "unit": "ns/iter",
+            "extra": "iterations: 31307\ncpu: 22332.629986903885 ns\nthreads: 1"
           }
         ]
       }
