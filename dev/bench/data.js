@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765379522154,
+  "lastUpdate": 1765379525681,
   "entries": {
     "Rust Benchmark": [
       {
@@ -28633,6 +28633,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000017350836271206314",
             "extra": "mean: 1.6638029292927736 msec\nrounds: 594"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a34e53c4f90b57589b2342f4aed535eecacddfc2",
+          "message": "Merge pull request #4 from arup-group/fix/change-repo-path\n\nFix typo",
+          "timestamp": "2025-12-10T15:11:44Z",
+          "tree_id": "c7bdd3e25ea7e301eb97eec1d0937f316f41989a",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/a34e53c4f90b57589b2342f4aed535eecacddfc2"
+        },
+        "date": 1765379524234,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 77185.55744436015,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010532049853360583",
+            "extra": "mean: 12.95579164173114 usec\nrounds: 43454"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 604.3126513370751,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000019215541621204583",
+            "extra": "mean: 1.6547725714287875 msec\nrounds: 588"
           }
         ]
       }
