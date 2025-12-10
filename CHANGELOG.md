@@ -1,3 +1,111 @@
+## Unreleased
+
+<a name="v1.20.7"></a>
+# [v1.20.7](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.20.7) - 06 Sep 2025
+- **fix** improve parsing for custom benchmarks (#323)
+
+<a name="v1.20.5"></a>
+# [v1.20.5](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.20.5) - 02 Sep 2025
+- **feat** allow to parse generic cargo bench/criterion units (#280)
+- **fix** add summary even when failure threshold is surpassed (#285)
+- **fix** time units are not normalized (#318)
+
+<a name="v1.20.4"></a>
+# [v1.20.4](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.20.4) - 23 Oct 2024
+- **feat** add typings and validation workflow (#257)
+
+<a name="v1.20.3"></a>
+# [v1.20.3](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.20.3) - 19 May 2024
+- **fix** Catch2 v.3.5.0 changed output format (#247)
+
+<a name="v1.20.2"></a>
+# [v1.20.2](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.20.2) - 19 May 2024
+- **fix** Support sub-nanosecond precision on Cargo benchmarks (#246)
+
+<a name="v1.20.1"></a>
+# [v1.20.1](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.20.1) - 02 Apr 2024
+- **fix** release script
+
+<a name="v1.20.0"></a>
+# [v1.20.0](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.20.0) - 02 Apr 2024
+- **fix** Rust benchmarks not comparing to baseline (#235)
+- **feat** Comment on PR and auto update comment (#223)
+
+<a name="v1.19.3"></a>
+# [v1.19.3](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.19.3) - 02 Feb 2024
+- **fix** ratio is NaN when previous value is 0. Now, print 1 when both values are 0 and `+-∞` when divisor is 0 (#222)
+- **fix** action hangs in some cases for go fiber benchmarks (#225)
+
+<a name="v1.19.2"></a>
+# [v1.19.2](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.19.2) - 26 Jan 2024
+- **fix** markdown rendering for summary is broken (#218)
+
+
+<a name="v1.19.1"></a>
+# [v1.19.1](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.19.1) - 25 Jan 2024
+- **fix** improve flaky CI runs (#215)
+- **fix** write with retry fails with the separate repository (#216)
+
+<a name="v1.19.0"></a>
+# [v1.19.0](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.19.0) - 25 Jan 2024
+
+- **docs** Add description for skip-fetch-gh-pages (#180)
+- **fix** Mismatch input in action.yml (#191)
+- **fix** Update Manifest.toml to fix julia test failure (#210)
+- **chore** update to node 20 (#208)
+- **chore** update actions/* (#212)
+- **fix** summary-always and gh-repository don't work together (#214)
+
+<a name="v1.18.0"></a>
+# [v1.18.0](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.18.0) - 07 Jul 2023
+
+- **feat** getServerUrl refers to the GITHUB_SERVER_URL environment variable (#169)
+- **feat** extract multiple metrics from Golang benchmarks (#177)
+- **fix** getCommitFromGitHubAPIRequest to refer to GITHUB_API_URL (#171)
+- **chore** Remove unreachable code from extract.ts (#153)
+
+<a name="v1.17.0"></a>
+# [v1.17.0](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.17.0) - 26 Apr 2023
+
+- **feat** support for JMH parameters (as separate charts) (#161)
+- **feat** enable user to specify the ref being tested (#163)
+- **feat** allow more characters in Golang bench outputs (#131)
+
+<a name="v1.16.2"></a>
+# [v1.16.2](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.16.2) - 08 Feb 2023
+
+- **Fix** use commit.id over commit object (#155)
+
+<a name="v1.16.1"></a>
+# [v1.16.1](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.16.1) - 06 Feb 2023
+
+- **Fix** action.yml missing `summary-always` input
+
+<a name="v1.16.0"></a>
+# [v1.16.0](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.16.0) - 05 Feb 2023
+
+- **Feat** Support pr summary for benchmark output (#138)
+
+<a name="v1.15.0"></a>
+# [v1.15.0](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.15.0) - 03 Nov 2022
+
+- **Feat** Add support for Java via JMH (#134)
+- **Chore** Update @actions/core, @actions/exec and @actions/io to the latest version (#137)
+
+<a name="v1.14.0"></a>
+# [v1.14.0](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.14.0) - 28 May 2022
+
+- **Feat** Added benchmark luau support (#123)
+- **Chore** Bump minimist from 1.2.5 to 1.2.6 (#114)
+- **Feat** Implement deploy to another repository (#112)
+
+<a name="v1.13.0"></a>
+# [v1.13.0](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.13.0) - 17 Feb 2022
+
+- **Feat:** Updated urls to support GHES (#104)
+- **Feat:** Add support for BenchmarkDotNet (#109)
+- **Chore** Bump node-fetch from 2.6.6 to 2.6.7 (#107)
+
 <a name="v1.12.0"></a>
 # [v1.12.0](https://github.com/benchmark-action/github-action-benchmark/releases/tag/v1.12.0) - 28 Jan 2022
 

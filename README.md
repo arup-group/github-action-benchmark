@@ -27,6 +27,9 @@ This action currently supports the following tools:
 - [Google Benchmark Framework][google-benchmark] for C++ projects
 - [Catch2][catch2] for C++ projects
 - [BenchmarkTools.jl][] for Julia packages
+- [Benchmark.Net][benchmarkdotnet] for .Net projects
+- [benchmarkluau](https://github.com/Roblox/luau/tree/master/bench) for Luau projects
+- [JMH][jmh] for Java projects
 - Custom benchmarks where either 'biggerIsBetter' or 'smallerIsBetter'
 
 Multiple languages in the same repository are supported for polyglot projects.
@@ -49,6 +52,9 @@ definitions are in [.github/workflows/](./.github/workflows) directory. Live wor
 | C++          | [![C++ Example Workflow][cpp-badge]][cpp-workflow-example]                              | [examples/cpp](./examples/cpp)                 |
 | C++ (Catch2) | [![C++ Catch2 Example Workflow][catch2-badge]][catch2-workflow-example]                 | [examples/catch2](./examples/catch2)           |
 | Julia | [![Julia Example][julia-badge]][julia-workflow-example]                 | [examples/julia](./examples/julia)           |
+| .Net         | [![C# Benchmark.Net Example Workflow][benchmarkdotnet-badge]][benchmarkdotnet-workflow-example] | [examples/benchmarkdotnet](./examples/benchmarkdotnet) |
+| Java         | [![Java Example Workflow][java-badge]][java-workflow-example] | [examples/java](./examples/java) |
+| Luau         | Coming soon | Coming soon |
 
 All benchmark charts from above workflows are gathered in GitHub pages:
 
@@ -76,7 +82,7 @@ context) properties. Like this:
         "unit": "Megabytes",
         "value": 100,
         "range": "3",
-        "extra": "Value for Tooltip: 25\nOptional Num #2: 100\nAnything Else!",
+        "extra": "Value for Tooltip: 25\nOptional Num #2: 100\nAnything Else!"
     }
 ]
 ```
@@ -148,14 +154,16 @@ jobs:
     name: Performance regression check
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-go@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v4
+        with:
+          go-version: "stable"
       # Run benchmark with `go test -bench` and stores the output to a file
       - name: Run benchmark
         run: go test -bench 'BenchmarkFib' | tee output.txt
       # Download previous benchmark result from cache (if exists)
       - name: Download previous benchmark data
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         with:
           path: ./cache
           key: ${{ runner.os }}-benchmark
@@ -222,6 +230,29 @@ that this value must be quoted like `'@rhysd'` because [`@` is an indicator in Y
 A live workflow example is [here](.github/workflows/commit-comment.yml). And the results of the workflow
 can be seen [here][commit-comment-workflow-example].
 
+### Job Summary
+
+Similar to the [Commit comment](#commit-comment) feature, Github Actions [Job Summaries](https://github.blog/2022-05-09-supercharging-github-actions-with-job-summaries/) are
+also supported. In order to use Job Summaries, turn on the `summary-always`
+option.
+
+```yaml
+- name: Store benchmark result
+  uses: benchmark-action/github-action-benchmark@v1
+  with:
+    tool: 'cargo'
+    output-file-path: output.txt
+    external-data-json-path: ./cache/benchmark-data.json
+    fail-on-alert: true
+    # GitHub API token to make a commit comment
+    github-token: ${{ secrets.GITHUB_TOKEN }}
+    # Enable alert commit comment
+    comment-on-alert: true
+    # Enable Job Summary for PRs
+    summary-always: true
+    # Mention @rhysd in the commit comment
+    alert-comment-cc-users: '@rhysd'
+```
 
 ### Charts on GitHub Pages
 
@@ -259,8 +290,10 @@ jobs:
     name: Performance regression check
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-go@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v4
+        with:
+          go-version: "stable"
       # Run benchmark with `go test -bench` and stores the output to a file
       - name: Run benchmark
         run: go test -bench 'BenchmarkFib' | tee output.txt
@@ -292,7 +325,7 @@ After the first workflow run, you will get the first result on `https://you.gith
 
 By default, this action assumes that `gh-pages` is your GitHub Pages branch and that `/dev/bench` is
 a path to put the benchmark dashboard page. If they don't fit your use case, please tweak them by
-`gh-pages-branch` and `benchmark-data-dir-path` inputs.
+`gh-pages-branch`, `gh-repository` and `benchmark-data-dir-path` inputs.
 
 This action merges all benchmark results into one GitHub pages branch. If your workflows have multiple
 steps to check benchmarks from multiple tools, please give `name` input to each step to make each
@@ -329,6 +362,10 @@ and store it to file. Then specify the file path to `output-file-path` input.
 - [Benchmark.js for JavaScript/TypeScript projects](./examples/benchmarkjs/README.md)
 - [pytest-benchmark for Python projects with pytest](./examples/pytest/README.md)
 - [Google Benchmark Framework for C++ projects](./examples/cpp/README.md)
+- [catch2 for C++ projects](./examples/cpp/README.md)
+- [BenchmarkTools.jl for Julia projects](./examples/julia/README.md)
+- [Benchmark.Net for .Net projects](./examples/benchmarkdotnet/README.md)
+- [benchmarkluau for Luau projects](#) - Examples for this are still a work in progress.
 
 These examples are run in workflows of this repository as described in the 'Examples' section above.
 
@@ -350,7 +387,7 @@ Name of the benchmark. This value must be identical across all benchmarks in you
 - Default: N/A
 
 Tool for running benchmark. The value must be one of `"cargo"`, `"go"`, `"benchmarkjs"`, `"pytest"`,
-`"googlecpp"`, `"catch2"`, `"customBiggerIsBetter"`, `"customSmallerIsBetter"`.
+`"googlecpp"`, `"catch2"`, `"julia"`, `"jmh"`, `"benchmarkdotnet"`,`"benchmarkluau"`, `"customBiggerIsBetter"`, `"customSmallerIsBetter"`.
 
 #### `output-file-path` (Required)
 
@@ -369,6 +406,15 @@ Name of your GitHub pages branch.
 Note: If you're using `docs/` directory of `master` branch for GitHub pages, please set `gh-pages-branch`
 to `master` and `benchmark-data-dir-path` to the directory under `docs` like `docs/dev/bench`.
 
+#### `gh-repository`
+
+- Type: String
+
+Url to an optional different repository to store benchmark results (eg. `github.com/benchmark-action/github-action-benchmark-results`)
+
+NOTE: if you want to auto push to a different repository you need to use a separate Personal Access Token that has a write access to the specified repository.
+If you are not using the `auto-push` option then you can avoid passing the `gh-token` if your data repository is public
+
 #### `benchmark-data-dir-path` (Required)
 
 - Type: String
@@ -385,6 +431,13 @@ The path can be relative to repository root.
 - Default: N/A
 
 GitHub API access token.
+
+#### `ref` (Optional)
+
+- Type: String
+- Default: N/A
+
+Ref to use for reporting the commit
 
 #### `auto-push` (Optional)
 
@@ -407,7 +460,7 @@ If it is set to `true`, this action will leave a commit comment comparing the cu
 - Type: Boolean
 - Default: `true`
 
-If it is set to `true`, this action will not save the current benchmark to the external data file.
+If it is set to `false`, this action will not save the current benchmark to the external data file.
 You can use this option to set up your action to compare the benchmarks between PR and base branch.
 
 #### `alert-threshold` (Optional)
@@ -475,6 +528,13 @@ Max number of data points in a chart for avoiding too busy chart. This value mus
 larger than zero. If the number of benchmark results for some benchmark suite exceeds this value,
 the oldest one will be removed before storing the results to file. By default this value is empty
 which means there is no limit.
+
+#### `skip-fetch-gh-pages` (Optional)
+
+- Type: Boolean
+- Default: `false`
+
+If set to `true`, the workflow will skip fetching branch defined with the `gh-pages-branch` variable.
 
 
 ### Action outputs
@@ -573,20 +633,21 @@ Every release will appear on your GitHub notifications page.
 
 
 
-[build-badge]: https://github.com/benchmark-action/github-action-benchmark/workflows/CI/badge.svg?branch=master&event=push
+[build-badge]: https://github.com/benchmark-action/github-action-benchmark/actions/workflows/ci.yml/badge.svg
 [ci]: https://github.com/benchmark-action/github-action-benchmark/actions?query=workflow%3ACI
 [codecov-badge]: https://codecov.io/gh/benchmark-action/github-action-benchmark/branch/master/graph/badge.svg
 [codecov]: https://app.codecov.io/gh/benchmark-action/github-action-benchmark
 [release-badge]: https://img.shields.io/github/v/release/benchmark-action/github-action-benchmark.svg
 [marketplace]: https://github.com/marketplace/actions/continuous-benchmark
 [proj]: https://github.com/benchmark-action/github-action-benchmark
-[rust-badge]: https://github.com/benchmark-action/github-action-benchmark/workflows/Rust%20Example/badge.svg
-[go-badge]: https://github.com/benchmark-action/github-action-benchmark/workflows/Go%20Example/badge.svg
-[benchmarkjs-badge]: https://github.com/benchmark-action/github-action-benchmark/workflows/Benchmark.js%20Example/badge.svg
-[pytest-benchmark-badge]: https://github.com/benchmark-action/github-action-benchmark/workflows/Python%20Example%20with%20pytest/badge.svg
-[cpp-badge]: https://github.com/benchmark-action/github-action-benchmark/workflows/C%2B%2B%20Example/badge.svg
-[catch2-badge]: https://github.com/benchmark-action/github-action-benchmark/workflows/Catch2%20C%2B%2B%20Example/badge.svg
-[julia-badge]: https://github.com/benchmark-action/github-action-benchmark/workflows/Julia%20Example%20with%20BenchmarkTools.jl/badge.svg
+[rust-badge]: https://github.com/benchmark-action/github-action-benchmark/actions/workflows/rust.yml/badge.svg
+[go-badge]: https://github.com/benchmark-action/github-action-benchmark/actions/workflows/go.yml/badge.svg
+[benchmarkjs-badge]: https://github.com/benchmark-action/github-action-benchmark/actions/workflows/benchmarkjs.yml/badge.svg
+[pytest-benchmark-badge]: https://github.com/benchmark-action/github-action-benchmark/actions/workflows/pytest.yml/badge.svg
+[cpp-badge]: https://github.com/benchmark-action/github-action-benchmark/actions/workflows/cpp.yml/badge.svg
+[catch2-badge]: https://github.com/benchmark-action/github-action-benchmark/actions/workflows/catch2.yml/badge.svg
+[julia-badge]: https://github.com/benchmark-action/github-action-benchmark/actions/workflows/julia.yml/badge.svg
+[java-badge]: https://github.com/benchmark-action/github-action-benchmark/actions/workflows/java.yml/badge.svg
 [github-action]: https://github.com/features/actions
 [cargo-bench]: https://doc.rust-lang.org/cargo/commands/cargo-bench.html
 [benchmarkjs]: https://benchmarkjs.com/
@@ -602,12 +663,18 @@ Every release will appear on your GitHub notifications page.
 [cpp-workflow-example]: https://github.com/benchmark-action/github-action-benchmark/actions?query=workflow%3A%22C%2B%2B+Example%22
 [catch2-workflow-example]: https://github.com/benchmark-action/github-action-benchmark/actions?query=workflow%3A%22Catch2+C%2B%2B+Example%22
 [julia-workflow-example]: https://github.com/benchmark-action/github-action-benchmark/actions?query=workflow%3A%22Julia+Example+with+BenchmarkTools.jl%22
+[java-workflow-example]: https://github.com/benchmark-action/github-action-benchmark/actions?query=workflow%3A%22JMH+Example%22
 [help-watch-release]: https://docs.github.com/en/github/receiving-notifications-about-activity-on-github/watching-and-unwatching-releases-for-a-repository
 [help-github-token]: https://docs.github.com/en/actions/security-guides/automatic-token-authentication
-[minimal-workflow-example]: https://github.com/benchmark-action/github-action-benchmark/actions?query=workflow%3A%22Example+for+minimal+setup
-[commit-comment-workflow-example]: https://github.com/benchmark-action/github-action-benchmark/actions?query=workflow%3A%22Example+for+alert+with+commit+comment
+[minimal-workflow-example]: https://github.com/benchmark-action/github-action-benchmark/actions?query=workflow%3A%22Example+for+minimal+setup%22
+[commit-comment-workflow-example]: https://github.com/benchmark-action/github-action-benchmark/actions?query=workflow%3A%22Example+for+alert+with+commit+comment%22
 [google-benchmark]: https://github.com/google/benchmark
 [catch2]: https://github.com/catchorg/Catch2
+[jmh]: https://openjdk.java.net/projects/code-tools/jmh/
 [lighthouse-ci-action]: https://github.com/treosh/lighthouse-ci-action
 [lighthouse-ci]: https://github.com/GoogleChrome/lighthouse-ci
 [BenchmarkTools.jl]: https://github.com/JuliaCI/BaseBenchmarks.jl
+[benchmarkdotnet]: https://benchmarkdotnet.org
+[benchmarkdotnet-badge]: https://github.com/benchmark-action/github-action-benchmark/actions/workflows/benchmarkdotnet.yml/badge.svg
+[benchmarkdotnet-workflow-example]: https://github.com/rhysd/github-action-benchmark/actions?query=workflow%3A%22Benchmark.Net+Example%22
+[job-summaries]: https://github.blog/2022-05-09-supercharging-github-actions-with-job-summaries/
