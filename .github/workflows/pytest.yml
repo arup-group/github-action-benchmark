@@ -24,7 +24,7 @@ jobs:
           pytest bench.py --benchmark-json output.json
 
       - name: Store benchmark result
-        uses: barup-group/github-action-benchmark@v1
+        uses: arup-group/github-action-benchmark@v1
         with:
           name: Python Benchmark with pytest-benchmark
           tool: "pytest"
