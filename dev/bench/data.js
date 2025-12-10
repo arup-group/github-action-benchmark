@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765361047258,
+  "lastUpdate": 1765361049955,
   "entries": {
     "Rust Benchmark": [
       {
@@ -35855,6 +35855,44 @@ window.BENCHMARK_DATA = {
             "range": "± 321.581",
             "unit": "us",
             "extra": "100 samples\n4 iterations"
+          }
+        ]
+      }
+    ],
+    "Benchmark.Net Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "varada.nambiar@arup.com",
+            "name": "Varada Nambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "varada.nambiar@arup.com",
+            "name": "Varada Nambiar",
+            "username": "VaradaNambiar"
+          },
+          "distinct": true,
+          "id": "07941001e6d3b5f581177f4035b7f7036b567360",
+          "message": "merge remote-tracking branch 'upstream/master'\n~",
+          "timestamp": "2025-12-10T15:04:15+05:30",
+          "tree_id": "ecedcc4484978cdac9600829ea0bdf65921208ca",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/07941001e6d3b5f581177f4035b7f7036b567360"
+        },
+        "date": 1765361036719,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 21.217834144830704,
+            "unit": "ns",
+            "range": "± 0.02711878530764824"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 42.968075637306484,
+            "unit": "ns",
+            "range": "± 0.03757333586490564"
           }
         ]
       }
