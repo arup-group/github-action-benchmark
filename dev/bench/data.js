@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765361040527,
+  "lastUpdate": 1765361047258,
   "entries": {
     "Rust Benchmark": [
       {
@@ -35815,6 +35815,46 @@ window.BENCHMARK_DATA = {
             "value": 1947310303.945185,
             "unit": "ops/s",
             "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          }
+        ]
+      }
+    ],
+    "Catch2 Benchmark (v3)": [
+      {
+        "commit": {
+          "author": {
+            "email": "varada.nambiar@arup.com",
+            "name": "Varada Nambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "varada.nambiar@arup.com",
+            "name": "Varada Nambiar",
+            "username": "VaradaNambiar"
+          },
+          "distinct": true,
+          "id": "07941001e6d3b5f581177f4035b7f7036b567360",
+          "message": "merge remote-tracking branch 'upstream/master'\n~",
+          "timestamp": "2025-12-10T15:04:15+05:30",
+          "tree_id": "ecedcc4484978cdac9600829ea0bdf65921208ca",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/07941001e6d3b5f581177f4035b7f7036b567360"
+        },
+        "date": 1765361035189,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 86.5167,
+            "range": "± 19.675",
+            "unit": "ns",
+            "extra": "100 samples\n371 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 7.75352,
+            "range": "± 321.581",
+            "unit": "us",
+            "extra": "100 samples\n4 iterations"
           }
         ]
       }
