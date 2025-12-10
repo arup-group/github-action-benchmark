@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1643370911936,
+  "lastUpdate": 1765360992626,
   "entries": {
     "Rust Benchmark": [
       {
@@ -28389,6 +28389,44 @@ window.BENCHMARK_DATA = {
             "extra": "mean: 2.133237570815633 msec\nrounds: 466"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "varada.nambiar@arup.com",
+            "name": "Varada Nambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "varada.nambiar@arup.com",
+            "name": "Varada Nambiar",
+            "username": "VaradaNambiar"
+          },
+          "distinct": true,
+          "id": "07941001e6d3b5f581177f4035b7f7036b567360",
+          "message": "merge remote-tracking branch 'upstream/master'\n~",
+          "timestamp": "2025-12-10T15:04:15+05:30",
+          "tree_id": "ecedcc4484978cdac9600829ea0bdf65921208ca",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/07941001e6d3b5f581177f4035b7f7036b567360"
+        },
+        "date": 1765360990894,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 72352.78955059576,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010570733319870167",
+            "extra": "mean: 13.82116717560292 usec\nrounds: 35699"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 601.0327199177766,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000017350836271206314",
+            "extra": "mean: 1.6638029292927736 msec\nrounds: 594"
+          }
+        ]
       }
     ],
     "C++ Benchmark": [
@@ -35548,5 +35586,5 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "repoUrl": "https://github.com/benchmark-action/github-action-benchmark"
+  "repoUrl": "https://github.com/arup-group/github-action-benchmark"
 }
