@@ -19,7 +19,7 @@ jobs:
           cache: "npm"
       - uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: "6.0.101" # SDK Version to use. keep in line with examples/benchmarkdotnet/global.json
+          dotnet-version: "6.0.101"
       - run: npm ci
       - run: npm run build
       - name: Run benchmark
