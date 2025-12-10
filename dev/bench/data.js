@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765379103139,
+  "lastUpdate": 1765379104278,
   "entries": {
     "Rust Benchmark": [
       {
@@ -15755,6 +15755,48 @@ window.BENCHMARK_DATA = {
             "value": 4,
             "unit": "auxMetricUnits",
             "extra": "30235 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a6397dff19ea6c9b56b258c1fc7e80a99a037fb3",
+          "message": "Merge pull request #3 from arup-group/fix/change-repo-path\n\nChange hardcoded \"benchmark-action/github-action-benchmark\" to \"arup-…",
+          "timestamp": "2025-12-10T15:04:30Z",
+          "tree_id": "7246e8fb8fcf9a5e5cc9c2ac4c0afb0904157666",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/a6397dff19ea6c9b56b258c1fc7e80a99a037fb3"
+        },
+        "date": 1765379102892,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 313.1,
+            "unit": "ns/op",
+            "extra": "3852370 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 39961,
+            "unit": "ns/op",
+            "extra": "30270 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 40504,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "30057 times\n4 procs"
           }
         ]
       }
