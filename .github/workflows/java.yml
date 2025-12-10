@@ -28,7 +28,7 @@ jobs:
         uses: arup-group/github-action-benchmark@v1
         with:
           name: JMH Benchmark
-          tool: "jmh"
+          tool: "customBiggerIsBetter"
           output-file-path: examples/java/jmh-result.json
           # Use personal access token instead of GITHUB_TOKEN due to https://github.community/t/github-action-not-triggering-gh-pages-upon-push/16096
           github-token: ${{ secrets.GITHUB_TOKEN }}

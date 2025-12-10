@@ -253,7 +253,7 @@ jobs:
         uses: ./
         with:
           name: JMH Benchmark
-          tool: "jmh"
+          tool: "customBiggerIsBetter"
           output-file-path: examples/java/jmh-result.json
           skip-fetch-gh-pages: true
           fail-on-alert: true
