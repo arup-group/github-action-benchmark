@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765380281364,
+  "lastUpdate": 1765380291881,
   "entries": {
     "Rust Benchmark": [
       {
@@ -36647,6 +36647,42 @@ window.BENCHMARK_DATA = {
             "value": 43.392143139472374,
             "unit": "ns",
             "range": "± 0.03168187374684288"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "31ae7f9268272bcf903e108a8b89b23d042997b5",
+          "message": "Merge pull request #5 from arup-group/fix/change-repo-path\n\nGet rid of \"separate results repo\" step",
+          "timestamp": "2025-12-10T15:23:42Z",
+          "tree_id": "a8d07b2c5fd3a27ad711003f6b246486a9a1ed78",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/31ae7f9268272bcf903e108a8b89b23d042997b5"
+        },
+        "date": 1765380290019,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 21.196975041713035,
+            "unit": "ns",
+            "range": "± 0.020886906287887815"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 42.821384594990654,
+            "unit": "ns",
+            "range": "± 0.02368859758326777"
           }
         ]
       }
