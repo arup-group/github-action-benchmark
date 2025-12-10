@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765379187761,
+  "lastUpdate": 1765379522154,
   "entries": {
     "Rust Benchmark": [
       {
@@ -32991,6 +32991,42 @@ window.BENCHMARK_DATA = {
             "value": 23126.442376120216,
             "unit": "ns/iter",
             "extra": "iterations: 30352\ncpu: 23124.82258170797 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a34e53c4f90b57589b2342f4aed535eecacddfc2",
+          "message": "Merge pull request #4 from arup-group/fix/change-repo-path\n\nFix typo",
+          "timestamp": "2025-12-10T15:11:44Z",
+          "tree_id": "c7bdd3e25ea7e301eb97eec1d0937f316f41989a",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/a34e53c4f90b57589b2342f4aed535eecacddfc2"
+        },
+        "date": 1765379520630,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 177.41141645298868,
+            "unit": "ns/iter",
+            "extra": "iterations: 3924126\ncpu: 177.39373710222355 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 22296.727816582486,
+            "unit": "ns/iter",
+            "extra": "iterations: 30924\ncpu: 22295.57178890182 ns\nthreads: 1"
           }
         ]
       }
