@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765379543185,
+  "lastUpdate": 1765379565528,
   "entries": {
     "Rust Benchmark": [
       {
@@ -36199,6 +36199,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "fib/20",
             "value": 44994,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a34e53c4f90b57589b2342f4aed535eecacddfc2",
+          "message": "Merge pull request #4 from arup-group/fix/change-repo-path\n\nFix typo",
+          "timestamp": "2025-12-10T15:11:44Z",
+          "tree_id": "c7bdd3e25ea7e301eb97eec1d0937f316f41989a",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/a34e53c4f90b57589b2342f4aed535eecacddfc2"
+        },
+        "date": 1765379564161,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 351.85258964143424,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":251,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 44853,
             "unit": "ns",
             "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
