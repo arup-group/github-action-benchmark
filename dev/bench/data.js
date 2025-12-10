@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765379579779,
+  "lastUpdate": 1765379621048,
   "entries": {
     "Rust Benchmark": [
       {
@@ -36534,6 +36534,66 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci/Recursive/21",
             "value": 30573,
             "range": "± 94",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/21",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a34e53c4f90b57589b2342f4aed535eecacddfc2",
+          "message": "Merge pull request #4 from arup-group/fix/change-repo-path\n\nFix typo",
+          "timestamp": "2025-12-10T15:11:44Z",
+          "tree_id": "c7bdd3e25ea7e301eb97eec1d0937f316f41989a",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/a34e53c4f90b57589b2342f4aed535eecacddfc2"
+        },
+        "date": 1765379619211,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "BenchFib10",
+            "value": 150,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "BenchFib20",
+            "value": 25202,
+            "range": "± 268",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/20",
+            "value": 18882,
+            "range": "± 241",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/20",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/21",
+            "value": 30557,
+            "range": "± 45",
             "unit": "ns/iter"
           },
           {
