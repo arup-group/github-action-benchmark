@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765411187694,
+  "lastUpdate": 1765411192062,
   "entries": {
     "Rust Benchmark": [
       {
@@ -37175,6 +37175,42 @@ window.BENCHMARK_DATA = {
             "value": 42.973401844501495,
             "unit": "ns",
             "range": "± 0.023741670739870897"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "336b2ce472510023f32d89baaf19aeff6dfa5012",
+          "message": "Merge pull request #8 from arup-group/fix/cicd_after_update\n\nRestore jmh benchmark to upstream version",
+          "timestamp": "2025-12-10T23:58:40Z",
+          "tree_id": "3c60612df80d77daaea95857574d6393adbe5eef",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/336b2ce472510023f32d89baaf19aeff6dfa5012"
+        },
+        "date": 1765411190773,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 21.228943166824486,
+            "unit": "ns",
+            "range": "± 0.023575876330725526"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 42.97938055992127,
+            "unit": "ns",
+            "range": "± 0.06069865852518133"
           }
         ]
       }
