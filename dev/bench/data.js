@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765380291881,
+  "lastUpdate": 1765380339428,
   "entries": {
     "Rust Benchmark": [
       {
@@ -36858,6 +36858,66 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci/Recursive/21",
             "value": 30557,
             "range": "± 45",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/21",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "31ae7f9268272bcf903e108a8b89b23d042997b5",
+          "message": "Merge pull request #5 from arup-group/fix/change-repo-path\n\nGet rid of \"separate results repo\" step",
+          "timestamp": "2025-12-10T15:23:42Z",
+          "tree_id": "a8d07b2c5fd3a27ad711003f6b246486a9a1ed78",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/31ae7f9268272bcf903e108a8b89b23d042997b5"
+        },
+        "date": 1765380337502,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "BenchFib10",
+            "value": 149,
+            "range": "± 2",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "BenchFib20",
+            "value": 18896,
+            "range": "± 97",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/20",
+            "value": 18887,
+            "range": "± 363",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/20",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/21",
+            "value": 30561,
+            "range": "± 381",
             "unit": "ns/iter"
           },
           {
