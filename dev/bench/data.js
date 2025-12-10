@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765380241380,
+  "lastUpdate": 1765380244468,
   "entries": {
     "Rust Benchmark": [
       {
@@ -28751,6 +28751,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000019215541621204583",
             "extra": "mean: 1.6547725714287875 msec\nrounds: 588"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "31ae7f9268272bcf903e108a8b89b23d042997b5",
+          "message": "Merge pull request #5 from arup-group/fix/change-repo-path\n\nGet rid of \"separate results repo\" step",
+          "timestamp": "2025-12-10T15:23:42Z",
+          "tree_id": "a8d07b2c5fd3a27ad711003f6b246486a9a1ed78",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/31ae7f9268272bcf903e108a8b89b23d042997b5"
+        },
+        "date": 1765380242550,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 77810.21587259935,
+            "unit": "iter/sec",
+            "range": "stddev: 9.877527304848748e-7",
+            "extra": "mean: 12.851782876908164 usec\nrounds: 40857"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 607.8382825083584,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000022892004157644078",
+            "extra": "mean: 1.6451744300693154 msec\nrounds: 572"
           }
         ]
       }
