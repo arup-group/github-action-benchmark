@@ -16,10 +16,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
       - uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '6.0.101'  # SDK Version to use. keep in line with examples/benchmarkdotnet/global.json
+          dotnet-version: "6.0.101" # SDK Version to use. keep in line with examples/benchmarkdotnet/global.json
       - run: npm ci
       - run: npm run build
       - name: Run benchmark
@@ -34,7 +34,7 @@ jobs:
         uses: ./
         with:
           name: Benchmark.Net Benchmark
-          tool: 'benchmarkdotnet'
+          tool: "benchmarkdotnet"
           output-file-path: examples/benchmarkdotnet/BenchmarkDotNet.Artifacts/results/Sample.Benchmarks-report-full-compressed.json
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -51,7 +51,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
       - run: npm ci
       - run: npm run build
       - name: Run benchmark
@@ -66,7 +66,7 @@ jobs:
         uses: ./
         with:
           name: Benchmark.js Benchmark
-          tool: 'benchmarkjs'
+          tool: "benchmarkjs"
           output-file-path: examples/benchmarkjs/output.txt
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -83,7 +83,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
       - run: npm ci
       - run: npm run build
       - name: Run benchmark
@@ -103,7 +103,7 @@ jobs:
         uses: ./
         with:
           name: Catch2 Benchmark
-          tool: 'catch2'
+          tool: "catch2"
           output-file-path: examples/catch2_v2/benchmark_result.txt
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -120,7 +120,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
       - run: npm ci
       - run: npm run build
       - name: Run benchmark
@@ -140,7 +140,7 @@ jobs:
         uses: ./
         with:
           name: Catch2 Benchmark (v3)
-          tool: 'catch2'
+          tool: "catch2"
           output-file-path: examples/catch2/benchmark_result.txt
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -157,7 +157,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
       - run: npm ci
       - run: npm run build
       - name: Cache Benchmark library
@@ -179,7 +179,7 @@ jobs:
         uses: ./
         with:
           name: C++ Benchmark
-          tool: 'googlecpp'
+          tool: "googlecpp"
           output-file-path: examples/cpp/benchmark_result.json
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -196,7 +196,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
       - uses: actions/setup-go@v4
         with:
           go-version: "stable"
@@ -214,7 +214,7 @@ jobs:
         uses: ./
         with:
           name: Go Benchmark
-          tool: 'go'
+          tool: "go"
           output-file-path: examples/go/output.txt
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -231,11 +231,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
       - uses: actions/setup-java@v4
         with:
-          distribution: 'adopt'
-          java-version: '11'
+          distribution: "adopt"
+          java-version: "11"
       - run: npm ci
       - run: npm run build
       - name: Run benchmark
@@ -253,7 +253,7 @@ jobs:
         uses: ./
         with:
           name: JMH Benchmark
-          tool: "customBiggerIsBetter"
+          tool: "jmh"
           output-file-path: examples/java/jmh-result.json
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -270,12 +270,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
       - run: npm ci
       - run: npm run build
       - uses: julia-actions/setup-julia@v1
         with:
-          version: '1'
+          version: "1"
           arch: x64
       - name: Run benchmark
         run: |
@@ -294,7 +294,7 @@ jobs:
         uses: ./
         with:
           name: Julia benchmark
-          tool: 'julia'
+          tool: "julia"
           output-file-path: examples/julia/output.json
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -311,7 +311,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
       - uses: actions/setup-python@v5
         with:
           python-version: 3.9
@@ -332,7 +332,7 @@ jobs:
         uses: ./
         with:
           name: Python Benchmark with pytest-benchmark
-          tool: 'pytest'
+          tool: "pytest"
           output-file-path: examples/pytest/output.json
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -349,7 +349,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
       - run: npm ci
       - run: npm run build
       - run: rustup toolchain update nightly && rustup default nightly
@@ -365,7 +365,7 @@ jobs:
         uses: ./
         with:
           name: Rust Benchmark
-          tool: 'cargo'
+          tool: "cargo"
           output-file-path: examples/rust/output.txt
           fail-on-alert: true
           summary-always: true
@@ -381,7 +381,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
       - run: npm ci
       - run: npm run build
       - run: rustup toolchain update nightly && rustup default nightly
@@ -397,7 +397,7 @@ jobs:
         uses: ./
         with:
           name: Criterion.rs Benchmark
-          tool: 'cargo'
+          tool: "cargo"
           output-file-path: examples/criterion-rs/output.txt
           fail-on-alert: true
           summary-always: true
@@ -413,7 +413,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
       - run: npm ci
       - run: npm run build
       - uses: actions/setup-go@v4
@@ -430,14 +430,14 @@ jobs:
         uses: ./
         with:
           name: Alert setup example with cache
-          tool: 'go'
+          tool: "go"
           output-file-path: examples/go/output.txt
           external-data-json-path: ./cache/benchmark-data.json
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          alert-threshold: '200%'
+          alert-threshold: "200%"
           comment-on-alert: true
           fail-on-alert: true
-          alert-comment-cc-users: '@ktrz'
+          alert-comment-cc-users: "@ktrz"
   unit-tests:
     name: Run unit tests
     runs-on: ubuntu-latest
@@ -446,7 +446,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
       - run: npm ci
       - run: npm run coverage
       - name: Apply yamllint
@@ -465,7 +465,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
       - run: npm ci
       - run: npm run lint
       - run: npm run format:check
