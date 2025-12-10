@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765411154511,
+  "lastUpdate": 1765411187694,
   "entries": {
     "Rust Benchmark": [
       {
@@ -36883,6 +36883,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "fib/20",
             "value": 45004,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "336b2ce472510023f32d89baaf19aeff6dfa5012",
+          "message": "Merge pull request #8 from arup-group/fix/cicd_after_update\n\nRestore jmh benchmark to upstream version",
+          "timestamp": "2025-12-10T23:58:40Z",
+          "tree_id": "3c60612df80d77daaea95857574d6393adbe5eef",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/336b2ce472510023f32d89baaf19aeff6dfa5012"
+        },
+        "date": 1765411185810,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 433.87735849056605,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":212,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 44934,
             "unit": "ns",
             "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
