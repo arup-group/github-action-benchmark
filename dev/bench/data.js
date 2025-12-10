@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765380256085,
+  "lastUpdate": 1765380281364,
   "entries": {
     "Rust Benchmark": [
       {
@@ -36421,6 +36421,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "fib/10",
             "value": 351.85258964143424,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":251,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 44853,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "31ae7f9268272bcf903e108a8b89b23d042997b5",
+          "message": "Merge pull request #5 from arup-group/fix/change-repo-path\n\nGet rid of \"separate results repo\" step",
+          "timestamp": "2025-12-10T15:23:42Z",
+          "tree_id": "a8d07b2c5fd3a27ad711003f6b246486a9a1ed78",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/31ae7f9268272bcf903e108a8b89b23d042997b5"
+        },
+        "date": 1765380280129,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 304.23107569721117,
             "unit": "ns",
             "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":251,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           },
