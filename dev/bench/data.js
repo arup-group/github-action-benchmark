@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765361084444,
+  "lastUpdate": 1765361233531,
   "entries": {
     "Rust Benchmark": [
       {
@@ -32839,6 +32839,42 @@ window.BENCHMARK_DATA = {
             "value": 25745.22399791391,
             "unit": "ns/iter",
             "extra": "iterations: 26844\ncpu: 25741.00730144539 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "varada.nambiar@arup.com",
+            "name": "Varada Nambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "varada.nambiar@arup.com",
+            "name": "Varada Nambiar",
+            "username": "VaradaNambiar"
+          },
+          "distinct": true,
+          "id": "07941001e6d3b5f581177f4035b7f7036b567360",
+          "message": "merge remote-tracking branch 'upstream/master'\n~",
+          "timestamp": "2025-12-10T15:04:15+05:30",
+          "tree_id": "ecedcc4484978cdac9600829ea0bdf65921208ca",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/07941001e6d3b5f581177f4035b7f7036b567360"
+        },
+        "date": 1765361232140,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 177.96961817714643,
+            "unit": "ns/iter",
+            "extra": "iterations: 3919383\ncpu: 177.94661123957522 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 22418.309454393922,
+            "unit": "ns/iter",
+            "extra": "iterations: 31213\ncpu: 22414.78124499407 ns\nthreads: 1"
           }
         ]
       }
