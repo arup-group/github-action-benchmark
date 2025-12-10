@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765411143390,
+  "lastUpdate": 1765411146170,
   "entries": {
     "Rust Benchmark": [
       {
@@ -29029,6 +29029,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000018925835427703795",
             "extra": "mean: 1.6546360249583492 msec\nrounds: 601"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "336b2ce472510023f32d89baaf19aeff6dfa5012",
+          "message": "Merge pull request #8 from arup-group/fix/cicd_after_update\n\nRestore jmh benchmark to upstream version",
+          "timestamp": "2025-12-10T23:58:40Z",
+          "tree_id": "3c60612df80d77daaea95857574d6393adbe5eef",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/336b2ce472510023f32d89baaf19aeff6dfa5012"
+        },
+        "date": 1765411144335,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 75898.05021274237,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001045171041964828",
+            "extra": "mean: 13.17556903236642 usec\nrounds: 39467"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 610.9998057933368,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000012575454584769931",
+            "extra": "mean: 1.6366617313430667 msec\nrounds: 603"
           }
         ]
       }
