@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765379621048,
+  "lastUpdate": 1765380241380,
   "entries": {
     "Rust Benchmark": [
       {
@@ -33145,6 +33145,42 @@ window.BENCHMARK_DATA = {
             "value": 22296.727816582486,
             "unit": "ns/iter",
             "extra": "iterations: 30924\ncpu: 22295.57178890182 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "31ae7f9268272bcf903e108a8b89b23d042997b5",
+          "message": "Merge pull request #5 from arup-group/fix/change-repo-path\n\nGet rid of \"separate results repo\" step",
+          "timestamp": "2025-12-10T15:23:42Z",
+          "tree_id": "a8d07b2c5fd3a27ad711003f6b246486a9a1ed78",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/31ae7f9268272bcf903e108a8b89b23d042997b5"
+        },
+        "date": 1765380239425,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 176.9546554686099,
+            "unit": "ns/iter",
+            "extra": "iterations: 3949495\ncpu: 176.9311585405223 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 22293.85897395018,
+            "unit": "ns/iter",
+            "extra": "iterations: 31363\ncpu: 22288.906258967578 ns\nthreads: 1"
           }
         ]
       }
