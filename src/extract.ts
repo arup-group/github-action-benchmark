@@ -357,7 +357,7 @@ function extractGoResult(output: string): BenchmarkResult[] {
     // "A benchmark result line has the general form: <name> <iterations> <value> <unit> [<value> <unit>...]"
     // "The fields are separated by runs of space characters (as defined by unicode.IsSpace), so the line can be parsed with strings.Fields. The line must have an even number of fields, and at least four."
     const reExtract =
-        /^(?<name>Benchmark\w+[\w()$%^&*-=|,[\]{}"#]*?)(?<procs>-\d+)?\s+(?<times>\d+)\s+(?<remainder>.+)$/;
+        /^(?<name>Benchmark\w+[\w()$%^&*\-=|,[\]{}"#]*?)(?<procs>-\d+)?\s+(?<times>\d+)\s+(?<remainder>.+)$/;
 
     for (const line of lines) {
         const m = line.match(reExtract);
