@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765452526329,
+  "lastUpdate": 1765453881337,
   "entries": {
     "Rust Benchmark": [
       {
@@ -38227,6 +38227,42 @@ window.BENCHMARK_DATA = {
             "value": 22296.02522855424,
             "unit": "ns/iter",
             "extra": "iterations: 31393\ncpu: 22290.927913866155 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7f8908c1420d9a90256070c32e5cd09f7ace8708",
+          "message": "Merge pull request #26 from arup-group/branch-with-updated-packages\n\nupdate actions/github version",
+          "timestamp": "2025-12-11T17:21:01+05:30",
+          "tree_id": "464b082c15dbb7652ee7a132eb59268ee31a6d11",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/7f8908c1420d9a90256070c32e5cd09f7ace8708"
+        },
+        "date": 1765453878965,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 177.15477623958074,
+            "unit": "ns/iter",
+            "extra": "iterations: 3950587\ncpu: 177.11907572216484 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 22307.58836289399,
+            "unit": "ns/iter",
+            "extra": "iterations: 31348\ncpu: 22305.02418017099 ns\nthreads: 1"
           }
         ]
       }
