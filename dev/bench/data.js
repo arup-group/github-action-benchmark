@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765432557214,
+  "lastUpdate": 1765432561063,
   "entries": {
     "Rust Benchmark": [
       {
@@ -36999,6 +36999,44 @@ window.BENCHMARK_DATA = {
             "range": "± 602.253",
             "unit": "us",
             "extra": "100 samples\n4 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fab5b6019b67fe5b158f744fdfc971371aa5ad3f",
+          "message": "Merge pull request #12 from arup-group/update-braces-version2\n\nUpdate braces version2",
+          "timestamp": "2025-12-11T11:25:24+05:30",
+          "tree_id": "0b4cc60a17e04b673f4bf7d78a7ea43f685cbf8c",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/fab5b6019b67fe5b158f744fdfc971371aa5ad3f"
+        },
+        "date": 1765432558841,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 83.5647,
+            "range": "± 2.82903",
+            "unit": "ns",
+            "extra": "100 samples\n224 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 8.42764,
+            "range": "± 275.79",
+            "unit": "us",
+            "extra": "100 samples\n3 iterations"
           }
         ]
       }
