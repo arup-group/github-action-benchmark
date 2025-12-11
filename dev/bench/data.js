@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765411245622,
+  "lastUpdate": 1765411793284,
   "entries": {
     "Rust Benchmark": [
       {
@@ -33607,6 +33607,42 @@ window.BENCHMARK_DATA = {
             "value": 22335.758520458334,
             "unit": "ns/iter",
             "extra": "iterations: 31307\ncpu: 22332.629986903885 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "94fad492f290f0c955bd09dd5f86eef4c294e7cb",
+          "message": "Merge pull request #9 from arup-group/fix/cicd_after_update\n\nFix token to match the repo",
+          "timestamp": "2025-12-11T00:09:34Z",
+          "tree_id": "1fe11483c543960fc8a3ec1c863dd4958f204b81",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/94fad492f290f0c955bd09dd5f86eef4c294e7cb"
+        },
+        "date": 1765411791876,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 177.07351953750705,
+            "unit": "ns/iter",
+            "extra": "iterations: 3818604\ncpu: 177.05755427899834 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 22301.127168183968,
+            "unit": "ns/iter",
+            "extra": "iterations: 31305\ncpu: 22299.658552946818 ns\nthreads: 1"
           }
         ]
       }
