@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765432554415,
+  "lastUpdate": 1765432555560,
   "entries": {
     "Rust Benchmark": [
       {
@@ -16072,6 +16072,48 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/fab5b6019b67fe5b158f744fdfc971371aa5ad3f"
         },
         "date": 1765432553047,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 312.3,
+            "unit": "ns/op",
+            "extra": "3851018 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 39852,
+            "unit": "ns/op",
+            "extra": "30228 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 39915,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "30075 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fab5b6019b67fe5b158f744fdfc971371aa5ad3f",
+          "message": "Merge pull request #12 from arup-group/update-braces-version2\n\nUpdate braces version2",
+          "timestamp": "2025-12-11T11:25:24+05:30",
+          "tree_id": "0b4cc60a17e04b673f4bf7d78a7ea43f685cbf8c",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/fab5b6019b67fe5b158f744fdfc971371aa5ad3f"
+        },
+        "date": 1765432555362,
         "tool": "go",
         "benches": [
           {
