@@ -359,6 +359,8 @@ jobs:
 
   rust:
     name: Run Rust benchmark example - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
