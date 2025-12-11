@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765447981089,
+  "lastUpdate": 1765447982859,
   "entries": {
     "Rust Benchmark": [
       {
@@ -37147,6 +37147,42 @@ window.BENCHMARK_DATA = {
             "value": 22355.3088886777,
             "unit": "ns/iter",
             "extra": "iterations: 31377\ncpu: 22352.324154635557 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "60345260+RaviKumarGubbala@users.noreply.github.com",
+            "name": "Ravi Kumar Gubbala",
+            "username": "RaviKumarGubbala"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0ebcbe9bea1e5a5f9e7f951788369b9c2aee4753",
+          "message": "Merge pull request #22 from arup-group/revert-21-task/fix-ci-yml-permission-warnings\n\nRevert \"Add the permissions key to the job - suggested by AI\"",
+          "timestamp": "2025-12-11T15:42:32+05:30",
+          "tree_id": "6f93f1534645a24d837b67196d0ad504b135fd71",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/0ebcbe9bea1e5a5f9e7f951788369b9c2aee4753"
+        },
+        "date": 1765447975337,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 182.63477085225324,
+            "unit": "ns/iter",
+            "extra": "iterations: 3836564\ncpu: 182.60801044893296 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 23279.00979937755,
+            "unit": "ns/iter",
+            "extra": "iterations: 30206\ncpu: 23276.88763821758 ns\nthreads: 1"
           }
         ]
       }
