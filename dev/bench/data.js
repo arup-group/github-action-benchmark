@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765433631870,
+  "lastUpdate": 1765433654379,
   "entries": {
     "Rust Benchmark": [
       {
@@ -38671,6 +38671,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "fib/20",
             "value": 45004,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "73531185edbf9bbe84511b9d47e8d3a59e97df29",
+          "message": "Merge pull request #14 from arup-group/alert-autofix-30\n\nPotential fix for code scanning alert no. 30: Workflow does not contain permissions",
+          "timestamp": "2025-12-11T11:43:13+05:30",
+          "tree_id": "937dd83eaf1d16c0759b6eaee18f1052874f7b6e",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/73531185edbf9bbe84511b9d47e8d3a59e97df29"
+        },
+        "date": 1765433652433,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 432.92452830188677,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":212,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 55042,
             "unit": "ns",
             "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
