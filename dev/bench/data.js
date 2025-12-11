@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765444845922,
+  "lastUpdate": 1765444849593,
   "entries": {
     "Rust Benchmark": [
       {
@@ -42970,6 +42970,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/e3495e673643203eb74e29f21759d8e159e9bdfa"
         },
         "date": 1765444843683,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 21.187100214617594,
+            "unit": "ns",
+            "range": "± 0.0207203761257534"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 42.98957530351785,
+            "unit": "ns",
+            "range": "± 0.02524499929087021"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "60345260+RaviKumarGubbala@users.noreply.github.com",
+            "name": "Ravi Kumar Gubbala",
+            "username": "RaviKumarGubbala"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e3495e673643203eb74e29f21759d8e159e9bdfa",
+          "message": "Merge pull request #21 from arup-group/task/fix-ci-yml-permission-warnings\n\nAdd the permissions key to the job - suggested by AI",
+          "timestamp": "2025-12-11T14:49:34+05:30",
+          "tree_id": "9c771d8bded0dae1f64e353ebe90e48d8787b271",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/e3495e673643203eb74e29f21759d8e159e9bdfa"
+        },
+        "date": 1765444847445,
         "tool": "benchmarkdotnet",
         "benches": [
           {
