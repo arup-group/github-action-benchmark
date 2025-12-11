@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765448766356,
+  "lastUpdate": 1765448768291,
   "entries": {
     "Rust Benchmark": [
       {
@@ -37710,6 +37710,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/283ae9aa60c8c1af3f45356376be57fbb8828750"
         },
         "date": 1765448761685,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 182.34141076288662,
+            "unit": "ns/iter",
+            "extra": "iterations: 3801787\ncpu: 182.33572554169922 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 23151.49710335759,
+            "unit": "ns/iter",
+            "extra": "iterations: 30380\ncpu: 23150.904970375253 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "283ae9aa60c8c1af3f45356376be57fbb8828750",
+          "message": "Merge pull request #24 from arup-group/dependabot/pip/examples/pytest/zipp-3.19.1\n\nchore(deps): bump zipp from 0.6.0 to 3.19.1 in /examples/pytest",
+          "timestamp": "2025-12-11T15:55:41+05:30",
+          "tree_id": "14f7543f1a0b0ab369a1c6f2f39b0ac5e9852538",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/283ae9aa60c8c1af3f45356376be57fbb8828750"
+        },
+        "date": 1765448767651,
         "tool": "googlecpp",
         "benches": [
           {
