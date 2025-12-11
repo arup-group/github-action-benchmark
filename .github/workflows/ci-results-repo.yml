@@ -8,13 +8,12 @@ on:
       - master
 
 jobs:
-  my-job:
-    permissions:
-      contents: read
-      pull-requests: write
 
   benchmarkdotnet-framework:
     name: Run Benchmark.Net .Net Benchmark Framework example - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -52,6 +51,9 @@ jobs:
 
   benchmarkjs:
     name: Run JavaScript benchmark example - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -86,6 +88,9 @@ jobs:
 
   catch2-v2-framework:
     name: Run Catch2 C++ Benchmark Framework example (v2.x) - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -125,6 +130,9 @@ jobs:
 
   catch2-v3-framework:
     name: Run Catch2 C++ Benchmark Framework example (v3.x) - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -164,6 +172,9 @@ jobs:
 
   cpp-framework:
     name: Run Google C++ Benchmark Framework example - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -205,6 +216,9 @@ jobs:
 
   go:
     name: Run Go benchmark example - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -242,6 +256,9 @@ jobs:
 
   java-jmh:
     name: Run JMH Java Benchmark Framework example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -281,6 +298,9 @@ jobs:
 
   julia-benchmark:
     name: Run Julia benchmark example - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
