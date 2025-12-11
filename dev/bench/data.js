@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765448022811,
+  "lastUpdate": 1765448025557,
   "entries": {
     "Rust Benchmark": [
       {
@@ -43498,6 +43498,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/0ebcbe9bea1e5a5f9e7f951788369b9c2aee4753"
         },
         "date": 1765448021182,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 21.203282975233517,
+            "unit": "ns",
+            "range": "± 0.02561402254004944"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 43.25656595826149,
+            "unit": "ns",
+            "range": "± 0.06110541932961973"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "60345260+RaviKumarGubbala@users.noreply.github.com",
+            "name": "Ravi Kumar Gubbala",
+            "username": "RaviKumarGubbala"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0ebcbe9bea1e5a5f9e7f951788369b9c2aee4753",
+          "message": "Merge pull request #22 from arup-group/revert-21-task/fix-ci-yml-permission-warnings\n\nRevert \"Add the permissions key to the job - suggested by AI\"",
+          "timestamp": "2025-12-11T15:42:32+05:30",
+          "tree_id": "6f93f1534645a24d837b67196d0ad504b135fd71",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/0ebcbe9bea1e5a5f9e7f951788369b9c2aee4753"
+        },
+        "date": 1765448023858,
         "tool": "benchmarkdotnet",
         "benches": [
           {
