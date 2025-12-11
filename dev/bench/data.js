@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765448378697,
+  "lastUpdate": 1765448380667,
   "entries": {
     "Rust Benchmark": [
       {
@@ -16996,6 +16996,48 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/e038350c13d37768fd2048b5a591a0200d3edfc0"
         },
         "date": 1765448376245,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 313.3,
+            "unit": "ns/op",
+            "extra": "3849622 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 39876,
+            "unit": "ns/op",
+            "extra": "30205 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 39772,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "30171 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e038350c13d37768fd2048b5a591a0200d3edfc0",
+          "message": "Merge pull request #23 from arup-group/fix-codescan-slerts-for-github-permission-in-workflow\n\nadd permissions for jobs in workflow in ci.yml",
+          "timestamp": "2025-12-11T15:49:08+05:30",
+          "tree_id": "9aff2e511d422554b26d2a253c45bf340248c2b9",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/e038350c13d37768fd2048b5a591a0200d3edfc0"
+        },
+        "date": 1765448380044,
         "tool": "go",
         "benches": [
           {
