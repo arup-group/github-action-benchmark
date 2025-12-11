@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765448775618,
+  "lastUpdate": 1765448780165,
   "entries": {
     "Rust Benchmark": [
       {
@@ -41607,6 +41607,44 @@ window.BENCHMARK_DATA = {
             "range": "± 340.676",
             "unit": "us",
             "extra": "100 samples\n4 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "283ae9aa60c8c1af3f45356376be57fbb8828750",
+          "message": "Merge pull request #24 from arup-group/dependabot/pip/examples/pytest/zipp-3.19.1\n\nchore(deps): bump zipp from 0.6.0 to 3.19.1 in /examples/pytest",
+          "timestamp": "2025-12-11T15:55:41+05:30",
+          "tree_id": "14f7543f1a0b0ab369a1c6f2f39b0ac5e9852538",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/283ae9aa60c8c1af3f45356376be57fbb8828750"
+        },
+        "date": 1765448778080,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 84.8867,
+            "range": "± 7.48599",
+            "unit": "ns",
+            "extra": "100 samples\n224 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 8.97344,
+            "range": "± 287.709",
+            "unit": "us",
+            "extra": "100 samples\n3 iterations"
           }
         ]
       }
