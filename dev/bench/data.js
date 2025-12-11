@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765433615220,
+  "lastUpdate": 1765433618440,
   "entries": {
     "Rust Benchmark": [
       {
@@ -29813,6 +29813,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000013085995612921422",
             "extra": "mean: 1.4736762283581202 msec\nrounds: 670"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "73531185edbf9bbe84511b9d47e8d3a59e97df29",
+          "message": "Merge pull request #14 from arup-group/alert-autofix-30\n\nPotential fix for code scanning alert no. 30: Workflow does not contain permissions",
+          "timestamp": "2025-12-11T11:43:13+05:30",
+          "tree_id": "937dd83eaf1d16c0759b6eaee18f1052874f7b6e",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/73531185edbf9bbe84511b9d47e8d3a59e97df29"
+        },
+        "date": 1765433617050,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 73787.84980610215,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010153490805433748",
+            "extra": "mean: 13.552366719287452 usec\nrounds: 43701"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 594.5269265912682,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000015473050042717368",
+            "extra": "mean: 1.682009603389235 msec\nrounds: 590"
           }
         ]
       }
