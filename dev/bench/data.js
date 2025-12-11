@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765453894377,
+  "lastUpdate": 1765453895606,
   "entries": {
     "Rust Benchmark": [
       {
@@ -42360,6 +42360,44 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/7f8908c1420d9a90256070c32e5cd09f7ace8708"
         },
         "date": 1765453892536,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 81.3651,
+            "range": "± 7.38185",
+            "unit": "ns",
+            "extra": "100 samples\n364 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 7.66947,
+            "range": "± 368.812",
+            "unit": "us",
+            "extra": "100 samples\n4 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7f8908c1420d9a90256070c32e5cd09f7ace8708",
+          "message": "Merge pull request #26 from arup-group/branch-with-updated-packages\n\nupdate actions/github version",
+          "timestamp": "2025-12-11T17:21:01+05:30",
+          "tree_id": "464b082c15dbb7652ee7a132eb59268ee31a6d11",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/7f8908c1420d9a90256070c32e5cd09f7ace8708"
+        },
+        "date": 1765453895391,
         "tool": "catch2",
         "benches": [
           {
