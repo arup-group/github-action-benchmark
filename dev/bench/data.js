@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765442091273,
+  "lastUpdate": 1765442093236,
   "entries": {
     "Rust Benchmark": [
       {
@@ -36022,6 +36022,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/828b08933d91bb820bb09a5afa1133bc135ac15a"
         },
         "date": 1765442080646,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 178.294333298047,
+            "unit": "ns/iter",
+            "extra": "iterations: 3948646\ncpu: 178.28515141646022 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 22313.806042450327,
+            "unit": "ns/iter",
+            "extra": "iterations: 31378\ncpu: 22310.804895149467 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "828b08933d91bb820bb09a5afa1133bc135ac15a",
+          "message": "Merge pull request #18 from arup-group/fix-codescan-slerts-for-github-permission-in-workflow\n\nFix codescan alerts for GitHub permission in workflow",
+          "timestamp": "2025-12-11T14:04:16+05:30",
+          "tree_id": "1b9bca2ef89b1e4249672f2e882dc51a9e8961b7",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/828b08933d91bb820bb09a5afa1133bc135ac15a"
+        },
+        "date": 1765442092638,
         "tool": "googlecpp",
         "benches": [
           {
