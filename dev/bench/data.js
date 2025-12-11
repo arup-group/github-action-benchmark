@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765444815039,
+  "lastUpdate": 1765444838091,
   "entries": {
     "Rust Benchmark": [
       {
@@ -41863,6 +41863,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "fib/20",
             "value": 44933,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "60345260+RaviKumarGubbala@users.noreply.github.com",
+            "name": "Ravi Kumar Gubbala",
+            "username": "RaviKumarGubbala"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e3495e673643203eb74e29f21759d8e159e9bdfa",
+          "message": "Merge pull request #21 from arup-group/task/fix-ci-yml-permission-warnings\n\nAdd the permissions key to the job - suggested by AI",
+          "timestamp": "2025-12-11T14:49:34+05:30",
+          "tree_id": "9c771d8bded0dae1f64e353ebe90e48d8787b271",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/e3495e673643203eb74e29f21759d8e159e9bdfa"
+        },
+        "date": 1765444835913,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 354.29245283018867,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":212,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 44924,
             "unit": "ns",
             "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
