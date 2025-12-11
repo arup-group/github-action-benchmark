@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765443736218,
+  "lastUpdate": 1765443765965,
   "entries": {
     "Rust Benchmark": [
       {
@@ -40945,6 +40945,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "fib/10",
             "value": 353.72641509433964,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":212,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 44934,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "60345260+RaviKumarGubbala@users.noreply.github.com",
+            "name": "Ravi Kumar Gubbala",
+            "username": "RaviKumarGubbala"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a2c64ea8bb87f524a3d63e622a55f6d9bb0719dc",
+          "message": "Merge pull request #19 from arup-group/fix-codescan-slerts-for-github-permission-in-workflow\n\nadd permissions for jobs in workflows of ci.yml file",
+          "timestamp": "2025-12-11T14:31:41+05:30",
+          "tree_id": "3362ed30beb4b4c48d0df97ebd21cad8d34d4968",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/a2c64ea8bb87f524a3d63e622a55f6d9bb0719dc"
+        },
+        "date": 1765443763652,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 432.9292452830189,
             "unit": "ns",
             "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":212,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           },
