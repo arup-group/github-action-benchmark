@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765448825936,
+  "lastUpdate": 1765448869074,
   "entries": {
     "Rust Benchmark": [
       {
@@ -46518,6 +46518,66 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci/Recursive/21",
             "value": 34815,
             "range": "± 57",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/21",
+            "value": 4,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "283ae9aa60c8c1af3f45356376be57fbb8828750",
+          "message": "Merge pull request #24 from arup-group/dependabot/pip/examples/pytest/zipp-3.19.1\n\nchore(deps): bump zipp from 0.6.0 to 3.19.1 in /examples/pytest",
+          "timestamp": "2025-12-11T15:55:41+05:30",
+          "tree_id": "14f7543f1a0b0ab369a1c6f2f39b0ac5e9852538",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/283ae9aa60c8c1af3f45356376be57fbb8828750"
+        },
+        "date": 1765448866260,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "BenchFib10",
+            "value": 170,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "BenchFib20",
+            "value": 21625,
+            "range": "± 66",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/20",
+            "value": 21566,
+            "range": "± 236",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/20",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/21",
+            "value": 34869,
+            "range": "± 284",
             "unit": "ns/iter"
           },
           {
