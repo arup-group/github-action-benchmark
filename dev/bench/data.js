@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765434068714,
+  "lastUpdate": 1765434094187,
   "entries": {
     "Rust Benchmark": [
       {
@@ -39127,6 +39127,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "fib/20",
             "value": 55042,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "04f9505a0576be521fed9592b17c1dd2e0734484",
+          "message": "Merge pull request #15 from arup-group/codescaning-autosuggested-fixes\n\nPotential fix for code scanning alert no. 29: Workflow does not contain permissions",
+          "timestamp": "2025-12-11T11:50:32+05:30",
+          "tree_id": "068251141128542bfefa6c203b3338fa3dc14b86",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/04f9505a0576be521fed9592b17c1dd2e0734484"
+        },
+        "date": 1765434092800,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 302.9650655021834,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":229,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 45004,
             "unit": "ns",
             "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
