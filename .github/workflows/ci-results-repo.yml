@@ -8,6 +8,10 @@ on:
       - master
 
 jobs:
+  my-job:
+    permissions:
+      contents: read
+      pull-requests: write
   benchmarkdotnet-framework:
     name: Run Benchmark.Net .Net Benchmark Framework example - github.com/arup-group/github-action-benchmark
     runs-on: ubuntu-latest
