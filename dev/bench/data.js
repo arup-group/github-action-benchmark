@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765442119446,
+  "lastUpdate": 1765442120927,
   "entries": {
     "Rust Benchmark": [
       {
@@ -40520,6 +40520,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/828b08933d91bb820bb09a5afa1133bc135ac15a"
         },
         "date": 1765442117754,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 353.72641509433964,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":212,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 44934,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "828b08933d91bb820bb09a5afa1133bc135ac15a",
+          "message": "Merge pull request #18 from arup-group/fix-codescan-slerts-for-github-permission-in-workflow\n\nFix codescan alerts for GitHub permission in workflow",
+          "timestamp": "2025-12-11T14:04:16+05:30",
+          "tree_id": "1b9bca2ef89b1e4249672f2e882dc51a9e8961b7",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/828b08933d91bb820bb09a5afa1133bc135ac15a"
+        },
+        "date": 1765442120607,
         "tool": "julia",
         "benches": [
           {
