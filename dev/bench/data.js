@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765452441015,
+  "lastUpdate": 1765452442930,
   "entries": {
     "Rust Benchmark": [
       {
@@ -17164,6 +17164,48 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/519bc16f21c9ec79ca65aee36cfb8c62b87f9769"
         },
         "date": 1765452437011,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 313,
+            "unit": "ns/op",
+            "extra": "3845856 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 39849,
+            "unit": "ns/op",
+            "extra": "30121 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 39830,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "30144 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "519bc16f21c9ec79ca65aee36cfb8c62b87f9769",
+          "message": "Merge pull request #25 from arup-group/branch-with-updated-packages\n\nupdate packages",
+          "timestamp": "2025-12-11T16:56:47+05:30",
+          "tree_id": "aafc8dcc3201ab3bcdd2b0f1f67e73d907c5ca21",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/519bc16f21c9ec79ca65aee36cfb8c62b87f9769"
+        },
+        "date": 1765452442265,
         "tool": "go",
         "benches": [
           {
