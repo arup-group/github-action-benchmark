@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765411806115,
+  "lastUpdate": 1765411807955,
   "entries": {
     "Rust Benchmark": [
       {
@@ -15965,6 +15965,48 @@ window.BENCHMARK_DATA = {
             "value": 39905,
             "unit": "ns/op\t         4.000 auxMetricUnits",
             "extra": "30120 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "94fad492f290f0c955bd09dd5f86eef4c294e7cb",
+          "message": "Merge pull request #9 from arup-group/fix/cicd_after_update\n\nFix token to match the repo",
+          "timestamp": "2025-12-11T00:09:34Z",
+          "tree_id": "1fe11483c543960fc8a3ec1c863dd4958f204b81",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/94fad492f290f0c955bd09dd5f86eef4c294e7cb"
+        },
+        "date": 1765411805089,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 308.7,
+            "unit": "ns/op",
+            "extra": "3844580 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 39747,
+            "unit": "ns/op",
+            "extra": "30165 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 39682,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "30490 times\n4 procs"
           }
         ]
       }
