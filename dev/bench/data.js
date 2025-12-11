@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765432588464,
+  "lastUpdate": 1765432589878,
   "entries": {
     "Rust Benchmark": [
       {
@@ -37784,6 +37784,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/fab5b6019b67fe5b158f744fdfc971371aa5ad3f"
         },
         "date": 1765432586996,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 354.57547169811323,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":212,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 44924,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fab5b6019b67fe5b158f744fdfc971371aa5ad3f",
+          "message": "Merge pull request #12 from arup-group/update-braces-version2\n\nUpdate braces version2",
+          "timestamp": "2025-12-11T11:25:24+05:30",
+          "tree_id": "0b4cc60a17e04b673f4bf7d78a7ea43f685cbf8c",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/fab5b6019b67fe5b158f744fdfc971371aa5ad3f"
+        },
+        "date": 1765432589572,
         "tool": "julia",
         "benches": [
           {
