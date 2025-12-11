@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765453897320,
+  "lastUpdate": 1765453921392,
   "entries": {
     "Rust Benchmark": [
       {
@@ -44143,6 +44143,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "fib/20",
             "value": 35511,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7f8908c1420d9a90256070c32e5cd09f7ace8708",
+          "message": "Merge pull request #26 from arup-group/branch-with-updated-packages\n\nupdate actions/github version",
+          "timestamp": "2025-12-11T17:21:01+05:30",
+          "tree_id": "464b082c15dbb7652ee7a132eb59268ee31a6d11",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/7f8908c1420d9a90256070c32e5cd09f7ace8708"
+        },
+        "date": 1765453919657,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 302.8,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":255,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 45004,
             "unit": "ns",
             "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
