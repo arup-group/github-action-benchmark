@@ -45,6 +45,9 @@ jobs:
 
   jmh:
     name: Run JMH Java Benchmark Framework example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -303,6 +306,9 @@ jobs:
 
   julia-benchmark:
     name: Run Julia benchmark example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -344,6 +350,9 @@ jobs:
 
   pytest-benchmark:
     name: Run Pytest benchmark example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -382,6 +391,9 @@ jobs:
 
   rust:
     name: Run Rust benchmark example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -414,6 +426,9 @@ jobs:
 
   rust-criterion-rs-framework:
     name: Run Criterion.rs benchmark example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -446,6 +461,9 @@ jobs:
 
   only-alert-with-cache:
     name: Run alert check with actions/cache
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -479,6 +497,9 @@ jobs:
           alert-comment-cc-users: "@ktrz"
   unit-tests:
     name: Run unit tests
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -498,6 +519,9 @@ jobs:
 
   lint:
     name: Run linting and formatting check
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
