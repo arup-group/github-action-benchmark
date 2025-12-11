@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765444379111,
+  "lastUpdate": 1765444796143,
   "entries": {
     "Rust Benchmark": [
       {
@@ -36687,6 +36687,42 @@ window.BENCHMARK_DATA = {
             "value": 22302.812850407645,
             "unit": "ns/iter",
             "extra": "iterations: 31392\ncpu: 22301.27290392456 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "60345260+RaviKumarGubbala@users.noreply.github.com",
+            "name": "Ravi Kumar Gubbala",
+            "username": "RaviKumarGubbala"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e3495e673643203eb74e29f21759d8e159e9bdfa",
+          "message": "Merge pull request #21 from arup-group/task/fix-ci-yml-permission-warnings\n\nAdd the permissions key to the job - suggested by AI",
+          "timestamp": "2025-12-11T14:49:34+05:30",
+          "tree_id": "9c771d8bded0dae1f64e353ebe90e48d8787b271",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/e3495e673643203eb74e29f21759d8e159e9bdfa"
+        },
+        "date": 1765444794544,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 177.26374057753995,
+            "unit": "ns/iter",
+            "extra": "iterations: 3953582\ncpu: 177.24765162326216 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 22355.3088886777,
+            "unit": "ns/iter",
+            "extra": "iterations: 31377\ncpu: 22352.324154635557 ns\nthreads: 1"
           }
         ]
       }
