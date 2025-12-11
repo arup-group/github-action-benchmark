@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765452431831,
+  "lastUpdate": 1765452433777,
   "entries": {
     "Rust Benchmark": [
       {
@@ -32409,6 +32409,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00001059018993476555",
             "extra": "mean: 1.5902236913185097 msec\nrounds: 622"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "519bc16f21c9ec79ca65aee36cfb8c62b87f9769",
+          "message": "Merge pull request #25 from arup-group/branch-with-updated-packages\n\nupdate packages",
+          "timestamp": "2025-12-11T16:56:47+05:30",
+          "tree_id": "aafc8dcc3201ab3bcdd2b0f1f67e73d907c5ca21",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/519bc16f21c9ec79ca65aee36cfb8c62b87f9769"
+        },
+        "date": 1765452429682,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 77324.36269999376,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010127211924102145",
+            "extra": "mean: 12.932534651204834 usec\nrounds: 39205"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 612.4018418569785,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000018515297396837725",
+            "extra": "mean: 1.6329147491910088 msec\nrounds: 618"
           }
         ]
       }
