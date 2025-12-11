@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765434682902,
+  "lastUpdate": 1765434685829,
   "entries": {
     "Rust Benchmark": [
       {
@@ -40307,6 +40307,42 @@ window.BENCHMARK_DATA = {
             "value": 43.41792139181724,
             "unit": "ns",
             "range": "± 0.03386447067282284"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a2d5f3205e760cffbb5b5f177aaddb6e74712d53",
+          "message": "Merge pull request #16 from arup-group/fix-codescanning-alerts-for-github-permission\n\nFix codescanning alerts for GitHub permission",
+          "timestamp": "2025-12-11T12:00:15+05:30",
+          "tree_id": "331b636e0e6a9be7ed5d39ee686dfcdb0f340487",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/a2d5f3205e760cffbb5b5f177aaddb6e74712d53"
+        },
+        "date": 1765434684272,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 21.1971415238721,
+            "unit": "ns",
+            "range": "± 0.02442443709186418"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 43.0374012360206,
+            "unit": "ns",
+            "range": "± 0.025267893551721977"
           }
         ]
       }
