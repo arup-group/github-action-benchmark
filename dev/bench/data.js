@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765433613290,
+  "lastUpdate": 1765433615220,
   "entries": {
     "Rust Benchmark": [
       {
@@ -34554,6 +34554,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/73531185edbf9bbe84511b9d47e8d3a59e97df29"
         },
         "date": 1765433611391,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 177.02250286415435,
+            "unit": "ns/iter",
+            "extra": "iterations: 3945320\ncpu: 176.9913986698164 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 22290.361866216663,
+            "unit": "ns/iter",
+            "extra": "iterations: 31379\ncpu: 22287.55938685108 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "73531185edbf9bbe84511b9d47e8d3a59e97df29",
+          "message": "Merge pull request #14 from arup-group/alert-autofix-30\n\nPotential fix for code scanning alert no. 30: Workflow does not contain permissions",
+          "timestamp": "2025-12-11T11:43:13+05:30",
+          "tree_id": "937dd83eaf1d16c0759b6eaee18f1052874f7b6e",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/73531185edbf9bbe84511b9d47e8d3a59e97df29"
+        },
+        "date": 1765433614604,
         "tool": "googlecpp",
         "benches": [
           {
