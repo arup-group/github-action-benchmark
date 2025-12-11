@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765411843266,
+  "lastUpdate": 1765411845814,
   "entries": {
     "Rust Benchmark": [
       {
@@ -37690,6 +37690,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/94fad492f290f0c955bd09dd5f86eef4c294e7cb"
         },
         "date": 1765411841810,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 21.928342578666552,
+            "unit": "ns",
+            "range": "± 0.032485739021310946"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 42.92839430485453,
+            "unit": "ns",
+            "range": "± 0.01783969712574565"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "94fad492f290f0c955bd09dd5f86eef4c294e7cb",
+          "message": "Merge pull request #9 from arup-group/fix/cicd_after_update\n\nFix token to match the repo",
+          "timestamp": "2025-12-11T00:09:34Z",
+          "tree_id": "1fe11483c543960fc8a3ec1c863dd4958f204b81",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/94fad492f290f0c955bd09dd5f86eef4c294e7cb"
+        },
+        "date": 1765411844369,
         "tool": "benchmarkdotnet",
         "benches": [
           {
