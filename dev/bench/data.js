@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765434053075,
+  "lastUpdate": 1765434054464,
   "entries": {
     "Rust Benchmark": [
       {
@@ -30072,6 +30072,44 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/04f9505a0576be521fed9592b17c1dd2e0734484"
         },
         "date": 1765434051641,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 76496.93735717832,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001065752330227104",
+            "extra": "mean: 13.072418773196311 usec\nrounds: 38214"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 603.3664857126824,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000013923255382144348",
+            "extra": "mean: 1.6573674933549272 msec\nrounds: 602"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "04f9505a0576be521fed9592b17c1dd2e0734484",
+          "message": "Merge pull request #15 from arup-group/codescaning-autosuggested-fixes\n\nPotential fix for code scanning alert no. 29: Workflow does not contain permissions",
+          "timestamp": "2025-12-11T11:50:32+05:30",
+          "tree_id": "068251141128542bfefa6c203b3338fa3dc14b86",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/04f9505a0576be521fed9592b17c1dd2e0734484"
+        },
+        "date": 1765434054223,
         "tool": "pytest",
         "benches": [
           {
