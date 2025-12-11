@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765444849593,
+  "lastUpdate": 1765444892624,
   "entries": {
     "Rust Benchmark": [
       {
@@ -44574,6 +44574,66 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci/Recursive/21",
             "value": 34808,
             "range": "± 84",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/21",
+            "value": 4,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "60345260+RaviKumarGubbala@users.noreply.github.com",
+            "name": "Ravi Kumar Gubbala",
+            "username": "RaviKumarGubbala"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e3495e673643203eb74e29f21759d8e159e9bdfa",
+          "message": "Merge pull request #21 from arup-group/task/fix-ci-yml-permission-warnings\n\nAdd the permissions key to the job - suggested by AI",
+          "timestamp": "2025-12-11T14:49:34+05:30",
+          "tree_id": "9c771d8bded0dae1f64e353ebe90e48d8787b271",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/e3495e673643203eb74e29f21759d8e159e9bdfa"
+        },
+        "date": 1765444890851,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "BenchFib10",
+            "value": 159,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "BenchFib20",
+            "value": 20095,
+            "range": "± 183",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/20",
+            "value": 20093,
+            "range": "± 432",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/20",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/21",
+            "value": 32510,
+            "range": "± 205",
             "unit": "ns/iter"
           },
           {
