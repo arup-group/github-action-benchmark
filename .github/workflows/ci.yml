@@ -8,11 +8,6 @@ on:
       - master
 
 jobs:
-  my-job:
-    permissions:
-      contents: read
-      pull-requests: write
-
   benchmarkdotnet-framework:
     name: Run Benchmark.Net .Net Benchmark Framework example
     runs-on: ubuntu-latest
