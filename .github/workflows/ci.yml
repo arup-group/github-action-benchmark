@@ -10,6 +10,9 @@ on:
 jobs:
   benchmarkdotnet-framework:
     name: Run Benchmark.Net .Net Benchmark Framework example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -87,6 +90,9 @@ jobs:
 
   benchmarkjs:
     name: Run JavaScript benchmark example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -119,6 +125,9 @@ jobs:
 
   catch2-v2-framework:
     name: Run Catch2 C++ Benchmark Framework example (v2.x)
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -156,6 +165,9 @@ jobs:
 
   catch2-v3-framework:
     name: Run Catch2 C++ Benchmark Framework example (v3.x)
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -193,6 +205,9 @@ jobs:
 
   cpp-framework:
     name: Run Google C++ Benchmark Framework example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -232,6 +247,9 @@ jobs:
 
   go:
     name: Run Go benchmark example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -267,6 +285,9 @@ jobs:
 
   java-jmh:
     name: Run JMH Java Benchmark Framework example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
