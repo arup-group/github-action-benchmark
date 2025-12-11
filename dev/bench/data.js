@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765432546536,
+  "lastUpdate": 1765432548353,
   "entries": {
     "Rust Benchmark": [
       {
@@ -34014,6 +34014,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/fab5b6019b67fe5b158f744fdfc971371aa5ad3f"
         },
         "date": 1765432542850,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 178.94994286182796,
+            "unit": "ns/iter",
+            "extra": "iterations: 3956199\ncpu: 178.94357740851765 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 22300.306374971533,
+            "unit": "ns/iter",
+            "extra": "iterations: 31357\ncpu: 22299.216570462744 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fab5b6019b67fe5b158f744fdfc971371aa5ad3f",
+          "message": "Merge pull request #12 from arup-group/update-braces-version2\n\nUpdate braces version2",
+          "timestamp": "2025-12-11T11:25:24+05:30",
+          "tree_id": "0b4cc60a17e04b673f4bf7d78a7ea43f685cbf8c",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/fab5b6019b67fe5b158f744fdfc971371aa5ad3f"
+        },
+        "date": 1765432547699,
         "tool": "googlecpp",
         "benches": [
           {
