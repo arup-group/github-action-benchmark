@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765434065927,
+  "lastUpdate": 1765434067457,
   "entries": {
     "Rust Benchmark": [
       {
@@ -38149,6 +38149,44 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci 20",
             "value": 7.58094,
             "range": "± 355.84",
+            "unit": "us",
+            "extra": "100 samples\n4 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "04f9505a0576be521fed9592b17c1dd2e0734484",
+          "message": "Merge pull request #15 from arup-group/codescaning-autosuggested-fixes\n\nPotential fix for code scanning alert no. 29: Workflow does not contain permissions",
+          "timestamp": "2025-12-11T11:50:32+05:30",
+          "tree_id": "068251141128542bfefa6c203b3338fa3dc14b86",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/04f9505a0576be521fed9592b17c1dd2e0734484"
+        },
+        "date": 1765434065518,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 88.3822,
+            "range": "± 10.176",
+            "unit": "ns",
+            "extra": "100 samples\n362 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 7.73058,
+            "range": "± 454.629",
             "unit": "us",
             "extra": "100 samples\n4 iterations"
           }
