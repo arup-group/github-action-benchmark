@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765438585446,
+  "lastUpdate": 1765438587234,
   "entries": {
     "Rust Benchmark": [
       {
@@ -35493,6 +35493,42 @@ window.BENCHMARK_DATA = {
             "value": 23085.250699956854,
             "unit": "ns/iter",
             "extra": "iterations: 30359\ncpu: 23084.27415264007 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cbdf1f9e491c9e2c3af6b4c0bd80b87160b95a44",
+          "message": "Merge pull request #17 from arup-group/alert-autofix-28\n\nPotential fix for code scanning alert no. 28: Workflow does not contain permissions",
+          "timestamp": "2025-12-11T13:06:00+05:30",
+          "tree_id": "e0ab76f26d7b53b41303231ec331a1b479b2c822",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/cbdf1f9e491c9e2c3af6b4c0bd80b87160b95a44"
+        },
+        "date": 1765438585344,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 177.7908915527038,
+            "unit": "ns/iter",
+            "extra": "iterations: 3951892\ncpu: 177.77986873123052 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 22291.14775390631,
+            "unit": "ns/iter",
+            "extra": "iterations: 30720\ncpu: 22290.75807291667 ns\nthreads: 1"
           }
         ]
       }
