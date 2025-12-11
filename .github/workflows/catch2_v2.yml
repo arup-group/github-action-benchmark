@@ -40,7 +40,7 @@ jobs:
           name: Catch2 Benchmark
           tool: "catch2"
           output-file-path: examples/catch2_v2/benchmark_result.txt
-          github-token: ${{ secrets.BENCHMARK_ACTION_BOT_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           auto-push: true
           # Show alert with commit comment on detecting possible performance regression
           alert-threshold: "200%"
