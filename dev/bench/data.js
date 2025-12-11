@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765443723046,
+  "lastUpdate": 1765443724960,
   "entries": {
     "Rust Benchmark": [
       {
@@ -36147,6 +36147,42 @@ window.BENCHMARK_DATA = {
             "value": 22313.806042450327,
             "unit": "ns/iter",
             "extra": "iterations: 31378\ncpu: 22310.804895149467 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "60345260+RaviKumarGubbala@users.noreply.github.com",
+            "name": "Ravi Kumar Gubbala",
+            "username": "RaviKumarGubbala"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a2c64ea8bb87f524a3d63e622a55f6d9bb0719dc",
+          "message": "Merge pull request #19 from arup-group/fix-codescan-slerts-for-github-permission-in-workflow\n\nadd permissions for jobs in workflows of ci.yml file",
+          "timestamp": "2025-12-11T14:31:41+05:30",
+          "tree_id": "3362ed30beb4b4c48d0df97ebd21cad8d34d4968",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/a2c64ea8bb87f524a3d63e622a55f6d9bb0719dc"
+        },
+        "date": 1765443719506,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 177.5463404625444,
+            "unit": "ns/iter",
+            "extra": "iterations: 3952658\ncpu: 177.53714361323443 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 22297.719853484577,
+            "unit": "ns/iter",
+            "extra": "iterations: 31123\ncpu: 22297.20897728368 ns\nthreads: 1"
           }
         ]
       }
