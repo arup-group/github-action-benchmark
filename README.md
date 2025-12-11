@@ -1,3 +1,4 @@
+*This is a dummy branchchange - not to be merged!- *
 *This fork makes the catch2 benchmarks always report in ms (to avoid issues with charts and false alerts)*
 
 *See branch `consistent-duration-units-catch2`*
