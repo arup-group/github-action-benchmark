@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765447976983,
+  "lastUpdate": 1765447978452,
   "entries": {
     "Rust Benchmark": [
       {
@@ -31724,6 +31724,44 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/0ebcbe9bea1e5a5f9e7f951788369b9c2aee4753"
         },
         "date": 1765447975003,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 82662.0926904412,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000012968318577102463",
+            "extra": "mean: 12.097443549425613 usec\nrounds: 47050"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 681.8072364820086,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000012283096323264925",
+            "extra": "mean: 1.4666902116788954 msec\nrounds: 685"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "60345260+RaviKumarGubbala@users.noreply.github.com",
+            "name": "Ravi Kumar Gubbala",
+            "username": "RaviKumarGubbala"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0ebcbe9bea1e5a5f9e7f951788369b9c2aee4753",
+          "message": "Merge pull request #22 from arup-group/revert-21-task/fix-ci-yml-permission-warnings\n\nRevert \"Add the permissions key to the job - suggested by AI\"",
+          "timestamp": "2025-12-11T15:42:32+05:30",
+          "tree_id": "6f93f1534645a24d837b67196d0ad504b135fd71",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/0ebcbe9bea1e5a5f9e7f951788369b9c2aee4753"
+        },
+        "date": 1765447978138,
         "tool": "pytest",
         "benches": [
           {
