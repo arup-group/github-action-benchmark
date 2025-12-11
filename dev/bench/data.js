@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765443721675,
+  "lastUpdate": 1765443723046,
   "entries": {
     "Rust Benchmark": [
       {
@@ -31016,6 +31016,44 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/a2c64ea8bb87f524a3d63e622a55f6d9bb0719dc"
         },
         "date": 1765443720138,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 76997.56966028723,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010721864230132896",
+            "extra": "mean: 12.987422907138413 usec\nrounds: 50744"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 620.0994349183208,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000012037470461807603",
+            "extra": "mean: 1.612644591639919 msec\nrounds: 622"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "60345260+RaviKumarGubbala@users.noreply.github.com",
+            "name": "Ravi Kumar Gubbala",
+            "username": "RaviKumarGubbala"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a2c64ea8bb87f524a3d63e622a55f6d9bb0719dc",
+          "message": "Merge pull request #19 from arup-group/fix-codescan-slerts-for-github-permission-in-workflow\n\nadd permissions for jobs in workflows of ci.yml file",
+          "timestamp": "2025-12-11T14:31:41+05:30",
+          "tree_id": "3362ed30beb4b4c48d0df97ebd21cad8d34d4968",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/a2c64ea8bb87f524a3d63e622a55f6d9bb0719dc"
+        },
+        "date": 1765443722799,
         "tool": "pytest",
         "benches": [
           {
