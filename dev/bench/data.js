@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765438632328,
+  "lastUpdate": 1765438682283,
   "entries": {
     "Rust Benchmark": [
       {
@@ -41982,6 +41982,66 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci/Recursive/21",
             "value": 32499,
             "range": "± 286",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/21",
+            "value": 4,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cbdf1f9e491c9e2c3af6b4c0bd80b87160b95a44",
+          "message": "Merge pull request #17 from arup-group/alert-autofix-28\n\nPotential fix for code scanning alert no. 28: Workflow does not contain permissions",
+          "timestamp": "2025-12-11T13:06:00+05:30",
+          "tree_id": "e0ab76f26d7b53b41303231ec331a1b479b2c822",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/cbdf1f9e491c9e2c3af6b4c0bd80b87160b95a44"
+        },
+        "date": 1765438680182,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "BenchFib10",
+            "value": 159,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "BenchFib20",
+            "value": 20092,
+            "range": "± 1025",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/20",
+            "value": 20085,
+            "range": "± 124",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/20",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/21",
+            "value": 32491,
+            "range": "± 53",
             "unit": "ns/iter"
           },
           {
