@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765452448998,
+  "lastUpdate": 1765452470546,
   "entries": {
     "Rust Benchmark": [
       {
@@ -43687,6 +43687,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "fib/20",
             "value": 45034,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "519bc16f21c9ec79ca65aee36cfb8c62b87f9769",
+          "message": "Merge pull request #25 from arup-group/branch-with-updated-packages\n\nupdate packages",
+          "timestamp": "2025-12-11T16:56:47+05:30",
+          "tree_id": "aafc8dcc3201ab3bcdd2b0f1f67e73d907c5ca21",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/519bc16f21c9ec79ca65aee36cfb8c62b87f9769"
+        },
+        "date": 1765452467886,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 282.5438596491228,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":285,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 35511,
             "unit": "ns",
             "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
