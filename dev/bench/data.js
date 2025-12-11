@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765447984395,
+  "lastUpdate": 1765447986534,
   "entries": {
     "Rust Benchmark": [
       {
@@ -16912,6 +16912,48 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/0ebcbe9bea1e5a5f9e7f951788369b9c2aee4753"
         },
         "date": 1765447981633,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 289.8,
+            "unit": "ns/op",
+            "extra": "4139360 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 35914,
+            "unit": "ns/op",
+            "extra": "33411 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 35869,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "33399 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "60345260+RaviKumarGubbala@users.noreply.github.com",
+            "name": "Ravi Kumar Gubbala",
+            "username": "RaviKumarGubbala"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0ebcbe9bea1e5a5f9e7f951788369b9c2aee4753",
+          "message": "Merge pull request #22 from arup-group/revert-21-task/fix-ci-yml-permission-warnings\n\nRevert \"Add the permissions key to the job - suggested by AI\"",
+          "timestamp": "2025-12-11T15:42:32+05:30",
+          "tree_id": "6f93f1534645a24d837b67196d0ad504b135fd71",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/0ebcbe9bea1e5a5f9e7f951788369b9c2aee4753"
+        },
+        "date": 1765447985891,
         "tool": "go",
         "benches": [
           {
