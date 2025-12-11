@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765411794671,
+  "lastUpdate": 1765411798602,
   "entries": {
     "Rust Benchmark": [
       {
@@ -29105,6 +29105,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000012575454584769931",
             "extra": "mean: 1.6366617313430667 msec\nrounds: 603"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kat.biserova@gmail.com",
+            "name": "Kate",
+            "username": "biserova-k"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "94fad492f290f0c955bd09dd5f86eef4c294e7cb",
+          "message": "Merge pull request #9 from arup-group/fix/cicd_after_update\n\nFix token to match the repo",
+          "timestamp": "2025-12-11T00:09:34Z",
+          "tree_id": "1fe11483c543960fc8a3ec1c863dd4958f204b81",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/94fad492f290f0c955bd09dd5f86eef4c294e7cb"
+        },
+        "date": 1765411796718,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 77068.73833994717,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000011949217665115886",
+            "extra": "mean: 12.975429746741662 usec\nrounds: 51293"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 634.3899256825321,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000026262202464096348",
+            "extra": "mean: 1.576317591935453 msec\nrounds: 620"
           }
         ]
       }
