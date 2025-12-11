@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765434656518,
+  "lastUpdate": 1765434680863,
   "entries": {
     "Rust Benchmark": [
       {
@@ -39583,6 +39583,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "fib/20",
             "value": 45004,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a2d5f3205e760cffbb5b5f177aaddb6e74712d53",
+          "message": "Merge pull request #16 from arup-group/fix-codescanning-alerts-for-github-permission\n\nFix codescanning alerts for GitHub permission",
+          "timestamp": "2025-12-11T12:00:15+05:30",
+          "tree_id": "331b636e0e6a9be7ed5d39ee686dfcdb0f340487",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/a2d5f3205e760cffbb5b5f177aaddb6e74712d53"
+        },
+        "date": 1765434678553,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 353.72641509433964,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":212,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 44924,
             "unit": "ns",
             "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
