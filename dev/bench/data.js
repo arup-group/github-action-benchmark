@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765442175146,
+  "lastUpdate": 1765442176505,
   "entries": {
     "Rust Benchmark": [
       {
@@ -42660,6 +42660,66 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/828b08933d91bb820bb09a5afa1133bc135ac15a"
         },
         "date": 1765442173619,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "BenchFib10",
+            "value": 160,
+            "range": "± 2",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "BenchFib20",
+            "value": 20241,
+            "range": "± 3165",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/20",
+            "value": 20079,
+            "range": "± 295",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/20",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/21",
+            "value": 32494,
+            "range": "± 84",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/21",
+            "value": 4,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77726495+VaradaNambiar@users.noreply.github.com",
+            "name": "VaradaNambiar",
+            "username": "VaradaNambiar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "828b08933d91bb820bb09a5afa1133bc135ac15a",
+          "message": "Merge pull request #18 from arup-group/fix-codescan-slerts-for-github-permission-in-workflow\n\nFix codescan alerts for GitHub permission in workflow",
+          "timestamp": "2025-12-11T14:04:16+05:30",
+          "tree_id": "1b9bca2ef89b1e4249672f2e882dc51a9e8961b7",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/828b08933d91bb820bb09a5afa1133bc135ac15a"
+        },
+        "date": 1765442176294,
         "tool": "cargo",
         "benches": [
           {
