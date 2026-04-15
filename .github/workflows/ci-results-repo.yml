@@ -1,4 +1,4 @@
-name: CI - separate results repo
+name: CI - results - try to implement it in the same repo
 on:
   push:
     branches:
@@ -8,14 +8,18 @@ on:
       - master
 
 jobs:
+
   benchmarkdotnet-framework:
-    name: Run Benchmark.Net .Net Benchmark Framework example - github.com/benchmark-action/github-action-benchmark-results
+    name: Run Benchmark.Net .Net Benchmark Framework example - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '6.0.101'  # SDK Version to use. keep in line with examples/benchmarkdotnet/global.json
+          dotnet-version: "6.0.101"  # SDK Version to use. keep in line with examples/benchmarkdotnet/global.json
       - uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
@@ -27,9 +31,9 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          repository: benchmark-action/github-action-benchmark-results
-          ref: 'gh-pages'
-          path: 'dist/other-repo'
+          repository: arup-group/github-action-benchmark
+          ref: "gh-pages"
+          path: "dist/other-repo"
       - name: Save previous data.js
         run: |
           cp ./dist/other-repo/dev/bench/data.js before_data.js
@@ -38,15 +42,18 @@ jobs:
         uses: ./
         with:
           name: Benchmark.Net Benchmark
-          tool: 'benchmarkdotnet'
+          tool: "benchmarkdotnet"
           output-file-path: examples/benchmarkdotnet/BenchmarkDotNet.Artifacts/results/Sample.Benchmarks-report-full-compressed.json
           fail-on-alert: true
-          gh-repository: 'github.com/benchmark-action/github-action-benchmark-results'
+          gh-repository: "github.com/arup-group/github-action-benchmark"
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: node ./dist/scripts/ci_validate_modification.js before_data.js 'Benchmark.Net Benchmark' './benchmark-data-repository'
 
   benchmarkjs:
-    name: Run JavaScript benchmark example - github.com/benchmark-action/github-action-benchmark-results
+    name: Run JavaScript benchmark example - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -61,9 +68,9 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          repository: benchmark-action/github-action-benchmark-results
-          ref: 'gh-pages'
-          path: 'dist/other-repo'
+          repository: arup-group/github-action-benchmark
+          ref: "gh-pages"
+          path: "dist/other-repo"
       - name: Save previous data.js
         run: |
           cp ./dist/other-repo/dev/bench/data.js before_data.js
@@ -72,15 +79,18 @@ jobs:
         uses: ./
         with:
           name: Benchmark.js Benchmark
-          tool: 'benchmarkjs'
+          tool: "benchmarkjs"
           output-file-path: examples/benchmarkjs/output.txt
           fail-on-alert: true
-          gh-repository: 'github.com/benchmark-action/github-action-benchmark-results'
+          gh-repository: "github.com/arup-group/github-action-benchmark"
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: node ./dist/scripts/ci_validate_modification.js before_data.js 'Benchmark.js Benchmark' './benchmark-data-repository'
 
   catch2-v2-framework:
-    name: Run Catch2 C++ Benchmark Framework example (v2.x) - github.com/benchmark-action/github-action-benchmark-results
+    name: Run Catch2 C++ Benchmark Framework example (v2.x) - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -100,9 +110,9 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          repository: benchmark-action/github-action-benchmark-results
-          ref: 'gh-pages'
-          path: 'dist/other-repo'
+          repository: arup-group/github-action-benchmark
+          ref: "gh-pages"
+          path: "dist/other-repo"
       - name: Save previous data.js
         run: |
           cp ./dist/other-repo/dev/bench/data.js before_data.js
@@ -111,15 +121,18 @@ jobs:
         uses: ./
         with:
           name: Catch2 Benchmark
-          tool: 'catch2'
+          tool: "catch2"
           output-file-path: examples/catch2_v2/benchmark_result.txt
           fail-on-alert: true
-          gh-repository: 'github.com/benchmark-action/github-action-benchmark-results'
+          gh-repository: "github.com/arup-group/github-action-benchmark"
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: node ./dist/scripts/ci_validate_modification.js before_data.js 'Catch2 Benchmark' './benchmark-data-repository'
 
   catch2-v3-framework:
-    name: Run Catch2 C++ Benchmark Framework example (v3.x) - github.com/benchmark-action/github-action-benchmark-results
+    name: Run Catch2 C++ Benchmark Framework example (v3.x) - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -139,9 +152,9 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          repository: benchmark-action/github-action-benchmark-results
-          ref: 'gh-pages'
-          path: 'dist/other-repo'
+          repository: arup-group/github-action-benchmark
+          ref: "gh-pages"
+          path: "dist/other-repo"
       - name: Save previous data.js
         run: |
           cp ./dist/other-repo/dev/bench/data.js before_data.js
@@ -150,15 +163,18 @@ jobs:
         uses: ./
         with:
           name: Catch2 Benchmark (v3)
-          tool: 'catch2'
+          tool: "catch2"
           output-file-path: examples/catch2/benchmark_result.txt
           fail-on-alert: true
-          gh-repository: 'github.com/benchmark-action/github-action-benchmark-results'
+          gh-repository: "github.com/arup-group/github-action-benchmark"
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: node ./dist/scripts/ci_validate_modification.js before_data.js 'Catch2 Benchmark (v3)' './benchmark-data-repository'
 
   cpp-framework:
-    name: Run Google C++ Benchmark Framework example - github.com/benchmark-action/github-action-benchmark-results
+    name: Run Google C++ Benchmark Framework example - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -180,9 +196,9 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          repository: benchmark-action/github-action-benchmark-results
-          ref: 'gh-pages'
-          path: 'dist/other-repo'
+          repository: arup-group/github-action-benchmark
+          ref: "gh-pages"
+          path: "dist/other-repo"
       - name: Save previous data.js
         run: |
           cp ./dist/other-repo/dev/bench/data.js before_data.js
@@ -191,15 +207,18 @@ jobs:
         uses: ./
         with:
           name: C++ Benchmark
-          tool: 'googlecpp'
+          tool: "googlecpp"
           output-file-path: examples/cpp/benchmark_result.json
           fail-on-alert: true
-          gh-repository: 'github.com/benchmark-action/github-action-benchmark-results'
+          gh-repository: "github.com/arup-group/github-action-benchmark"
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: node ./dist/scripts/ci_validate_modification.js before_data.js 'C++ Benchmark' './benchmark-data-repository'
 
   go:
-    name: Run Go benchmark example - github.com/benchmark-action/github-action-benchmark-results
+    name: Run Go benchmark example - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -217,9 +236,9 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          repository: benchmark-action/github-action-benchmark-results
-          ref: 'gh-pages'
-          path: 'dist/other-repo'
+          repository: arup-group/github-action-benchmark
+          ref: "gh-pages"
+          path: "dist/other-repo"
       - name: Save previous data.js
         run: |
           cp ./dist/other-repo/dev/bench/data.js before_data.js
@@ -228,15 +247,18 @@ jobs:
         uses: ./
         with:
           name: Go Benchmark
-          tool: 'go'
+          tool: "go"
           output-file-path: examples/go/output.txt
           fail-on-alert: true
-          gh-repository: 'github.com/benchmark-action/github-action-benchmark-results'
+          gh-repository: "github.com/arup-group/github-action-benchmark"
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: node ./dist/scripts/ci_validate_modification.js before_data.js 'Go Benchmark' './benchmark-data-repository'
 
   java-jmh:
     name: Run JMH Java Benchmark Framework example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -246,8 +268,8 @@ jobs:
           cache: 'npm'
       - uses: actions/setup-java@v4
         with:
-          distribution: 'adopt'
-          java-version: '11'
+          distribution: "adopt"
+          java-version: "11"
       - run: npm ci
       - run: npm run build
       - name: Run benchmark
@@ -257,9 +279,9 @@ jobs:
           java -jar target/benchmarks.jar -wi 1 -i 3 -f 1 -rf json
       - uses: actions/checkout@v4
         with:
-          repository: benchmark-action/github-action-benchmark-results
-          ref: 'gh-pages'
-          path: 'dist/other-repo'
+          repository: arup-group/github-action-benchmark
+          ref: "gh-pages"
+          path: "dist/other-repo"
       - name: Save previous data.js
         run: |
           cp ./dist/other-repo/dev/bench/data.js before_data.js
@@ -270,12 +292,15 @@ jobs:
           tool: "jmh"
           output-file-path: examples/java/jmh-result.json
           fail-on-alert: true
-          gh-repository: 'github.com/benchmark-action/github-action-benchmark-results'
+          gh-repository: "github.com/arup-group/github-action-benchmark"
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: node ./dist/scripts/ci_validate_modification.js before_data.js 'JMH Benchmark' './benchmark-data-repository'
 
   julia-benchmark:
-    name: Run Julia benchmark example - github.com/benchmark-action/github-action-benchmark-results
+    name: Run Julia benchmark example - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -287,7 +312,7 @@ jobs:
       - run: npm run build
       - uses: julia-actions/setup-julia@v1
         with:
-          version: '1'
+          version: "1"
           arch: x64
       - name: Run benchmark
         run: |
@@ -299,9 +324,9 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          repository: benchmark-action/github-action-benchmark-results
-          ref: 'gh-pages'
-          path: 'dist/other-repo'
+          repository: arup-group/github-action-benchmark
+          ref: "gh-pages"
+          path: "dist/other-repo"
       - name: Save previous data.js
         run: |
           cp ./dist/other-repo/dev/bench/data.js before_data.js
@@ -310,15 +335,17 @@ jobs:
         uses: ./
         with:
           name: Julia benchmark
-          tool: 'julia'
+          tool: "julia"
           output-file-path: examples/julia/output.json
           fail-on-alert: true
-          gh-repository: 'github.com/benchmark-action/github-action-benchmark-results'
+          gh-repository: "github.com/arup-group/github-action-benchmark"
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: node ./dist/scripts/ci_validate_modification.js before_data.js 'Julia benchmark' './benchmark-data-repository'
 
   pytest-benchmark:
-    name: Run Pytest benchmark example - github.com/benchmark-action/github-action-benchmark-results
+    name: Run Pytest benchmark example - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -339,9 +366,9 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          repository: benchmark-action/github-action-benchmark-results
-          ref: 'gh-pages'
-          path: 'dist/other-repo'
+          repository: arup-group/github-action-benchmark
+          ref: "gh-pages"
+          path: "dist/other-repo"
       - name: Save previous data.js
         run: |
           cp ./dist/other-repo/dev/bench/data.js before_data.js
@@ -350,15 +377,17 @@ jobs:
         uses: ./
         with:
           name: Python Benchmark with pytest-benchmark
-          tool: 'pytest'
+          tool: "pytest"
           output-file-path: examples/pytest/output.json
           fail-on-alert: true
-          gh-repository: 'github.com/benchmark-action/github-action-benchmark-results'
+          gh-repository: "github.com/arup-group/github-action-benchmark"
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: node ./dist/scripts/ci_validate_modification.js before_data.js 'Python Benchmark with pytest-benchmark' './benchmark-data-repository'
 
   rust:
-    name: Run Rust benchmark example - github.com/benchmark-action/github-action-benchmark-results
+    name: Run Rust benchmark example - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -374,9 +403,9 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          repository: benchmark-action/github-action-benchmark-results
-          ref: 'gh-pages'
-          path: 'dist/other-repo'
+          repository: arup-group/github-action-benchmark
+          ref: "gh-pages"
+          path: "dist/other-repo"
       - name: Save previous data.js
         run: |
           cp ./dist/other-repo/dev/bench/data.js before_data.js
@@ -385,15 +414,17 @@ jobs:
         uses: ./
         with:
           name: Rust Benchmark
-          tool: 'cargo'
+          tool: "cargo"
           output-file-path: examples/rust/output.txt
           fail-on-alert: true
-          gh-repository: 'github.com/benchmark-action/github-action-benchmark-results'
+          gh-repository: "github.com/arup-group/github-action-benchmark"
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: node ./dist/scripts/ci_validate_modification.js before_data.js 'Rust Benchmark' './benchmark-data-repository'
 
   rust-criterion-rs-framework:
-    name: Run Criterion.rs benchmark example - github.com/benchmark-action/github-action-benchmark-results
+    name: Run Criterion.rs benchmark example - github.com/arup-group/github-action-benchmark
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -409,9 +440,9 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          repository: benchmark-action/github-action-benchmark-results
-          ref: 'gh-pages'
-          path: 'dist/other-repo'
+          repository: arup-group/github-action-benchmark
+          ref: "gh-pages"
+          path: "dist/other-repo"
       - name: Save previous data.js
         run: |
           cp ./dist/other-repo/dev/bench/data.js before_data.js
@@ -420,15 +451,18 @@ jobs:
         uses: ./
         with:
           name: Criterion.rs Benchmark
-          tool: 'cargo'
+          tool: "cargo"
           output-file-path: examples/criterion-rs/output.txt
           fail-on-alert: true
-          gh-repository: 'github.com/benchmark-action/github-action-benchmark-results'
+          gh-repository: "github.com/arup-group/github-action-benchmark"
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: node ./dist/scripts/ci_validate_modification.js before_data.js 'Criterion.rs Benchmark' './benchmark-data-repository'
 
   only-alert-with-cache:
     name: Run alert check with actions/cache
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -452,11 +486,11 @@ jobs:
         uses: ./
         with:
           name: Alert setup example with cache
-          tool: 'go'
+          tool: "go"
           output-file-path: examples/go/output.txt
           external-data-json-path: ./cache/benchmark-data.json
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          alert-threshold: '200%'
+          alert-threshold: "200%"
           comment-on-alert: true
           fail-on-alert: true
-          alert-comment-cc-users: '@ktrz'
+          alert-comment-cc-users: "@ktrz"

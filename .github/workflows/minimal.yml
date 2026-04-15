@@ -25,9 +25,9 @@ jobs:
           path: ./cache
           key: ${{ runner.os }}-benchmark
       - name: Store benchmark result
-        uses: benchmark-action/github-action-benchmark@v1
+        uses: arup-group/github-action-benchmark@v1
         with:
-          tool: 'go'
+          tool: "go"
           output-file-path: examples/go/output.txt
           external-data-json-path: ./cache/benchmark-data.json
           fail-on-alert: true

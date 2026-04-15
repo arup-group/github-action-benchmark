@@ -10,6 +10,9 @@ on:
 jobs:
   benchmarkdotnet-framework:
     name: Run Benchmark.Net .Net Benchmark Framework example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,7 +22,7 @@ jobs:
           cache: 'npm'
       - uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '6.0.101'  # SDK Version to use. keep in line with examples/benchmarkdotnet/global.json
+          dotnet-version: "6.0.101"
       - run: npm ci
       - run: npm run build
       - name: Run benchmark
@@ -34,7 +37,7 @@ jobs:
         uses: ./
         with:
           name: Benchmark.Net Benchmark
-          tool: 'benchmarkdotnet'
+          tool: "benchmarkdotnet"
           output-file-path: examples/benchmarkdotnet/BenchmarkDotNet.Artifacts/results/Sample.Benchmarks-report-full-compressed.json
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -43,8 +46,53 @@ jobs:
           comment-on-alert: true
       - run: node ./dist/scripts/ci_validate_modification.js before_data.js 'Benchmark.Net Benchmark'
 
+  jmh:
+    name: Run JMH Java Benchmark Framework example
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - uses: actions/setup-java@v2
+        with:
+          distribution: "adopt"
+          java-version: "11"
+      - uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+      - run: npm ci
+      - run: npm run build
+      - name: Save previous data.js
+        run: |
+          git fetch origin gh-pages
+          git checkout gh-pages
+          cp ./dev/bench/data.js before_data.js
+          git checkout -
+      - name: Run benchmark
+        run: |
+          cd examples/java
+          mvn clean verify
+          java -jar target/benchmarks.jar -wi 1 -i 3 -f 1 -rf json
+      - name: Store benchmark result
+        uses: ./
+        with:
+          name: JMH Benchmark
+          tool: "jmh"
+          output-file-path: examples/java/jmh-result.json
+          skip-fetch-gh-pages: true
+          fail-on-alert: true
+      - run: node ./dist/scripts/ci_validate_modification.js before_data.js 'JMH Benchmark'
+
   benchmarkjs:
     name: Run JavaScript benchmark example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -66,7 +114,7 @@ jobs:
         uses: ./
         with:
           name: Benchmark.js Benchmark
-          tool: 'benchmarkjs'
+          tool: "benchmarkjs"
           output-file-path: examples/benchmarkjs/output.txt
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -77,6 +125,9 @@ jobs:
 
   catch2-v2-framework:
     name: Run Catch2 C++ Benchmark Framework example (v2.x)
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -103,7 +154,7 @@ jobs:
         uses: ./
         with:
           name: Catch2 Benchmark
-          tool: 'catch2'
+          tool: "catch2"
           output-file-path: examples/catch2_v2/benchmark_result.txt
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -114,6 +165,9 @@ jobs:
 
   catch2-v3-framework:
     name: Run Catch2 C++ Benchmark Framework example (v3.x)
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -140,7 +194,7 @@ jobs:
         uses: ./
         with:
           name: Catch2 Benchmark (v3)
-          tool: 'catch2'
+          tool: "catch2"
           output-file-path: examples/catch2/benchmark_result.txt
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -151,6 +205,9 @@ jobs:
 
   cpp-framework:
     name: Run Google C++ Benchmark Framework example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -179,7 +236,7 @@ jobs:
         uses: ./
         with:
           name: C++ Benchmark
-          tool: 'googlecpp'
+          tool: "googlecpp"
           output-file-path: examples/cpp/benchmark_result.json
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -190,6 +247,9 @@ jobs:
 
   go:
     name: Run Go benchmark example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -214,7 +274,7 @@ jobs:
         uses: ./
         with:
           name: Go Benchmark
-          tool: 'go'
+          tool: "go"
           output-file-path: examples/go/output.txt
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -225,6 +285,9 @@ jobs:
 
   java-jmh:
     name: Run JMH Java Benchmark Framework example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -234,8 +297,8 @@ jobs:
           cache: 'npm'
       - uses: actions/setup-java@v4
         with:
-          distribution: 'adopt'
-          java-version: '11'
+          distribution: "adopt"
+          java-version: "11"
       - run: npm ci
       - run: npm run build
       - name: Run benchmark
@@ -264,6 +327,9 @@ jobs:
 
   julia-benchmark:
     name: Run Julia benchmark example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -275,7 +341,7 @@ jobs:
       - run: npm run build
       - uses: julia-actions/setup-julia@v1
         with:
-          version: '1'
+          version: "1"
           arch: x64
       - name: Run benchmark
         run: |
@@ -294,7 +360,7 @@ jobs:
         uses: ./
         with:
           name: Julia benchmark
-          tool: 'julia'
+          tool: "julia"
           output-file-path: examples/julia/output.json
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -305,6 +371,9 @@ jobs:
 
   pytest-benchmark:
     name: Run Pytest benchmark example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -332,7 +401,7 @@ jobs:
         uses: ./
         with:
           name: Python Benchmark with pytest-benchmark
-          tool: 'pytest'
+          tool: "pytest"
           output-file-path: examples/pytest/output.json
           skip-fetch-gh-pages: true
           fail-on-alert: true
@@ -343,6 +412,9 @@ jobs:
 
   rust:
     name: Run Rust benchmark example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -365,7 +437,7 @@ jobs:
         uses: ./
         with:
           name: Rust Benchmark
-          tool: 'cargo'
+          tool: "cargo"
           output-file-path: examples/rust/output.txt
           fail-on-alert: true
           summary-always: true
@@ -375,6 +447,9 @@ jobs:
 
   rust-criterion-rs-framework:
     name: Run Criterion.rs benchmark example
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -397,7 +472,7 @@ jobs:
         uses: ./
         with:
           name: Criterion.rs Benchmark
-          tool: 'cargo'
+          tool: "cargo"
           output-file-path: examples/criterion-rs/output.txt
           fail-on-alert: true
           summary-always: true
@@ -407,6 +482,9 @@ jobs:
 
   only-alert-with-cache:
     name: Run alert check with actions/cache
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -430,16 +508,19 @@ jobs:
         uses: ./
         with:
           name: Alert setup example with cache
-          tool: 'go'
+          tool: "go"
           output-file-path: examples/go/output.txt
           external-data-json-path: ./cache/benchmark-data.json
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          alert-threshold: '200%'
+          alert-threshold: "200%"
           comment-on-alert: true
           fail-on-alert: true
-          alert-comment-cc-users: '@ktrz'
+          alert-comment-cc-users: "@ktrz"
   unit-tests:
     name: Run unit tests
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -459,6 +540,9 @@ jobs:
 
   lint:
     name: Run linting and formatting check
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

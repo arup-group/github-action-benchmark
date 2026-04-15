@@ -25,7 +25,7 @@ jobs:
           path: ./cache
           key: ${{ runner.os }}-benchmark
       - name: Store benchmark result
-        uses: benchmark-action/github-action-benchmark@v1
+        uses: arup-group/github-action-benchmark@v1
         with:
           name: Alert setup example with cache
           tool: 'go'

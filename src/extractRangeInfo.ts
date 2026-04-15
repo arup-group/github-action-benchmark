@@ -5,7 +5,7 @@ export function extractRangeInfo(range: string | undefined): { prefix: string; v
 
     const matches = range.match(/(?<prefix>(\+-|±)\s*)(?<value>\d.*)/);
 
-    if (!matches || !matches.groups) {
+    if (!matches?.groups) {
         return undefined;
     }
 
