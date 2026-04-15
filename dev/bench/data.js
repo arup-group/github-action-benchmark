@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776251257937,
+  "lastUpdate": 1776251259464,
   "entries": {
     "Rust Benchmark": [
       {
@@ -44552,6 +44552,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/196a48ee0e2bedd775cc28be52bbbfa455327769"
         },
         "date": 1776251255704,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 399.65,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":200,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 50246,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "66684601+nathanrobertsarup@users.noreply.github.com",
+            "name": "nathanrobertsarup",
+            "username": "nathanrobertsarup"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "196a48ee0e2bedd775cc28be52bbbfa455327769",
+          "message": "Merge pull request #29 from arup-group/upstream\n\nUpdate from upstream",
+          "timestamp": "2026-04-15T12:06:33+01:00",
+          "tree_id": "d19ec738b3ca46a56364d2e6223fd52c899a73ac",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/196a48ee0e2bedd775cc28be52bbbfa455327769"
+        },
+        "date": 1776251259218,
         "tool": "julia",
         "benches": [
           {
