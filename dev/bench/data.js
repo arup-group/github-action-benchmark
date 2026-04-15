@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776251225182,
+  "lastUpdate": 1776251227734,
   "entries": {
     "Rust Benchmark": [
       {
@@ -17309,6 +17309,48 @@ window.BENCHMARK_DATA = {
             "value": 40056,
             "unit": "ns/op\t         4.000 auxMetricUnits",
             "extra": "28564 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "66684601+nathanrobertsarup@users.noreply.github.com",
+            "name": "nathanrobertsarup",
+            "username": "nathanrobertsarup"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "196a48ee0e2bedd775cc28be52bbbfa455327769",
+          "message": "Merge pull request #29 from arup-group/upstream\n\nUpdate from upstream",
+          "timestamp": "2026-04-15T12:06:33+01:00",
+          "tree_id": "d19ec738b3ca46a56364d2e6223fd52c899a73ac",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/196a48ee0e2bedd775cc28be52bbbfa455327769"
+        },
+        "date": 1776251224305,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 290.1,
+            "unit": "ns/op",
+            "extra": "4119954 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 35914,
+            "unit": "ns/op",
+            "extra": "33375 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 35899,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "33387 times\n4 procs"
           }
         ]
       }
