@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776254637946,
+  "lastUpdate": 1776254641908,
   "entries": {
     "Rust Benchmark": [
       {
@@ -33155,6 +33155,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000045536443623869016",
             "extra": "mean: 1.8184419610384053 msec\nrounds: 539"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "66684601+nathanrobertsarup@users.noreply.github.com",
+            "name": "nathanrobertsarup",
+            "username": "nathanrobertsarup"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "665788efbbbd72df8beaeb138d98d51d75aa35ab",
+          "message": "Merge pull request #30 from arup-group/dependabot/npm_and_yarn/handlebars-4.7.9\n\nchore(deps-dev): bump handlebars from 4.7.8 to 4.7.9",
+          "timestamp": "2026-04-15T13:03:29+01:00",
+          "tree_id": "a18e2c7ba801f45aa28235832be04a9566958219",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/665788efbbbd72df8beaeb138d98d51d75aa35ab"
+        },
+        "date": 1776254635887,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 71516.98239380542,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000017064328679306931",
+            "extra": "mean: 13.98269287277167 usec\nrounds: 30629"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 607.4314355890198,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005950304124489446",
+            "extra": "mean: 1.6462763390411472 msec\nrounds: 584"
           }
         ]
       }
