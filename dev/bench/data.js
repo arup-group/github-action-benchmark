@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776256024849,
+  "lastUpdate": 1776256027360,
   "entries": {
     "Rust Benchmark": [
       {
@@ -43831,6 +43831,44 @@ window.BENCHMARK_DATA = {
             "range": "± 428.56",
             "unit": "us",
             "extra": "100 samples\n4 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "66684601+nathanrobertsarup@users.noreply.github.com",
+            "name": "nathanrobertsarup",
+            "username": "nathanrobertsarup"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1511105e75ec4b749105ddb24742e47d5ef1e335",
+          "message": "Merge pull request #32 from arup-group/dependabot/npm_and_yarn/flatted-3.4.2\n\nchore(deps-dev): bump flatted from 3.3.3 to 3.4.2",
+          "timestamp": "2026-04-15T13:26:29+01:00",
+          "tree_id": "8845572c29e1c5379f64c898df86d96d2e741a37",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/1511105e75ec4b749105ddb24742e47d5ef1e335"
+        },
+        "date": 1776256023861,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 85.6105,
+            "range": "± 4.88985",
+            "unit": "ns",
+            "extra": "100 samples\n362 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 7.68058,
+            "range": "± 398.501",
+            "unit": "us",
+            "extra": "100 samples\n5 iterations"
           }
         ]
       }
