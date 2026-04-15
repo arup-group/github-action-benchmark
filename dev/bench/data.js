@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776254657968,
+  "lastUpdate": 1776254660667,
   "entries": {
     "Rust Benchmark": [
       {
@@ -17416,6 +17416,48 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/665788efbbbd72df8beaeb138d98d51d75aa35ab"
         },
         "date": 1776254644282,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 313.1,
+            "unit": "ns/op",
+            "extra": "3850054 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 39945,
+            "unit": "ns/op",
+            "extra": "30147 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 39863,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "30132 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "66684601+nathanrobertsarup@users.noreply.github.com",
+            "name": "nathanrobertsarup",
+            "username": "nathanrobertsarup"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "665788efbbbd72df8beaeb138d98d51d75aa35ab",
+          "message": "Merge pull request #30 from arup-group/dependabot/npm_and_yarn/handlebars-4.7.9\n\nchore(deps-dev): bump handlebars from 4.7.8 to 4.7.9",
+          "timestamp": "2026-04-15T13:03:29+01:00",
+          "tree_id": "a18e2c7ba801f45aa28235832be04a9566958219",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/665788efbbbd72df8beaeb138d98d51d75aa35ab"
+        },
+        "date": 1776254660303,
         "tool": "go",
         "benches": [
           {
