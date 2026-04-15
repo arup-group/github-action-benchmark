@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776254987934,
+  "lastUpdate": 1776254989437,
   "entries": {
     "Rust Benchmark": [
       {
@@ -43483,6 +43483,44 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci 20",
             "value": 7.75325,
             "range": "± 985.12",
+            "unit": "us",
+            "extra": "100 samples\n4 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "66684601+nathanrobertsarup@users.noreply.github.com",
+            "name": "nathanrobertsarup",
+            "username": "nathanrobertsarup"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "22f6500e4bd43073496890bd7edce4dfae85390b",
+          "message": "Merge pull request #31 from arup-group/dependabot/npm_and_yarn/multi-d2f11ff75f\n\nchore(deps): bump minimatch",
+          "timestamp": "2026-04-15T13:09:12+01:00",
+          "tree_id": "0319f2898982f0a0052d3d1e3289dbb9a9abf9a2",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/22f6500e4bd43073496890bd7edce4dfae85390b"
+        },
+        "date": 1776254986931,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 80.3798,
+            "range": "± 4.50264",
+            "unit": "ns",
+            "extra": "100 samples\n361 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 7.67553,
+            "range": "± 428.56",
             "unit": "us",
             "extra": "100 samples\n4 iterations"
           }
