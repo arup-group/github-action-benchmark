@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776256020654,
+  "lastUpdate": 1776256022787,
   "entries": {
     "Rust Benchmark": [
       {
@@ -33650,6 +33650,44 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/1511105e75ec4b749105ddb24742e47d5ef1e335"
         },
         "date": 1776256015405,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 76442.6635881645,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001373852163409725",
+            "extra": "mean: 13.081700101235462 usec\nrounds: 39500"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 611.0564779605211,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000055552957891023865",
+            "extra": "mean: 1.636509939862887 msec\nrounds: 582"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "66684601+nathanrobertsarup@users.noreply.github.com",
+            "name": "nathanrobertsarup",
+            "username": "nathanrobertsarup"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1511105e75ec4b749105ddb24742e47d5ef1e335",
+          "message": "Merge pull request #32 from arup-group/dependabot/npm_and_yarn/flatted-3.4.2\n\nchore(deps-dev): bump flatted from 3.3.3 to 3.4.2",
+          "timestamp": "2026-04-15T13:26:29+01:00",
+          "tree_id": "8845572c29e1c5379f64c898df86d96d2e741a37",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/1511105e75ec4b749105ddb24742e47d5ef1e335"
+        },
+        "date": 1776256019973,
         "tool": "pytest",
         "benches": [
           {
