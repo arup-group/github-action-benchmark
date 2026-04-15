@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776251220235,
+  "lastUpdate": 1776251221726,
   "entries": {
     "Rust Benchmark": [
       {
@@ -32904,6 +32904,44 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/196a48ee0e2bedd775cc28be52bbbfa455327769"
         },
         "date": 1776251217843,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 73145.96282410342,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000012911702860542815",
+            "extra": "mean: 13.671294510193734 usec\nrounds: 35357"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 549.9213180435843,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000045536443623869016",
+            "extra": "mean: 1.8184419610384053 msec\nrounds: 539"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "66684601+nathanrobertsarup@users.noreply.github.com",
+            "name": "nathanrobertsarup",
+            "username": "nathanrobertsarup"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "196a48ee0e2bedd775cc28be52bbbfa455327769",
+          "message": "Merge pull request #29 from arup-group/upstream\n\nUpdate from upstream",
+          "timestamp": "2026-04-15T12:06:33+01:00",
+          "tree_id": "d19ec738b3ca46a56364d2e6223fd52c899a73ac",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/196a48ee0e2bedd775cc28be52bbbfa455327769"
+        },
+        "date": 1776251221460,
         "tool": "pytest",
         "benches": [
           {
