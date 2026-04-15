@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776251229640,
+  "lastUpdate": 1776251232950,
   "entries": {
     "Rust Benchmark": [
       {
@@ -42685,6 +42685,44 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci 20",
             "value": 7.66947,
             "range": "± 368.812",
+            "unit": "us",
+            "extra": "100 samples\n4 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "66684601+nathanrobertsarup@users.noreply.github.com",
+            "name": "nathanrobertsarup",
+            "username": "nathanrobertsarup"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "196a48ee0e2bedd775cc28be52bbbfa455327769",
+          "message": "Merge pull request #29 from arup-group/upstream\n\nUpdate from upstream",
+          "timestamp": "2026-04-15T12:06:33+01:00",
+          "tree_id": "d19ec738b3ca46a56364d2e6223fd52c899a73ac",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/196a48ee0e2bedd775cc28be52bbbfa455327769"
+        },
+        "date": 1776251229884,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 84.5331,
+            "range": "± 13.2096",
+            "unit": "ns",
+            "extra": "100 samples\n365 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 7.77462,
+            "range": "± 407.666",
             "unit": "us",
             "extra": "100 samples\n4 iterations"
           }
