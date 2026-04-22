@@ -1,13 +1,57 @@
 import * as path from 'path';
 import { promises as fs } from 'fs';
 import * as cp from 'child_process';
-import { BenchmarkSuites, DataJson, SCRIPT_PREFIX } from '../src/write';
-import { VALID_TOOLS } from '../src/config';
-import { Benchmark } from '../src/extract';
 import { diff, Diff, DiffArray, DiffEdit, DiffNew } from 'deep-diff';
-import { getServerUrl } from '../src/git';
 import assert from 'assert';
 import deepEq = require('deep-equal');
+
+// Keep this script self-contained so CI checks don't load GitHub Action runtime deps.
+const SCRIPT_PREFIX = 'window.BENCHMARK_DATA = ';
+const VALID_TOOLS = [
+    'cargo',
+    'go',
+    'benchmarkjs',
+    'benchmarkluau',
+    'pytest',
+    'googlecpp',
+    'catch2',
+    'julia',
+    'jmh',
+    'benchmarkdotnet',
+    'customBiggerIsBetter',
+    'customSmallerIsBetter',
+] as const;
+
+interface BenchmarkResult {
+    name: string;
+    value: number;
+    unit: string;
+    range?: string;
+    extra?: string;
+}
+
+interface Benchmark {
+    commit: {
+        id: string;
+        url: string;
+    };
+    date: number;
+    tool: (typeof VALID_TOOLS)[number];
+    benches: BenchmarkResult[];
+}
+
+type BenchmarkSuites = { [name: string]: Benchmark[] };
+
+interface DataJson {
+    lastUpdate: number;
+    repoUrl: string;
+    entries: BenchmarkSuites;
+}
+
+function getServerUrl(repositoryUrl: string | undefined): string {
+    const value = repositoryUrl && repositoryUrl.trim().length > 0 ? repositoryUrl : process.env['GITHUB_SERVER_URL'];
+    return new URL(value ?? 'https://github.com').origin;
+}
 
 function help(): never {
     throw new Error(
