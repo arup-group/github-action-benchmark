@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776952682056,
+  "lastUpdate": 1776952685366,
   "entries": {
     "Rust Benchmark": [
       {
@@ -17813,6 +17813,48 @@ window.BENCHMARK_DATA = {
             "value": 39879,
             "unit": "ns/op\t         4.000 auxMetricUnits",
             "extra": "30171 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "66684601+nathanrobertsarup@users.noreply.github.com",
+            "name": "nathanrobertsarup",
+            "username": "nathanrobertsarup"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e799d30f64a5927c34b2a79a151d63a664685f94",
+          "message": "Merge pull request #35 from arup-group/dependabot/npm_and_yarn/flatted-3.4.2\n\nchore(deps-dev): bump flatted from 3.3.3 to 3.4.2",
+          "timestamp": "2026-04-23T14:57:26+01:00",
+          "tree_id": "8f3b2550c4251d115649de00b7abd13f5bc49ecd",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/e799d30f64a5927c34b2a79a151d63a664685f94"
+        },
+        "date": 1776952682101,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 311.8,
+            "unit": "ns/op",
+            "extra": "3854646 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 40199,
+            "unit": "ns/op",
+            "extra": "30164 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 41083,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "30134 times\n4 procs"
           }
         ]
       }
