@@ -38,6 +38,9 @@
     "@actions/io": "^1.1.2",
     "zod": "^4.1.5"
   },
+  "overrides": {
+    "undici": "^7.24.0"
+  },
   "devDependencies": {
     "@types/acorn": "^4.0.5",
     "@types/cheerio": "^0.22.16",
