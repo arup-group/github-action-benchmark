@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776925598961,
+  "lastUpdate": 1776925600750,
   "entries": {
     "Rust Benchmark": [
       {
@@ -33848,6 +33848,44 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/b232c9c291b220e179550889ae86482bb3309756"
         },
         "date": 1776925596351,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 77229.58534747007,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000013510456634326352",
+            "extra": "mean: 12.948405659577436 usec\nrounds: 34455"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 612.0421087299995,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001616663345416145",
+            "extra": "mean: 1.6338745091820912 msec\nrounds: 599"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b232c9c291b220e179550889ae86482bb3309756",
+          "message": "Merge pull request #33 from arup-group/override-undici\n\nOverride undici to address vuln",
+          "timestamp": "2026-04-23T08:26:11+02:00",
+          "tree_id": "b9b8bc691a166fef1dc3af9f327d391584ef6c3c",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/b232c9c291b220e179550889ae86482bb3309756"
+        },
+        "date": 1776925600366,
         "tool": "pytest",
         "benches": [
           {
