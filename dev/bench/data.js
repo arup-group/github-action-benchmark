@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776952670092,
+  "lastUpdate": 1776952674689,
   "entries": {
     "Rust Benchmark": [
       {
@@ -34297,6 +34297,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00001875263772185735",
             "extra": "mean: 1.596594187702841 msec\nrounds: 618"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "66684601+nathanrobertsarup@users.noreply.github.com",
+            "name": "nathanrobertsarup",
+            "username": "nathanrobertsarup"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e799d30f64a5927c34b2a79a151d63a664685f94",
+          "message": "Merge pull request #35 from arup-group/dependabot/npm_and_yarn/flatted-3.4.2\n\nchore(deps-dev): bump flatted from 3.3.3 to 3.4.2",
+          "timestamp": "2026-04-23T14:57:26+01:00",
+          "tree_id": "8f3b2550c4251d115649de00b7abd13f5bc49ecd",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/e799d30f64a5927c34b2a79a151d63a664685f94"
+        },
+        "date": 1776952672021,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 74040.493304559,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000013423990715076639",
+            "extra": "mean: 13.506122870988836 usec\nrounds: 35932"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 626.7604624142809,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000029455011567590762",
+            "extra": "mean: 1.5955058750004756 msec\nrounds: 608"
           }
         ]
       }
