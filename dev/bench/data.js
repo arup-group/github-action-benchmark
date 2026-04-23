@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776955475488,
+  "lastUpdate": 1776955481565,
   "entries": {
     "Rust Benchmark": [
       {
@@ -49811,6 +49811,42 @@ window.BENCHMARK_DATA = {
             "value": 48.531161528367264,
             "unit": "ns",
             "range": "± 0.05018378189572509"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "66684601+nathanrobertsarup@users.noreply.github.com",
+            "name": "nathanrobertsarup",
+            "username": "nathanrobertsarup"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "09c501d2cb0375c21cb61b60c17d667251ba8524",
+          "message": "Merge pull request #36 from arup-group/dependabot/npm_and_yarn/multi-d2f11ff75f\n\nchore(deps): bump minimatch",
+          "timestamp": "2026-04-23T15:39:11+01:00",
+          "tree_id": "a2d03dfee12470240c60f00949f59c9044d2110e",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/09c501d2cb0375c21cb61b60c17d667251ba8524"
+        },
+        "date": 1776955478933,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 22.124019819498063,
+            "unit": "ns",
+            "range": "± 0.043119544933882537"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 43.55626073877017,
+            "unit": "ns",
+            "range": "± 0.039221021107239074"
           }
         ]
       }
