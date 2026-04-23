@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776952712943,
+  "lastUpdate": 1776952714783,
   "entries": {
     "Rust Benchmark": [
       {
@@ -47360,6 +47360,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/e799d30f64a5927c34b2a79a151d63a664685f94"
         },
         "date": 1776952710472,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 368.4782608695652,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":207,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 46109,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "66684601+nathanrobertsarup@users.noreply.github.com",
+            "name": "nathanrobertsarup",
+            "username": "nathanrobertsarup"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e799d30f64a5927c34b2a79a151d63a664685f94",
+          "message": "Merge pull request #35 from arup-group/dependabot/npm_and_yarn/flatted-3.4.2\n\nchore(deps-dev): bump flatted from 3.3.3 to 3.4.2",
+          "timestamp": "2026-04-23T14:57:26+01:00",
+          "tree_id": "8f3b2550c4251d115649de00b7abd13f5bc49ecd",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/e799d30f64a5927c34b2a79a151d63a664685f94"
+        },
+        "date": 1776952714501,
         "tool": "julia",
         "benches": [
           {
