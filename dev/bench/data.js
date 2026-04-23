@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776925608074,
+  "lastUpdate": 1776925609714,
   "entries": {
     "Rust Benchmark": [
       {
@@ -44253,6 +44253,44 @@ window.BENCHMARK_DATA = {
             "range": "± 398.501",
             "unit": "us",
             "extra": "100 samples\n5 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b232c9c291b220e179550889ae86482bb3309756",
+          "message": "Merge pull request #33 from arup-group/override-undici\n\nOverride undici to address vuln",
+          "timestamp": "2026-04-23T08:26:11+02:00",
+          "tree_id": "b9b8bc691a166fef1dc3af9f327d391584ef6c3c",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/b232c9c291b220e179550889ae86482bb3309756"
+        },
+        "date": 1776925607254,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 82.0176,
+            "range": "± 5.95286",
+            "unit": "ns",
+            "extra": "100 samples\n362 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 7.76286,
+            "range": "± 888.034",
+            "unit": "us",
+            "extra": "100 samples\n4 iterations"
           }
         ]
       }
