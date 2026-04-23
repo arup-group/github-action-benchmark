@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776950861226,
+  "lastUpdate": 1776950863001,
   "entries": {
     "Rust Benchmark": [
       {
@@ -44677,6 +44677,44 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci 20",
             "value": 7.76286,
             "range": "± 888.034",
+            "unit": "us",
+            "extra": "100 samples\n4 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "66684601+nathanrobertsarup@users.noreply.github.com",
+            "name": "nathanrobertsarup",
+            "username": "nathanrobertsarup"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "048a37289feb9353842aa0b627fbc699ae1ff59d",
+          "message": "Merge pull request #34 from arup-group/dependabot/npm_and_yarn/handlebars-4.7.9\n\nchore(deps-dev): bump handlebars from 4.7.8 to 4.7.9",
+          "timestamp": "2026-04-23T14:27:00+01:00",
+          "tree_id": "9535c5bd587b11455918d55d63bdc4a70bdb48a0",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/048a37289feb9353842aa0b627fbc699ae1ff59d"
+        },
+        "date": 1776950855626,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 79.7516,
+            "range": "± 3.90593",
+            "unit": "ns",
+            "extra": "100 samples\n361 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 7.69102,
+            "range": "± 408.511",
             "unit": "us",
             "extra": "100 samples\n4 iterations"
           }
