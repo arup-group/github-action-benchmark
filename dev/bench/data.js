@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776256109711,
+  "lastUpdate": 1776925594543,
   "entries": {
     "Rust Benchmark": [
       {
@@ -39767,6 +39767,42 @@ window.BENCHMARK_DATA = {
             "value": 24756.221733579434,
             "unit": "ns/iter",
             "extra": "iterations: 28196\ncpu: 24752.598347283303 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b232c9c291b220e179550889ae86482bb3309756",
+          "message": "Merge pull request #33 from arup-group/override-undici\n\nOverride undici to address vuln",
+          "timestamp": "2026-04-23T08:26:11+02:00",
+          "tree_id": "b9b8bc691a166fef1dc3af9f327d391584ef6c3c",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/b232c9c291b220e179550889ae86482bb3309756"
+        },
+        "date": 1776925591830,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 154.79455077836954,
+            "unit": "ns/iter",
+            "extra": "iterations: 4514186\ncpu: 154.77868878242944 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 19181.189184003968,
+            "unit": "ns/iter",
+            "extra": "iterations: 36483\ncpu: 19179.874187977963 ns\nthreads: 1"
           }
         ]
       }
