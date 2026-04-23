@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776925638142,
+  "lastUpdate": 1776925644127,
   "entries": {
     "Rust Benchmark": [
       {
@@ -48250,6 +48250,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/b232c9c291b220e179550889ae86482bb3309756"
         },
         "date": 1776925632702,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 19.356952693065008,
+            "unit": "ns",
+            "range": "± 0.02996184527924776"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 37.15410173856295,
+            "unit": "ns",
+            "range": "± 0.023170282416297514"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b232c9c291b220e179550889ae86482bb3309756",
+          "message": "Merge pull request #33 from arup-group/override-undici\n\nOverride undici to address vuln",
+          "timestamp": "2026-04-23T08:26:11+02:00",
+          "tree_id": "b9b8bc691a166fef1dc3af9f327d391584ef6c3c",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/b232c9c291b220e179550889ae86482bb3309756"
+        },
+        "date": 1776925637916,
         "tool": "benchmarkdotnet",
         "benches": [
           {
