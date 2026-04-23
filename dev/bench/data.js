@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776925691075,
+  "lastUpdate": 1776950844395,
   "entries": {
     "Rust Benchmark": [
       {
@@ -40075,6 +40075,42 @@ window.BENCHMARK_DATA = {
             "value": 19181.189184003968,
             "unit": "ns/iter",
             "extra": "iterations: 36483\ncpu: 19179.874187977963 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "66684601+nathanrobertsarup@users.noreply.github.com",
+            "name": "nathanrobertsarup",
+            "username": "nathanrobertsarup"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "048a37289feb9353842aa0b627fbc699ae1ff59d",
+          "message": "Merge pull request #34 from arup-group/dependabot/npm_and_yarn/handlebars-4.7.9\n\nchore(deps-dev): bump handlebars from 4.7.8 to 4.7.9",
+          "timestamp": "2026-04-23T14:27:00+01:00",
+          "tree_id": "9535c5bd587b11455918d55d63bdc4a70bdb48a0",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/048a37289feb9353842aa0b627fbc699ae1ff59d"
+        },
+        "date": 1776950841995,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 201.39036462150284,
+            "unit": "ns/iter",
+            "extra": "iterations: 3165584\ncpu: 201.3472442999459 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 24734.284114988033,
+            "unit": "ns/iter",
+            "extra": "iterations: 28316\ncpu: 24730.973371945194 ns\nthreads: 1"
           }
         ]
       }
