@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779017724101,
+  "lastUpdate": 1779017729144,
   "entries": {
     "Rust Benchmark": [
       {
@@ -45759,6 +45759,44 @@ window.BENCHMARK_DATA = {
             "range": "± 389.482",
             "unit": "us",
             "extra": "100 samples\n5 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "95f9a93867cc2a004fff9995f704637c95a1c1eb",
+          "message": "Merge pull request #37 from arup-group/dependabot/npm_and_yarn/picomatch-2.3.2\n\nchore(deps-dev): bump picomatch from 2.3.1 to 2.3.2",
+          "timestamp": "2026-05-17T13:34:50+02:00",
+          "tree_id": "41a0bf19927f189dbf538245bb3a43bfff4dab2a",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/95f9a93867cc2a004fff9995f704637c95a1c1eb"
+        },
+        "date": 1779017726260,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 85.8522,
+            "range": "± 3.86397",
+            "unit": "ns",
+            "extra": "100 samples\n361 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 7.96008,
+            "range": "± 459.425",
+            "unit": "us",
+            "extra": "100 samples\n4 iterations"
           }
         ]
       }
