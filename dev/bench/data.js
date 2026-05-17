@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779017943948,
+  "lastUpdate": 1779017948304,
   "entries": {
     "Rust Benchmark": [
       {
@@ -18065,6 +18065,48 @@ window.BENCHMARK_DATA = {
             "value": 40416,
             "unit": "ns/op\t         4.000 auxMetricUnits",
             "extra": "30483 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "332227ea7e68a0fecf3eaf5c47dba883cd7e848d",
+          "message": "Merge pull request #38 from arup-group/dependabot/pip/examples/pytest/pytest-9.0.3\n\nchore(deps): bump pytest from 5.2.4 to 9.0.3 in /examples/pytest",
+          "timestamp": "2026-05-17T13:38:34+02:00",
+          "tree_id": "28d139cc73ffef0d879fe60f068c2a03838a5ecf",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/332227ea7e68a0fecf3eaf5c47dba883cd7e848d"
+        },
+        "date": 1779017944609,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 316.2,
+            "unit": "ns/op",
+            "extra": "3839984 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 41369,
+            "unit": "ns/op",
+            "extra": "30223 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 39940,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "30037 times\n4 procs"
           }
         ]
       }
