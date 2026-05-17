@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779017758745,
+  "lastUpdate": 1779017760463,
   "entries": {
     "Rust Benchmark": [
       {
@@ -41258,6 +41258,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/95f9a93867cc2a004fff9995f704637c95a1c1eb"
         },
         "date": 1779017755866,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 199.51895200530066,
+            "unit": "ns/iter",
+            "extra": "iterations: 3503033\ncpu: 199.4983295903864 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 24785.74690921918,
+            "unit": "ns/iter",
+            "extra": "iterations: 28310\ncpu: 24777.570717061106 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "95f9a93867cc2a004fff9995f704637c95a1c1eb",
+          "message": "Merge pull request #37 from arup-group/dependabot/npm_and_yarn/picomatch-2.3.2\n\nchore(deps-dev): bump picomatch from 2.3.1 to 2.3.2",
+          "timestamp": "2026-05-17T13:34:50+02:00",
+          "tree_id": "41a0bf19927f189dbf538245bb3a43bfff4dab2a",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/95f9a93867cc2a004fff9995f704637c95a1c1eb"
+        },
+        "date": 1779017760213,
         "tool": "googlecpp",
         "benches": [
           {
