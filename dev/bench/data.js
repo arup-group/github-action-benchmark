@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779017730847,
+  "lastUpdate": 1779017756375,
   "entries": {
     "Rust Benchmark": [
       {
@@ -48175,6 +48175,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "fib/20",
             "value": 44924,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "95f9a93867cc2a004fff9995f704637c95a1c1eb",
+          "message": "Merge pull request #37 from arup-group/dependabot/npm_and_yarn/picomatch-2.3.2\n\nchore(deps-dev): bump picomatch from 2.3.1 to 2.3.2",
+          "timestamp": "2026-05-17T13:34:50+02:00",
+          "tree_id": "41a0bf19927f189dbf538245bb3a43bfff4dab2a",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/95f9a93867cc2a004fff9995f704637c95a1c1eb"
+        },
+        "date": 1779017751878,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 348.76851851851853,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":216,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 43372,
             "unit": "ns",
             "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
