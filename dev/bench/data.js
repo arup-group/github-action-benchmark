@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779017813746,
+  "lastUpdate": 1779017937107,
   "entries": {
     "Rust Benchmark": [
       {
@@ -41307,6 +41307,42 @@ window.BENCHMARK_DATA = {
             "value": 24785.74690921918,
             "unit": "ns/iter",
             "extra": "iterations: 28310\ncpu: 24777.570717061106 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "332227ea7e68a0fecf3eaf5c47dba883cd7e848d",
+          "message": "Merge pull request #38 from arup-group/dependabot/pip/examples/pytest/pytest-9.0.3\n\nchore(deps): bump pytest from 5.2.4 to 9.0.3 in /examples/pytest",
+          "timestamp": "2026-05-17T13:38:34+02:00",
+          "tree_id": "28d139cc73ffef0d879fe60f068c2a03838a5ecf",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/332227ea7e68a0fecf3eaf5c47dba883cd7e848d"
+        },
+        "date": 1779017932910,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 182.42935474742853,
+            "unit": "ns/iter",
+            "extra": "iterations: 3834235\ncpu: 182.41157023500128 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 23119.142163982026,
+            "unit": "ns/iter",
+            "extra": "iterations: 30296\ncpu: 23117.892659096913 ns\nthreads: 1"
           }
         ]
       }
