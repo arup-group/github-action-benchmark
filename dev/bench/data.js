@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783683438217,
+  "lastUpdate": 1783683471885,
   "entries": {
     "Rust Benchmark": [
       {
@@ -55367,6 +55367,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "Fibonacci/Iterative/21",
             "value": 5,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a2e37da82e7a6a600c08123261c642b84578f15d",
+          "message": "Merge pull request #41 from arup-group/dependabot/npm_and_yarn/markdown-it-14.2.0\n\nchore(deps-dev): bump markdown-it from 12.3.2 to 14.2.0",
+          "timestamp": "2026-07-10T13:35:55+02:00",
+          "tree_id": "9bc186a77e6e6e77845fe6a664d7b8efe938ee9b",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/a2e37da82e7a6a600c08123261c642b84578f15d"
+        },
+        "date": 1783683468201,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "BenchFib10",
+            "value": 150,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "BenchFib20",
+            "value": 18928,
+            "range": "± 28",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/20",
+            "value": 18924,
+            "range": "± 371",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/20",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/21",
+            "value": 30609,
+            "range": "± 68",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/21",
+            "value": 3,
             "range": "± 0",
             "unit": "ns/iter"
           }
