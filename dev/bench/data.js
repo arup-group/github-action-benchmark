@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783683200495,
+  "lastUpdate": 1783683203327,
   "entries": {
     "Rust Benchmark": [
       {
@@ -18172,6 +18172,48 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/915fab726911da69d546803482f0fbf6771563cd"
         },
         "date": 1783683190876,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 313.6,
+            "unit": "ns/op",
+            "extra": "3833234 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 40706,
+            "unit": "ns/op",
+            "extra": "30176 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 39963,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "30224 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "915fab726911da69d546803482f0fbf6771563cd",
+          "message": "Merge pull request #39 from arup-group/copilot/fix-dependabot-failure\n\nBump overridden `undici` to a non-vulnerable 7.x release",
+          "timestamp": "2026-07-10T13:32:37+02:00",
+          "tree_id": "e94b60953212cd7b1744bd95b3425917eead3176",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/915fab726911da69d546803482f0fbf6771563cd"
+        },
+        "date": 1783683202645,
         "tool": "go",
         "benches": [
           {
