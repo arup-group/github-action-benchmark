@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783683241333,
+  "lastUpdate": 1783683272014,
   "entries": {
     "Rust Benchmark": [
       {
@@ -54795,6 +54795,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "Fibonacci/Iterative/21",
             "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "915fab726911da69d546803482f0fbf6771563cd",
+          "message": "Merge pull request #39 from arup-group/copilot/fix-dependabot-failure\n\nBump overridden `undici` to a non-vulnerable 7.x release",
+          "timestamp": "2026-07-10T13:32:37+02:00",
+          "tree_id": "e94b60953212cd7b1744bd95b3425917eead3176",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/915fab726911da69d546803482f0fbf6771563cd"
+        },
+        "date": 1783683267674,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "BenchFib10",
+            "value": 152,
+            "range": "± 2",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "BenchFib20",
+            "value": 18114,
+            "range": "± 561",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/20",
+            "value": 18114,
+            "range": "± 467",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/20",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/21",
+            "value": 29082,
+            "range": "± 113",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/21",
+            "value": 5,
             "range": "± 0",
             "unit": "ns/iter"
           }
