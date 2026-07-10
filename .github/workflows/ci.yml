@@ -383,7 +383,7 @@ jobs:
           cache: 'npm'
       - uses: actions/setup-python@v5
         with:
-          python-version: 3.9
+          python-version: 3.13
       - run: npm ci
       - run: npm run build
       - name: Run benchmark
