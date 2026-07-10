@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783683231722,
+  "lastUpdate": 1783683234529,
   "entries": {
     "Rust Benchmark": [
       {
@@ -51243,6 +51243,42 @@ window.BENCHMARK_DATA = {
             "value": 43.14380600452423,
             "unit": "ns",
             "range": "± 0.06508876382008791"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "915fab726911da69d546803482f0fbf6771563cd",
+          "message": "Merge pull request #39 from arup-group/copilot/fix-dependabot-failure\n\nBump overridden `undici` to a non-vulnerable 7.x release",
+          "timestamp": "2026-07-10T13:32:37+02:00",
+          "tree_id": "e94b60953212cd7b1744bd95b3425917eead3176",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/915fab726911da69d546803482f0fbf6771563cd"
+        },
+        "date": 1783683228067,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 21.2983813647713,
+            "unit": "ns",
+            "range": "± 0.06013189812699153"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 43.75301670233409,
+            "unit": "ns",
+            "range": "± 0.06944469297730219"
           }
         ]
       }
