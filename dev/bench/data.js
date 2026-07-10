@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783683221641,
+  "lastUpdate": 1783683223654,
   "entries": {
     "Rust Benchmark": [
       {
@@ -48960,6 +48960,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/915fab726911da69d546803482f0fbf6771563cd"
         },
         "date": 1783683217525,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 434.7311320754717,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":212,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 55033,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "915fab726911da69d546803482f0fbf6771563cd",
+          "message": "Merge pull request #39 from arup-group/copilot/fix-dependabot-failure\n\nBump overridden `undici` to a non-vulnerable 7.x release",
+          "timestamp": "2026-07-10T13:32:37+02:00",
+          "tree_id": "e94b60953212cd7b1744bd95b3425917eead3176",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/915fab726911da69d546803482f0fbf6771563cd"
+        },
+        "date": 1783683223302,
         "tool": "julia",
         "benches": [
           {
