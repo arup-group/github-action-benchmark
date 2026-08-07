@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786112386279,
+  "lastUpdate": 1786112423673,
   "entries": {
     "Rust Benchmark": [
       {
@@ -55934,6 +55934,66 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci/Recursive/21",
             "value": 30609,
             "range": "± 68",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/21",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c1983a5c9f7082adc28790659c0f25cfa26206ac",
+          "message": "Merge pull request #44 from arup-group/renefritze-patch-1\n\nConfigure Dependabot for GitHub Actions and npm",
+          "timestamp": "2026-08-07T07:18:20-07:00",
+          "tree_id": "2a4416521002e58ee43e871cd5ca035f6e6c1a68",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/c1983a5c9f7082adc28790659c0f25cfa26206ac"
+        },
+        "date": 1786112419744,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "BenchFib10",
+            "value": 160,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "BenchFib20",
+            "value": 20133,
+            "range": "± 2532",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/20",
+            "value": 20117,
+            "range": "± 99",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/20",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/21",
+            "value": 32572,
+            "range": "± 1786",
             "unit": "ns/iter"
           },
           {
