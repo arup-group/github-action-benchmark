@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786115447623,
+  "lastUpdate": 1786115450607,
   "entries": {
     "Rust Benchmark": [
       {
@@ -50147,6 +50147,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "fib/20",
             "value": 34490,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4217dac16af3800fc87384732a9a7b54619078b2",
+          "message": "Merge pull request #46 from arup-group/dependabot/github_actions/all_github-actions-07a7d45695\n\nchore(deps): bump the all_github-actions group across 1 directory with 10 updates",
+          "timestamp": "2026-08-07T08:09:34-07:00",
+          "tree_id": "bfc5b4b354030f5ce4f0fc279c09be6fa8c6e799",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/4217dac16af3800fc87384732a9a7b54619078b2"
+        },
+        "date": 1786115442470,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 368.4782608695652,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":207,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 46069,
             "unit": "ns",
             "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
