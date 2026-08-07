@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786115420632,
+  "lastUpdate": 1786115423469,
   "entries": {
     "Rust Benchmark": [
       {
@@ -47352,6 +47352,44 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/4217dac16af3800fc87384732a9a7b54619078b2"
         },
         "date": 1786115410703,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 80.702,
+            "range": "± 3.80103",
+            "unit": "ns",
+            "extra": "100 samples\n365 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 7.52784,
+            "range": "± 382.181",
+            "unit": "us",
+            "extra": "100 samples\n4 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4217dac16af3800fc87384732a9a7b54619078b2",
+          "message": "Merge pull request #46 from arup-group/dependabot/github_actions/all_github-actions-07a7d45695\n\nchore(deps): bump the all_github-actions group across 1 directory with 10 updates",
+          "timestamp": "2026-08-07T08:09:34-07:00",
+          "tree_id": "bfc5b4b354030f5ce4f0fc279c09be6fa8c6e799",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/4217dac16af3800fc87384732a9a7b54619078b2"
+        },
+        "date": 1786115422689,
         "tool": "catch2",
         "benches": [
           {
