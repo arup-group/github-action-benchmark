@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786112337280,
+  "lastUpdate": 1786112339574,
   "entries": {
     "Rust Benchmark": [
       {
@@ -18340,6 +18340,48 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/c1983a5c9f7082adc28790659c0f25cfa26206ac"
         },
         "date": 1786112329683,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 355.3,
+            "unit": "ns/op",
+            "extra": "3403514 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 44913,
+            "unit": "ns/op",
+            "extra": "27188 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 44218,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "27316 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c1983a5c9f7082adc28790659c0f25cfa26206ac",
+          "message": "Merge pull request #44 from arup-group/renefritze-patch-1\n\nConfigure Dependabot for GitHub Actions and npm",
+          "timestamp": "2026-08-07T07:18:20-07:00",
+          "tree_id": "2a4416521002e58ee43e871cd5ca035f6e6c1a68",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/c1983a5c9f7082adc28790659c0f25cfa26206ac"
+        },
+        "date": 1786112339198,
         "tool": "go",
         "benches": [
           {
