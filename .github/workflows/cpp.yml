@@ -13,9 +13,9 @@ jobs:
     name: Run Google C++ Benchmark Framework example
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Cache Benchmark library
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: examples/cpp/benchmark
           key: ${{ runner.os }}-googlebenchmark-v1.5.0

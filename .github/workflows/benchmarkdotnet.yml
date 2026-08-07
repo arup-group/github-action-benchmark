@@ -13,8 +13,8 @@ jobs:
     name: Run Benchmark.Net benchmark example
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-dotnet@v3
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
         with:
           dotnet-version: "6.0.101"
       - name: Run benchmark
