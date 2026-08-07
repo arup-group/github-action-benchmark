@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786115499311,
+  "lastUpdate": 1786115501741,
   "entries": {
     "Rust Benchmark": [
       {
@@ -56536,6 +56536,66 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/4217dac16af3800fc87384732a9a7b54619078b2"
         },
         "date": 1786115495033,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "BenchFib10",
+            "value": 160,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "BenchFib20",
+            "value": 19976,
+            "range": "± 140",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/20",
+            "value": 19975,
+            "range": "± 600",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/20",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/21",
+            "value": 32325,
+            "range": "± 520",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/21",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4217dac16af3800fc87384732a9a7b54619078b2",
+          "message": "Merge pull request #46 from arup-group/dependabot/github_actions/all_github-actions-07a7d45695\n\nchore(deps): bump the all_github-actions group across 1 directory with 10 updates",
+          "timestamp": "2026-08-07T08:09:34-07:00",
+          "tree_id": "bfc5b4b354030f5ce4f0fc279c09be6fa8c6e799",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/4217dac16af3800fc87384732a9a7b54619078b2"
+        },
+        "date": 1786115501231,
         "tool": "cargo",
         "benches": [
           {
