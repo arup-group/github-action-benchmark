@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786115426032,
+  "lastUpdate": 1786115447623,
   "entries": {
     "Rust Benchmark": [
       {
@@ -52527,6 +52527,42 @@ window.BENCHMARK_DATA = {
             "value": 43.06149565256559,
             "unit": "ns",
             "range": "± 0.05182059650984153"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4217dac16af3800fc87384732a9a7b54619078b2",
+          "message": "Merge pull request #46 from arup-group/dependabot/github_actions/all_github-actions-07a7d45695\n\nchore(deps): bump the all_github-actions group across 1 directory with 10 updates",
+          "timestamp": "2026-08-07T08:09:34-07:00",
+          "tree_id": "bfc5b4b354030f5ce4f0fc279c09be6fa8c6e799",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/4217dac16af3800fc87384732a9a7b54619078b2"
+        },
+        "date": 1786115442858,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 22.21282096306483,
+            "unit": "ns",
+            "range": "± 0.04955169934672068"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 43.634961091555084,
+            "unit": "ns",
+            "range": "± 0.06457220465853829"
           }
         ]
       }
