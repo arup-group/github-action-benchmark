@@ -1,0 +1,25 @@
+version: 2
+updates:
+- package-ecosystem: github-actions
+  directories:
+  - /  # Updates files in .github/workflows and the top-level action.yml (if there is one)
+  - /.github/actions/*  # Updates files in .github/actions and its subdirectories
+  schedule:
+    interval: monthly
+  cooldown:
+    default-days: 7
+  groups:
+    all_github-actions:
+      patterns:
+      - "*"
+- package-ecosystem: npm
+  directories:
+  - /
+  schedule:
+    interval: monthly
+  cooldown:
+    default-days: 7
+  groups:
+    all_npm:
+      patterns:
+      - "*"
