@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786112372222,
+  "lastUpdate": 1786112375384,
   "entries": {
     "Rust Benchmark": [
       {
@@ -42163,6 +42163,42 @@ window.BENCHMARK_DATA = {
             "value": 24780.574083927415,
             "unit": "ns/iter",
             "extra": "iterations: 28191\ncpu: 24779.317228902837 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c1983a5c9f7082adc28790659c0f25cfa26206ac",
+          "message": "Merge pull request #44 from arup-group/renefritze-patch-1\n\nConfigure Dependabot for GitHub Actions and npm",
+          "timestamp": "2026-08-07T07:18:20-07:00",
+          "tree_id": "2a4416521002e58ee43e871cd5ca035f6e6c1a68",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/c1983a5c9f7082adc28790659c0f25cfa26206ac"
+        },
+        "date": 1786112371056,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 177.4402397785805,
+            "unit": "ns/iter",
+            "extra": "iterations: 3939301\ncpu: 177.41896849212588 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 22349.79619521898,
+            "unit": "ns/iter",
+            "extra": "iterations: 31329\ncpu: 22345.09847106515 ns\nthreads: 1"
           }
         ]
       }
