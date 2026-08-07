@@ -13,7 +13,7 @@ jobs:
     name: Run Catch2 C++ Benchmark Framework example (v3.x)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Build and run benchmarks with Catch2
         run: |
           cd examples/catch2
