@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786430727397,
+  "lastUpdate": 1786430729496,
   "entries": {
     "Rust Benchmark": [
       {
@@ -50552,6 +50552,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/117b62a8801fdf295d44eeb104383975a291a657"
         },
         "date": 1786430723464,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 303.8611111111111,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":252,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fib/20",
+            "value": 44844,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "117b62a8801fdf295d44eeb104383975a291a657",
+          "message": "Merge pull request #45 from arup-group/dependabot/npm_and_yarn/all_npm-33a0ec8f65\n\nchore(deps): bump the all_npm group across 1 directory with 23 updates",
+          "timestamp": "2026-08-11T08:44:18+02:00",
+          "tree_id": "8f40d9e576c8d64c9a3b7814a07a80495dbc03c7",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/117b62a8801fdf295d44eeb104383975a291a657"
+        },
+        "date": 1786430729152,
         "tool": "julia",
         "benches": [
           {
