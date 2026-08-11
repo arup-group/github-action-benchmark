@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786430688198,
+  "lastUpdate": 1786430690406,
   "entries": {
     "Rust Benchmark": [
       {
@@ -18485,6 +18485,48 @@ window.BENCHMARK_DATA = {
             "value": 39847,
             "unit": "ns/op\t         4.000 auxMetricUnits",
             "extra": "30055 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "117b62a8801fdf295d44eeb104383975a291a657",
+          "message": "Merge pull request #45 from arup-group/dependabot/npm_and_yarn/all_npm-33a0ec8f65\n\nchore(deps): bump the all_npm group across 1 directory with 23 updates",
+          "timestamp": "2026-08-11T08:44:18+02:00",
+          "tree_id": "8f40d9e576c8d64c9a3b7814a07a80495dbc03c7",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/117b62a8801fdf295d44eeb104383975a291a657"
+        },
+        "date": 1786430686110,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 353.8,
+            "unit": "ns/op",
+            "extra": "3394752 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 44292,
+            "unit": "ns/op",
+            "extra": "27211 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 44252,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "27058 times\n4 procs"
           }
         ]
       }
