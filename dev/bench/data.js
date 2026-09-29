@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790671089858,
+  "lastUpdate": 1790671091900,
   "entries": {
     "Rust Benchmark": [
       {
@@ -51063,6 +51063,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "fib/20",
             "value": 35832,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"samples\":10000,\"seconds\":5,\"time_tolerance\":0.05,\"overhead\":0,\"gcsample\":false,\"gctrial\":true,\"evals\":1,\"memory_tolerance\":0.01,\"evals_set\":false}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e42a00892e7b415fa7f5ae17682573fe31989ded",
+          "message": "Merge pull request #52 from arup-group/dependabot/npm_and_yarn/undici-7.30.0\n\nchore(deps): bump undici from 7.28.0 to 7.30.0",
+          "timestamp": "2026-09-29T10:37:20+02:00",
+          "tree_id": "7001ed214198fffb18744f3fb46f4d44d67df991",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/e42a00892e7b415fa7f5ae17682573fe31989ded"
+        },
+        "date": 1790671084832,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 286.50359712230215,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"samples\":10000,\"seconds\":5,\"time_tolerance\":0.05,\"overhead\":0,\"gcsample\":false,\"gctrial\":true,\"evals\":278,\"memory_tolerance\":0.01,\"evals_set\":false}"
+          },
+          {
+            "name": "fib/20",
+            "value": 35823,
             "unit": "ns",
             "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"samples\":10000,\"seconds\":5,\"time_tolerance\":0.05,\"overhead\":0,\"gcsample\":false,\"gctrial\":true,\"evals\":1,\"memory_tolerance\":0.01,\"evals_set\":false}"
           }
