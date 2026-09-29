@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790671130561,
+  "lastUpdate": 1790671132873,
   "entries": {
     "Rust Benchmark": [
       {
@@ -18760,6 +18760,48 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/797797d4ec9a71bce100a9cbfa7143868a6a89bf"
         },
         "date": 1790671097845,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 313.1,
+            "unit": "ns/op",
+            "extra": "3849910 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 39904,
+            "unit": "ns/op",
+            "extra": "30151 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 39951,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "30164 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "797797d4ec9a71bce100a9cbfa7143868a6a89bf",
+          "message": "Merge pull request #48 from arup-group/dependabot/github_actions/all_github-actions-31df092e2e\n\nchore(deps): bump actions/setup-java from 5 to 6 in the all_github-actions group across 1 directory",
+          "timestamp": "2026-09-29T10:37:47+02:00",
+          "tree_id": "62bed0a3e5066529c95170501b1da2a7adde5fab",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/797797d4ec9a71bce100a9cbfa7143868a6a89bf"
+        },
+        "date": 1790671125424,
         "tool": "go",
         "benches": [
           {
