@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790671096457,
+  "lastUpdate": 1790671098682,
   "entries": {
     "Rust Benchmark": [
       {
@@ -42981,6 +42981,42 @@ window.BENCHMARK_DATA = {
             "value": 24733.985444782025,
             "unit": "ns/iter",
             "extra": "iterations: 28306\ncpu: 24731.539108316258 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "acf0ff4a5b51b8b0411ee1270c2ecdd112f15fb1",
+          "message": "Merge pull request #51 from arup-group/dependabot/npm_and_yarn/browserslist-4.29.2\n\nchore(deps-dev): bump browserslist from 4.28.5 to 4.29.2",
+          "timestamp": "2026-09-29T10:37:08+02:00",
+          "tree_id": "071fc87de52d156505fbd0265e528ab9aee06b91",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/acf0ff4a5b51b8b0411ee1270c2ecdd112f15fb1"
+        },
+        "date": 1790671093764,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 199.55159931448742,
+            "unit": "ns/iter",
+            "extra": "iterations: 3509785\ncpu: 199.4948362933912 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 24731.761613735365,
+            "unit": "ns/iter",
+            "extra": "iterations: 28307\ncpu: 24723.15296569753 ns\nthreads: 1"
           }
         ]
       }
