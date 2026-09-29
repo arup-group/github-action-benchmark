@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790671116818,
+  "lastUpdate": 1790671119212,
   "entries": {
     "Rust Benchmark": [
       {
@@ -53999,6 +53999,42 @@ window.BENCHMARK_DATA = {
             "value": 43.6912625006267,
             "unit": "ns",
             "range": "± 0.045720534144269395"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e42a00892e7b415fa7f5ae17682573fe31989ded",
+          "message": "Merge pull request #52 from arup-group/dependabot/npm_and_yarn/undici-7.30.0\n\nchore(deps): bump undici from 7.28.0 to 7.30.0",
+          "timestamp": "2026-09-29T10:37:20+02:00",
+          "tree_id": "7001ed214198fffb18744f3fb46f4d44d67df991",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/e42a00892e7b415fa7f5ae17682573fe31989ded"
+        },
+        "date": 1790671111531,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 21.286914659397944,
+            "unit": "ns",
+            "range": "± 0.06413515946367664"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 43.65867431674685,
+            "unit": "ns",
+            "range": "± 0.04469483416826724"
           }
         ]
       }
