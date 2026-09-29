@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790671067108,
+  "lastUpdate": 1790671069766,
   "entries": {
     "Rust Benchmark": [
       {
@@ -18592,6 +18592,48 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/acf0ff4a5b51b8b0411ee1270c2ecdd112f15fb1"
         },
         "date": 1790671061731,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 312.3,
+            "unit": "ns/op",
+            "extra": "3850718 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 40269,
+            "unit": "ns/op",
+            "extra": "30211 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 39799,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "30145 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "acf0ff4a5b51b8b0411ee1270c2ecdd112f15fb1",
+          "message": "Merge pull request #51 from arup-group/dependabot/npm_and_yarn/browserslist-4.29.2\n\nchore(deps-dev): bump browserslist from 4.28.5 to 4.29.2",
+          "timestamp": "2026-09-29T10:37:08+02:00",
+          "tree_id": "071fc87de52d156505fbd0265e528ab9aee06b91",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/acf0ff4a5b51b8b0411ee1270c2ecdd112f15fb1"
+        },
+        "date": 1790671069430,
         "tool": "go",
         "benches": [
           {
