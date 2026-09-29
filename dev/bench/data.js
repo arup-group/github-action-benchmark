@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790671144713,
+  "lastUpdate": 1790671147425,
   "entries": {
     "Rust Benchmark": [
       {
@@ -43285,6 +43285,42 @@ window.BENCHMARK_DATA = {
             "value": 22367.0847944804,
             "unit": "ns/iter",
             "extra": "iterations: 31311\ncpu: 22363.450225160486 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "797797d4ec9a71bce100a9cbfa7143868a6a89bf",
+          "message": "Merge pull request #48 from arup-group/dependabot/github_actions/all_github-actions-31df092e2e\n\nchore(deps): bump actions/setup-java from 5 to 6 in the all_github-actions group across 1 directory",
+          "timestamp": "2026-09-29T10:37:47+02:00",
+          "tree_id": "62bed0a3e5066529c95170501b1da2a7adde5fab",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/797797d4ec9a71bce100a9cbfa7143868a6a89bf"
+        },
+        "date": 1790671120574,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 112.84091994782537,
+            "unit": "ns/iter",
+            "extra": "iterations: 6198395\ncpu: 112.82653783761764 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 14133.630682509585,
+            "unit": "ns/iter",
+            "extra": "iterations: 49318\ncpu: 14128.218966705868 ns\nthreads: 1"
           }
         ]
       }
