@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790671163218,
+  "lastUpdate": 1790671165908,
   "entries": {
     "Rust Benchmark": [
       {
@@ -54652,6 +54652,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/658ee12eff263c70d0ae3a7b9a8b8e538a6518de"
         },
         "date": 1790671144785,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 22.25012280344963,
+            "unit": "ns",
+            "range": "± 0.06742816389144009"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 43.67726440514837,
+            "unit": "ns",
+            "range": "± 0.03869978060881905"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "658ee12eff263c70d0ae3a7b9a8b8e538a6518de",
+          "message": "Merge pull request #47 from arup-group/dependabot/npm_and_yarn/all_npm-bf60eac77d\n\nchore(deps-dev): bump the all_npm group across 1 directory with 8 updates",
+          "timestamp": "2026-09-29T10:37:57+02:00",
+          "tree_id": "cca03c5b994f5495f2aa8fcbfecff842ebccd58e",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/658ee12eff263c70d0ae3a7b9a8b8e538a6518de"
+        },
+        "date": 1790671165263,
         "tool": "benchmarkdotnet",
         "benches": [
           {
