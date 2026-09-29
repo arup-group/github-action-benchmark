@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790671077632,
+  "lastUpdate": 1790671080420,
   "entries": {
     "Rust Benchmark": [
       {
@@ -50875,6 +50875,42 @@ window.BENCHMARK_DATA = {
             "value": 44844,
             "unit": "ns",
             "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"evals_set\":false,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "acf0ff4a5b51b8b0411ee1270c2ecdd112f15fb1",
+          "message": "Merge pull request #51 from arup-group/dependabot/npm_and_yarn/browserslist-4.29.2\n\nchore(deps-dev): bump browserslist from 4.28.5 to 4.29.2",
+          "timestamp": "2026-09-29T10:37:08+02:00",
+          "tree_id": "071fc87de52d156505fbd0265e528ab9aee06b91",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/acf0ff4a5b51b8b0411ee1270c2ecdd112f15fb1"
+        },
+        "date": 1790671075960,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 286.50359712230215,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"samples\":10000,\"seconds\":5,\"time_tolerance\":0.05,\"overhead\":0,\"gcsample\":false,\"gctrial\":true,\"evals\":278,\"memory_tolerance\":0.01,\"evals_set\":false}"
+          },
+          {
+            "name": "fib/20",
+            "value": 35832,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"samples\":10000,\"seconds\":5,\"time_tolerance\":0.05,\"overhead\":0,\"gcsample\":false,\"gctrial\":true,\"evals\":1,\"memory_tolerance\":0.01,\"evals_set\":false}"
           }
         ]
       }
