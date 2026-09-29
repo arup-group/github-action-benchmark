@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790671108965,
+  "lastUpdate": 1790671111545,
   "entries": {
     "Rust Benchmark": [
       {
@@ -48360,6 +48360,44 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/797797d4ec9a71bce100a9cbfa7143868a6a89bf"
         },
         "date": 1790671100547,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 87.7929,
+            "range": "± 7.79765",
+            "unit": "ns",
+            "extra": "100 samples\n362 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 7.90616,
+            "range": "± 634.916",
+            "unit": "us",
+            "extra": "100 samples\n4 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "797797d4ec9a71bce100a9cbfa7143868a6a89bf",
+          "message": "Merge pull request #48 from arup-group/dependabot/github_actions/all_github-actions-31df092e2e\n\nchore(deps): bump actions/setup-java from 5 to 6 in the all_github-actions group across 1 directory",
+          "timestamp": "2026-09-29T10:37:47+02:00",
+          "tree_id": "62bed0a3e5066529c95170501b1da2a7adde5fab",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/797797d4ec9a71bce100a9cbfa7143868a6a89bf"
+        },
+        "date": 1790671111223,
         "tool": "catch2",
         "benches": [
           {
