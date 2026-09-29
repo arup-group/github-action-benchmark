@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790671087478,
+  "lastUpdate": 1790671089858,
   "entries": {
     "Rust Benchmark": [
       {
@@ -18653,6 +18653,48 @@ window.BENCHMARK_DATA = {
             "value": 39799,
             "unit": "ns/op\t         4.000 auxMetricUnits",
             "extra": "30145 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bf7c48e5846dea7ae6f16daee207f34fad3e5f1e",
+          "message": "Merge pull request #50 from arup-group/dependabot/npm_and_yarn/baseline-browser-mapping-2.11.26\n\nchore(deps-dev): bump baseline-browser-mapping from 2.10.42 to 2.11.26",
+          "timestamp": "2026-09-29T10:37:30+02:00",
+          "tree_id": "7001ed214198fffb18744f3fb46f4d44d67df991",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/bf7c48e5846dea7ae6f16daee207f34fad3e5f1e"
+        },
+        "date": 1790671082709,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 264.8,
+            "unit": "ns/op",
+            "extra": "4548208 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 32207,
+            "unit": "ns/op",
+            "extra": "37056 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 32167,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "37329 times\n4 procs"
           }
         ]
       }
