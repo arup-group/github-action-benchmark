@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791875132598,
+  "lastUpdate": 1791875135154,
   "entries": {
     "Rust Benchmark": [
       {
@@ -49331,6 +49331,44 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci 20",
             "value": 4.31309,
             "range": "± 131.834",
+            "unit": "us",
+            "extra": "100 samples\n6 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "799e1654b7dd15f3c171e92e46587b0e61998471",
+          "message": "Merge pull request #54 from arup-group/dependabot/npm_and_yarn/markdown-it-15.0.1\n\nchore(deps-dev): bump markdown-it from 15.0.0 to 15.0.1",
+          "timestamp": "2026-10-13T09:04:53+02:00",
+          "tree_id": "9317865a20608e85410f4d6e42befd39a6e6cced",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/799e1654b7dd15f3c171e92e46587b0e61998471"
+        },
+        "date": 1791875122221,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 51.9067,
+            "range": "± 2.32495",
+            "unit": "ns",
+            "extra": "100 samples\n346 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 4.29546,
+            "range": "± 184.348",
             "unit": "us",
             "extra": "100 samples\n6 iterations"
           }
