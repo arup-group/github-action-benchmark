@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791890596457,
+  "lastUpdate": 1791890613932,
   "entries": {
     "Rust Benchmark": [
       {
@@ -53285,6 +53285,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "fib/20",
             "value": 34577,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"samples\":10000,\"seconds\":5,\"time_tolerance\":0.05,\"overhead\":0,\"gcsample\":false,\"gctrial\":true,\"evals\":1,\"memory_tolerance\":0.01,\"evals_set\":false}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "67552686+pgValero@users.noreply.github.com",
+            "name": "pgValero",
+            "username": "pgValero"
+          },
+          "distinct": true,
+          "id": "6d7a479d6f534f8df1c4297ad637b1b7a782f95c",
+          "message": "chore(deps-dev): bump markdown-it from 15.0.1 to 15.0.2\n\nBumps [markdown-it](https://github.com/markdown-it/markdown-it) from 15.0.1 to 15.0.2.\n- [Changelog](https://github.com/markdown-it/markdown-it/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/markdown-it/markdown-it/compare/15.0.1...15.0.2)\n\n---\nupdated-dependencies:\n- dependency-name: markdown-it\n  dependency-version: 15.0.2\n  dependency-type: direct:development\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2026-10-13T13:22:35+02:00",
+          "tree_id": "754779963afd02a0a2186ac9bec8e3231479e4a5",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/6d7a479d6f534f8df1c4297ad637b1b7a782f95c"
+        },
+        "date": 1791890608918,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 303.89803921568625,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"samples\":10000,\"seconds\":5,\"time_tolerance\":0.05,\"overhead\":0,\"gcsample\":false,\"gctrial\":true,\"evals\":255,\"memory_tolerance\":0.01,\"evals_set\":false}"
+          },
+          {
+            "name": "fib/20",
+            "value": 44794,
             "unit": "ns",
             "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"samples\":10000,\"seconds\":5,\"time_tolerance\":0.05,\"overhead\":0,\"gcsample\":false,\"gctrial\":true,\"evals\":1,\"memory_tolerance\":0.01,\"evals_set\":false}"
           }
