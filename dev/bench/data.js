@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791875209410,
+  "lastUpdate": 1791875212853,
   "entries": {
     "Rust Benchmark": [
       {
@@ -60783,6 +60783,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "Fibonacci/Iterative/21",
             "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e9e6e53cac2a05f3631ada0e82688b11d61b1656",
+          "message": "Merge pull request #56 from arup-group/dependabot/npm_and_yarn/brace-expansion-1.1.21\n\nchore(deps-dev): bump brace-expansion from 1.1.16 to 1.1.21",
+          "timestamp": "2026-10-13T09:04:40+02:00",
+          "tree_id": "d21f737d27eb26d8bdaf910b350d0664580cd53e",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/e9e6e53cac2a05f3631ada0e82688b11d61b1656"
+        },
+        "date": 1791875197563,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "BenchFib10",
+            "value": 204,
+            "range": "± 5",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "BenchFib20",
+            "value": 25788,
+            "range": "± 68",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/20",
+            "value": 25801,
+            "range": "± 50",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/20",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/21",
+            "value": 41759,
+            "range": "± 90",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/21",
+            "value": 4,
             "range": "± 0",
             "unit": "ns/iter"
           }
