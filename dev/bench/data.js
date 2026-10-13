@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791875149278,
+  "lastUpdate": 1791875151791,
   "entries": {
     "Rust Benchmark": [
       {
@@ -29110,6 +29110,44 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/799e1654b7dd15f3c171e92e46587b0e61998471"
         },
         "date": 1791875119228,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "fib(10)",
+            "value": 1899701,
+            "range": "±0.66%",
+            "unit": "ops/sec",
+            "extra": "95 samples"
+          },
+          {
+            "name": "fib(20)",
+            "value": 15719,
+            "range": "±0.29%",
+            "unit": "ops/sec",
+            "extra": "95 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "799e1654b7dd15f3c171e92e46587b0e61998471",
+          "message": "Merge pull request #54 from arup-group/dependabot/npm_and_yarn/markdown-it-15.0.1\n\nchore(deps-dev): bump markdown-it from 15.0.0 to 15.0.1",
+          "timestamp": "2026-10-13T09:04:53+02:00",
+          "tree_id": "9317865a20608e85410f4d6e42befd39a6e6cced",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/799e1654b7dd15f3c171e92e46587b0e61998471"
+        },
+        "date": 1791875130219,
         "tool": "benchmarkjs",
         "benches": [
           {
