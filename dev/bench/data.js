@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791875128208,
+  "lastUpdate": 1791875130613,
   "entries": {
     "Rust Benchmark": [
       {
@@ -18905,6 +18905,48 @@ window.BENCHMARK_DATA = {
             "value": 37372,
             "unit": "ns/op\t         4.000 auxMetricUnits",
             "extra": "31246 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "799e1654b7dd15f3c171e92e46587b0e61998471",
+          "message": "Merge pull request #54 from arup-group/dependabot/npm_and_yarn/markdown-it-15.0.1\n\nchore(deps-dev): bump markdown-it from 15.0.0 to 15.0.1",
+          "timestamp": "2026-10-13T09:04:53+02:00",
+          "tree_id": "9317865a20608e85410f4d6e42befd39a6e6cced",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/799e1654b7dd15f3c171e92e46587b0e61998471"
+        },
+        "date": 1791875124779,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 308.1,
+            "unit": "ns/op",
+            "extra": "4018266 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 38854,
+            "unit": "ns/op",
+            "extra": "30541 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 38619,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "30112 times\n4 procs"
           }
         ]
       }
