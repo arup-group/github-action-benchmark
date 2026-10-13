@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791890846450,
+  "lastUpdate": 1791890848875,
   "entries": {
     "Rust Benchmark": [
       {
@@ -19073,6 +19073,48 @@ window.BENCHMARK_DATA = {
             "value": 34363,
             "unit": "ns/op\t         4.000 auxMetricUnits",
             "extra": "35031 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "67552686+pgValero@users.noreply.github.com",
+            "name": "pgValero",
+            "username": "pgValero"
+          },
+          "distinct": true,
+          "id": "b9854d0af7364901497465635901fec5c6c32861",
+          "message": "chore(deps): bump the all_npm group across 1 directory with 10 updates\n\nBumps the all_npm group with 10 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [zod](https://github.com/colinhacks/zod) | `4.4.3` | `4.6.5` |\n| [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) | `26.3.0` | `26.6.4` |\n| [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin) | `8.68.0` | `8.71.1` |\n| [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/parser) | `8.68.0` | `8.71.1` |\n| [acorn](https://github.com/acornjs/acorn) | `8.18.0` | `8.19.0` |\n| [eslint](https://github.com/eslint/eslint) | `10.9.1` | `10.12.0` |\n| [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest) | `29.16.1` | `29.16.6` |\n| [jest](https://github.com/jestjs/jest/tree/HEAD/packages/jest) | `30.4.2` | `30.5.2` |\n| [prettier](https://github.com/prettier/prettier) | `3.9.6` | `3.9.9` |\n| [ts-jest](https://github.com/kulshekhar/ts-jest) | `29.4.12` | `29.4.14` |\n\n\n\nUpdates `zod` from 4.4.3 to 4.6.5\n- [Release notes](https://github.com/colinhacks/zod/releases)\n- [Commits](https://github.com/colinhacks/zod/compare/v4.4.3...v4.6.5)\n\nUpdates `@types/node` from 26.3.0 to 26.6.4\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\nUpdates `@typescript-eslint/eslint-plugin` from 8.68.0 to 8.71.1\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.71.1/packages/eslint-plugin)\n\nUpdates `@typescript-eslint/parser` from 8.68.0 to 8.71.1\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/parser/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.71.1/packages/parser)\n\nUpdates `acorn` from 8.18.0 to 8.19.0\n- [Commits](https://github.com/acornjs/acorn/compare/8.18.0...8.19.0)\n\nUpdates `eslint` from 10.9.1 to 10.12.0\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Commits](https://github.com/eslint/eslint/compare/v10.9.1...v10.12.0)\n\nUpdates `eslint-plugin-jest` from 29.16.1 to 29.16.6\n- [Release notes](https://github.com/jest-community/eslint-plugin-jest/releases)\n- [Changelog](https://github.com/jest-community/eslint-plugin-jest/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/jest-community/eslint-plugin-jest/compare/v29.16.1...v29.16.6)\n\nUpdates `jest` from 30.4.2 to 30.5.2\n- [Release notes](https://github.com/jestjs/jest/releases)\n- [Changelog](https://github.com/jestjs/jest/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/jestjs/jest/commits/v30.5.2/packages/jest)\n\nUpdates `prettier` from 3.9.6 to 3.9.9\n- [Release notes](https://github.com/prettier/prettier/releases)\n- [Changelog](https://github.com/prettier/prettier/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/prettier/prettier/compare/3.9.6...3.9.9)\n\nUpdates `ts-jest` from 29.4.12 to 29.4.14\n- [Release notes](https://github.com/kulshekhar/ts-jest/releases)\n- [Changelog](https://github.com/kulshekhar/ts-jest/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/kulshekhar/ts-jest/compare/v29.4.12...v29.4.14)\n\n---\nupdated-dependencies:\n- dependency-name: zod\n  dependency-version: 4.6.5\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: all_npm\n- dependency-name: \"@types/node\"\n  dependency-version: 26.6.4\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: all_npm\n- dependency-name: \"@typescript-eslint/eslint-plugin\"\n  dependency-version: 8.71.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: all_npm\n- dependency-name: \"@typescript-eslint/parser\"\n  dependency-version: 8.71.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: all_npm\n- dependency-name: acorn\n  dependency-version: 8.19.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: all_npm\n- dependency-name: eslint\n  dependency-version: 10.12.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: all_npm\n- dependency-name: eslint-plugin-jest\n  dependency-version: 29.16.6\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: all_npm\n- dependency-name: jest\n  dependency-version: 30.5.2\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: all_npm\n- dependency-name: prettier\n  dependency-version: 3.9.9\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: all_npm\n- dependency-name: ts-jest\n  dependency-version: 29.4.14\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: all_npm\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2026-10-13T13:26:47+02:00",
+          "tree_id": "f7fcf6bb441d88feba47e8fba7a805cb3611a63f",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/b9854d0af7364901497465635901fec5c6c32861"
+        },
+        "date": 1791890842702,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 300.1,
+            "unit": "ns/op",
+            "extra": "4210026 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 37419,
+            "unit": "ns/op",
+            "extra": "32122 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 38393,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "30859 times\n4 procs"
           }
         ]
       }
