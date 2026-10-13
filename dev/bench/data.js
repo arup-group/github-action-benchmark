@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791875205556,
+  "lastUpdate": 1791875209410,
   "entries": {
     "Rust Benchmark": [
       {
@@ -60688,6 +60688,66 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/b56e20238903ddb5b2e3fd0ec221c7eb3b215848"
         },
         "date": 1791875198559,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "BenchFib10",
+            "value": 177,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "BenchFib20",
+            "value": 22342,
+            "range": "± 663",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/20",
+            "value": 22323,
+            "range": "± 52",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/20",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/21",
+            "value": 36131,
+            "range": "± 144",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/21",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b56e20238903ddb5b2e3fd0ec221c7eb3b215848",
+          "message": "Merge pull request #55 from arup-group/dependabot/npm_and_yarn/js-yaml-3.15.2\n\nchore(deps): bump js-yaml from 3.15.1 to 3.15.2",
+          "timestamp": "2026-10-13T09:04:43+02:00",
+          "tree_id": "16e343f6c0043317e94c191f466fecc950364079",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/b56e20238903ddb5b2e3fd0ec221c7eb3b215848"
+        },
+        "date": 1791875209124,
         "tool": "cargo",
         "benches": [
           {
