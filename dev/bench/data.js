@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791875186748,
+  "lastUpdate": 1791875189428,
   "entries": {
     "Rust Benchmark": [
       {
@@ -56007,6 +56007,42 @@ window.BENCHMARK_DATA = {
             "value": 46.12539837360382,
             "unit": "ns",
             "range": "± 0.7978375896005043"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e9e6e53cac2a05f3631ada0e82688b11d61b1656",
+          "message": "Merge pull request #56 from arup-group/dependabot/npm_and_yarn/brace-expansion-1.1.21\n\nchore(deps-dev): bump brace-expansion from 1.1.16 to 1.1.21",
+          "timestamp": "2026-10-13T09:04:40+02:00",
+          "tree_id": "d21f737d27eb26d8bdaf910b350d0664580cd53e",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/e9e6e53cac2a05f3631ada0e82688b11d61b1656"
+        },
+        "date": 1791875181504,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 23.913586093829228,
+            "unit": "ns",
+            "range": "± 0.03930476813233481"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 48.996816942325005,
+            "unit": "ns",
+            "range": "± 0.04034083974687384"
           }
         ]
       }
