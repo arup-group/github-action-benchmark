@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791875163994,
+  "lastUpdate": 1791875166962,
   "entries": {
     "Rust Benchmark": [
       {
@@ -43933,6 +43933,42 @@ window.BENCHMARK_DATA = {
             "value": 19204.657990829826,
             "unit": "ns/iter",
             "extra": "iterations: 36423\ncpu: 19203.092606320184 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b56e20238903ddb5b2e3fd0ec221c7eb3b215848",
+          "message": "Merge pull request #55 from arup-group/dependabot/npm_and_yarn/js-yaml-3.15.2\n\nchore(deps): bump js-yaml from 3.15.1 to 3.15.2",
+          "timestamp": "2026-10-13T09:04:43+02:00",
+          "tree_id": "16e343f6c0043317e94c191f466fecc950364079",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/b56e20238903ddb5b2e3fd0ec221c7eb3b215848"
+        },
+        "date": 1791875161513,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 177.17006403010967,
+            "unit": "ns/iter",
+            "extra": "iterations: 3946737\ncpu: 177.16193883706975 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 22310.196924745822,
+            "unit": "ns/iter",
+            "extra": "iterations: 31347\ncpu: 22309.765783009538 ns\nthreads: 1"
           }
         ]
       }
