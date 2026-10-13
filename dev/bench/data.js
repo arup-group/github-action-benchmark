@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791875142095,
+  "lastUpdate": 1791875144155,
   "entries": {
     "Rust Benchmark": [
       {
@@ -52532,6 +52532,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/b56e20238903ddb5b2e3fd0ec221c7eb3b215848"
         },
         "date": 1791875136271,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 302.8048780487805,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"samples\":10000,\"seconds\":5,\"time_tolerance\":0.05,\"overhead\":0,\"gcsample\":false,\"gctrial\":true,\"evals\":246,\"memory_tolerance\":0.01,\"evals_set\":false}"
+          },
+          {
+            "name": "fib/20",
+            "value": 44994,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"samples\":10000,\"seconds\":5,\"time_tolerance\":0.05,\"overhead\":0,\"gcsample\":false,\"gctrial\":true,\"evals\":1,\"memory_tolerance\":0.01,\"evals_set\":false}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b56e20238903ddb5b2e3fd0ec221c7eb3b215848",
+          "message": "Merge pull request #55 from arup-group/dependabot/npm_and_yarn/js-yaml-3.15.2\n\nchore(deps): bump js-yaml from 3.15.1 to 3.15.2",
+          "timestamp": "2026-10-13T09:04:43+02:00",
+          "tree_id": "16e343f6c0043317e94c191f466fecc950364079",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/b56e20238903ddb5b2e3fd0ec221c7eb3b215848"
+        },
+        "date": 1791875143875,
         "tool": "julia",
         "benches": [
           {
