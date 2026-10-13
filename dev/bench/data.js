@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791875137335,
+  "lastUpdate": 1791875139571,
   "entries": {
     "Rust Benchmark": [
       {
@@ -49409,6 +49409,44 @@ window.BENCHMARK_DATA = {
             "range": "± 184.348",
             "unit": "us",
             "extra": "100 samples\n6 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "47802+renefritze@users.noreply.github.com",
+            "name": "René Fritze",
+            "username": "renefritze"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b56e20238903ddb5b2e3fd0ec221c7eb3b215848",
+          "message": "Merge pull request #55 from arup-group/dependabot/npm_and_yarn/js-yaml-3.15.2\n\nchore(deps): bump js-yaml from 3.15.1 to 3.15.2",
+          "timestamp": "2026-10-13T09:04:43+02:00",
+          "tree_id": "16e343f6c0043317e94c191f466fecc950364079",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/b56e20238903ddb5b2e3fd0ec221c7eb3b215848"
+        },
+        "date": 1791875121308,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 92.8307,
+            "range": "± 12.8649",
+            "unit": "ns",
+            "extra": "100 samples\n371 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 8.71036,
+            "range": "± 627.776",
+            "unit": "us",
+            "extra": "100 samples\n4 iterations"
           }
         ]
       }
