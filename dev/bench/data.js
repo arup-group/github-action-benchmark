@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791890593550,
+  "lastUpdate": 1791890596457,
   "entries": {
     "Rust Benchmark": [
       {
@@ -49971,6 +49971,44 @@ window.BENCHMARK_DATA = {
             "range": "± 131.834",
             "unit": "us",
             "extra": "100 samples\n6 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "67552686+pgValero@users.noreply.github.com",
+            "name": "pgValero",
+            "username": "pgValero"
+          },
+          "distinct": true,
+          "id": "6d7a479d6f534f8df1c4297ad637b1b7a782f95c",
+          "message": "chore(deps-dev): bump markdown-it from 15.0.1 to 15.0.2\n\nBumps [markdown-it](https://github.com/markdown-it/markdown-it) from 15.0.1 to 15.0.2.\n- [Changelog](https://github.com/markdown-it/markdown-it/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/markdown-it/markdown-it/compare/15.0.1...15.0.2)\n\n---\nupdated-dependencies:\n- dependency-name: markdown-it\n  dependency-version: 15.0.2\n  dependency-type: direct:development\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2026-10-13T13:22:35+02:00",
+          "tree_id": "754779963afd02a0a2186ac9bec8e3231479e4a5",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/6d7a479d6f534f8df1c4297ad637b1b7a782f95c"
+        },
+        "date": 1791890590813,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 96.3216,
+            "range": "± 3.50905",
+            "unit": "ns",
+            "extra": "100 samples\n270 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 10.12,
+            "range": "± 319.645",
+            "unit": "us",
+            "extra": "100 samples\n3 iterations"
           }
         ]
       }
