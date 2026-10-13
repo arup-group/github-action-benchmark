@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791890588746,
+  "lastUpdate": 1791890590935,
   "entries": {
     "Rust Benchmark": [
       {
@@ -19012,6 +19012,48 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/6d7a479d6f534f8df1c4297ad637b1b7a782f95c"
         },
         "date": 1791890583384,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 274.7,
+            "unit": "ns/op",
+            "extra": "4400454 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 34340,
+            "unit": "ns/op",
+            "extra": "35401 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 34363,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "35031 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "67552686+pgValero@users.noreply.github.com",
+            "name": "pgValero",
+            "username": "pgValero"
+          },
+          "distinct": true,
+          "id": "6d7a479d6f534f8df1c4297ad637b1b7a782f95c",
+          "message": "chore(deps-dev): bump markdown-it from 15.0.1 to 15.0.2\n\nBumps [markdown-it](https://github.com/markdown-it/markdown-it) from 15.0.1 to 15.0.2.\n- [Changelog](https://github.com/markdown-it/markdown-it/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/markdown-it/markdown-it/compare/15.0.1...15.0.2)\n\n---\nupdated-dependencies:\n- dependency-name: markdown-it\n  dependency-version: 15.0.2\n  dependency-type: direct:development\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2026-10-13T13:22:35+02:00",
+          "tree_id": "754779963afd02a0a2186ac9bec8e3231479e4a5",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/6d7a479d6f534f8df1c4297ad637b1b7a782f95c"
+        },
+        "date": 1791890590674,
         "tool": "go",
         "benches": [
           {
