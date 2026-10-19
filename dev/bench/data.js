@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792395956882,
+  "lastUpdate": 1792395959398,
   "entries": {
     "Rust Benchmark": [
       {
@@ -54032,6 +54032,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/1f9c60b21af2a5397b4b1eafc8be321b0b9c3fb1"
         },
         "date": 1792395950364,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fib/10",
+            "value": 321.0888888888889,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"samples\":10000,\"seconds\":5,\"time_tolerance\":0.05,\"overhead\":0,\"gcsample\":false,\"gctrial\":true,\"evals\":315,\"memory_tolerance\":0.01,\"evals_set\":false}"
+          },
+          {
+            "name": "fib/20",
+            "value": 35731,
+            "unit": "ns",
+            "extra": "gctime=0\nmemory=0\nallocs=0\nparams={\"samples\":10000,\"seconds\":5,\"time_tolerance\":0.05,\"overhead\":0,\"gcsample\":false,\"gctrial\":true,\"evals\":1,\"memory_tolerance\":0.01,\"evals_set\":false}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "67552686+pgValero@users.noreply.github.com",
+            "name": "pgValero",
+            "username": "pgValero"
+          },
+          "distinct": true,
+          "id": "1f9c60b21af2a5397b4b1eafc8be321b0b9c3fb1",
+          "message": "chore(deps-dev): bump handlebars from 4.7.9 to 4.7.10\n\nBumps [handlebars](https://github.com/handlebars-lang/handlebars.js) from 4.7.9 to 4.7.10.\n- [Release notes](https://github.com/handlebars-lang/handlebars.js/releases)\n- [Changelog](https://github.com/handlebars-lang/handlebars.js/blob/v4.7.10/release-notes.md)\n- [Commits](https://github.com/handlebars-lang/handlebars.js/compare/v4.7.9...v4.7.10)\n\n---\nupdated-dependencies:\n- dependency-name: handlebars\n  dependency-version: 4.7.10\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2026-10-19T09:44:58+02:00",
+          "tree_id": "042685cfc57be2a72e1ae15e3c1a25f1d2bc5e54",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/1f9c60b21af2a5397b4b1eafc8be321b0b9c3fb1"
+        },
+        "date": 1792395958918,
         "tool": "julia",
         "benches": [
           {
