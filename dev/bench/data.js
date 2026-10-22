@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792655824688,
+  "lastUpdate": 1792655827564,
   "entries": {
     "Rust Benchmark": [
       {
@@ -44794,6 +44794,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/1207f4430c6e7a3066c4eac08fa92dd57b5dd93b"
         },
         "date": 1792655817969,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 111.43516807623631,
+            "unit": "ns/iter",
+            "extra": "iterations: 6239966\ncpu: 111.4170309581815 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 14110.804151876504,
+            "unit": "ns/iter",
+            "extra": "iterations: 50146\ncpu: 14107.17243648546 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "67552686+pgValero@users.noreply.github.com",
+            "name": "pgValero",
+            "username": "pgValero"
+          },
+          "distinct": true,
+          "id": "1207f4430c6e7a3066c4eac08fa92dd57b5dd93b",
+          "message": "chore(deps-dev): bump markdown-it from 15.0.2 to 15.0.3\n\nBumps [markdown-it](https://github.com/markdown-it/markdown-it) from 15.0.2 to 15.0.3.\n- [Changelog](https://github.com/markdown-it/markdown-it/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/markdown-it/markdown-it/compare/15.0.2...15.0.3)\n\n---\nupdated-dependencies:\n- dependency-name: markdown-it\n  dependency-version: 15.0.3\n  dependency-type: direct:development\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2026-10-22T09:56:43+02:00",
+          "tree_id": "33deae76aabee6f0edac24cd84a25d020b823958",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/1207f4430c6e7a3066c4eac08fa92dd57b5dd93b"
+        },
+        "date": 1792655827104,
         "tool": "googlecpp",
         "benches": [
           {
