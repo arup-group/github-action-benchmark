@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792655891742,
+  "lastUpdate": 1792655919416,
   "entries": {
     "Rust Benchmark": [
       {
@@ -63110,6 +63110,66 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci/Recursive/21",
             "value": 39993,
             "range": "± 98",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/21",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "67552686+pgValero@users.noreply.github.com",
+            "name": "pgValero",
+            "username": "pgValero"
+          },
+          "distinct": true,
+          "id": "1207f4430c6e7a3066c4eac08fa92dd57b5dd93b",
+          "message": "chore(deps-dev): bump markdown-it from 15.0.2 to 15.0.3\n\nBumps [markdown-it](https://github.com/markdown-it/markdown-it) from 15.0.2 to 15.0.3.\n- [Changelog](https://github.com/markdown-it/markdown-it/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/markdown-it/markdown-it/compare/15.0.2...15.0.3)\n\n---\nupdated-dependencies:\n- dependency-name: markdown-it\n  dependency-version: 15.0.3\n  dependency-type: direct:development\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2026-10-22T09:56:43+02:00",
+          "tree_id": "33deae76aabee6f0edac24cd84a25d020b823958",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/1207f4430c6e7a3066c4eac08fa92dd57b5dd93b"
+        },
+        "date": 1792655913494,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "BenchFib10",
+            "value": 131,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "BenchFib20",
+            "value": 16196,
+            "range": "± 348",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/20",
+            "value": 16194,
+            "range": "± 176",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/20",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/21",
+            "value": 26221,
+            "range": "± 39",
             "unit": "ns/iter"
           },
           {
