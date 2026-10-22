@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792655888999,
+  "lastUpdate": 1792655891742,
   "entries": {
     "Rust Benchmark": [
       {
@@ -57726,6 +57726,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/1207f4430c6e7a3066c4eac08fa92dd57b5dd93b"
         },
         "date": 1792655881471,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 23.020891135931016,
+            "unit": "ns",
+            "range": "± 0.24367148140842523"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 40.743273333708444,
+            "unit": "ns",
+            "range": "± 0.6218437225760073"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "67552686+pgValero@users.noreply.github.com",
+            "name": "pgValero",
+            "username": "pgValero"
+          },
+          "distinct": true,
+          "id": "1207f4430c6e7a3066c4eac08fa92dd57b5dd93b",
+          "message": "chore(deps-dev): bump markdown-it from 15.0.2 to 15.0.3\n\nBumps [markdown-it](https://github.com/markdown-it/markdown-it) from 15.0.2 to 15.0.3.\n- [Changelog](https://github.com/markdown-it/markdown-it/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/markdown-it/markdown-it/compare/15.0.2...15.0.3)\n\n---\nupdated-dependencies:\n- dependency-name: markdown-it\n  dependency-version: 15.0.3\n  dependency-type: direct:development\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2026-10-22T09:56:43+02:00",
+          "tree_id": "33deae76aabee6f0edac24cd84a25d020b823958",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/1207f4430c6e7a3066c4eac08fa92dd57b5dd93b"
+        },
+        "date": 1792655891100,
         "tool": "benchmarkdotnet",
         "benches": [
           {
