@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792655827564,
+  "lastUpdate": 1792655836536,
   "entries": {
     "Rust Benchmark": [
       {
@@ -29605,6 +29605,44 @@ window.BENCHMARK_DATA = {
             "range": "±0.43%",
             "unit": "ops/sec",
             "extra": "102 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "67552686+pgValero@users.noreply.github.com",
+            "name": "pgValero",
+            "username": "pgValero"
+          },
+          "distinct": true,
+          "id": "1207f4430c6e7a3066c4eac08fa92dd57b5dd93b",
+          "message": "chore(deps-dev): bump markdown-it from 15.0.2 to 15.0.3\n\nBumps [markdown-it](https://github.com/markdown-it/markdown-it) from 15.0.2 to 15.0.3.\n- [Changelog](https://github.com/markdown-it/markdown-it/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/markdown-it/markdown-it/compare/15.0.2...15.0.3)\n\n---\nupdated-dependencies:\n- dependency-name: markdown-it\n  dependency-version: 15.0.3\n  dependency-type: direct:development\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2026-10-22T09:56:43+02:00",
+          "tree_id": "33deae76aabee6f0edac24cd84a25d020b823958",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/1207f4430c6e7a3066c4eac08fa92dd57b5dd93b"
+        },
+        "date": 1792655829552,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "fib(10)",
+            "value": 1833265,
+            "range": "±0.71%",
+            "unit": "ops/sec",
+            "extra": "95 samples"
+          },
+          {
+            "name": "fib(20)",
+            "value": 14694,
+            "range": "±2.13%",
+            "unit": "ops/sec",
+            "extra": "97 samples"
           }
         ]
       }
