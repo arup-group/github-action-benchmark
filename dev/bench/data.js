@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793879132846,
+  "lastUpdate": 1793879145655,
   "entries": {
     "Rust Benchmark": [
       {
@@ -59059,6 +59059,42 @@ window.BENCHMARK_DATA = {
             "value": 43.04803807338079,
             "unit": "ns",
             "range": "± 0.5503608095676504"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "67552686+pgValero@users.noreply.github.com",
+            "name": "pgValero",
+            "username": "pgValero"
+          },
+          "distinct": true,
+          "id": "f9361fc43f5a6ab640a9d2648ce181a4b8a3a7f3",
+          "message": "chore(deps): bump undici from 7.30.1 to 7.30.2\n\nBumps [undici](https://github.com/nodejs/undici) from 7.30.1 to 7.30.2.\n- [Release notes](https://github.com/nodejs/undici/releases)\n- [Commits](https://github.com/nodejs/undici/compare/v7.30.1...v7.30.2)\n\n---\nupdated-dependencies:\n- dependency-name: undici\n  dependency-version: 7.30.2\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2026-11-05T12:44:29+01:00",
+          "tree_id": "6028a3b8ae85b1fe34fe41e8ff476939ee98ee41",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/f9361fc43f5a6ab640a9d2648ce181a4b8a3a7f3"
+        },
+        "date": 1793879138117,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 21.62510622938474,
+            "unit": "ns",
+            "range": "± 0.42632814358722404"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 40.73083037137985,
+            "unit": "ns",
+            "range": "± 0.5534063675491211"
           }
         ]
       }
