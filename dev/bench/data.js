@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793879174878,
+  "lastUpdate": 1793879177231,
   "entries": {
     "Rust Benchmark": [
       {
@@ -64856,6 +64856,66 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/f9361fc43f5a6ab640a9d2648ce181a4b8a3a7f3"
         },
         "date": 1793879168704,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "BenchFib10",
+            "value": 108,
+            "range": "± 5",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "BenchFib20",
+            "value": 14182,
+            "range": "± 938",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/20",
+            "value": 13991,
+            "range": "± 1426",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/20",
+            "value": 1,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Recursive/21",
+            "value": 21859,
+            "range": "± 1180",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "Fibonacci/Iterative/21",
+            "value": 1,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "67552686+pgValero@users.noreply.github.com",
+            "name": "pgValero",
+            "username": "pgValero"
+          },
+          "distinct": true,
+          "id": "f9361fc43f5a6ab640a9d2648ce181a4b8a3a7f3",
+          "message": "chore(deps): bump undici from 7.30.1 to 7.30.2\n\nBumps [undici](https://github.com/nodejs/undici) from 7.30.1 to 7.30.2.\n- [Release notes](https://github.com/nodejs/undici/releases)\n- [Commits](https://github.com/nodejs/undici/compare/v7.30.1...v7.30.2)\n\n---\nupdated-dependencies:\n- dependency-name: undici\n  dependency-version: 7.30.2\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2026-11-05T12:44:29+01:00",
+          "tree_id": "6028a3b8ae85b1fe34fe41e8ff476939ee98ee41",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/f9361fc43f5a6ab640a9d2648ce181a4b8a3a7f3"
+        },
+        "date": 1793879176796,
         "tool": "cargo",
         "benches": [
           {
