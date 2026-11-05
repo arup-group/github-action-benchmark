@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793878900536,
+  "lastUpdate": 1793878903073,
   "entries": {
     "Rust Benchmark": [
       {
@@ -45323,6 +45323,42 @@ window.BENCHMARK_DATA = {
             "value": 14110.804151876504,
             "unit": "ns/iter",
             "extra": "iterations: 50146\ncpu: 14107.17243648546 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "67552686+pgValero@users.noreply.github.com",
+            "name": "pgValero",
+            "username": "pgValero"
+          },
+          "distinct": true,
+          "id": "00ada8f0fd8515c3cc52cb519f320b94685787d8",
+          "message": "chore(deps): bump undici from 7.30.0 to 7.30.1\n\nBumps [undici](https://github.com/nodejs/undici) from 7.30.0 to 7.30.1.\n- [Release notes](https://github.com/nodejs/undici/releases)\n- [Commits](https://github.com/nodejs/undici/compare/v7.30.0...v7.30.1)\n\n---\nupdated-dependencies:\n- dependency-name: undici\n  dependency-version: 7.30.1\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2026-11-05T12:40:26+01:00",
+          "tree_id": "026da588ccb652e17b1e9ba8c3c96a9caaca30e6",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/00ada8f0fd8515c3cc52cb519f320b94685787d8"
+        },
+        "date": 1793878895855,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 180.5674687157719,
+            "unit": "ns/iter",
+            "extra": "iterations: 3847146\ncpu: 180.55479334550859 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 22406.515991948138,
+            "unit": "ns/iter",
+            "extra": "iterations: 31297\ncpu: 22394.9617535227 ns\nthreads: 1"
           }
         ]
       }
