@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793879090550,
+  "lastUpdate": 1793879093154,
   "entries": {
     "Rust Benchmark": [
       {
@@ -45490,6 +45490,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/f9361fc43f5a6ab640a9d2648ce181a4b8a3a7f3"
         },
         "date": 1793879084538,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 108.04879021080998,
+            "unit": "ns/iter",
+            "extra": "iterations: 6446867\ncpu: 108.04569351283347 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 13630.463723967481,
+            "unit": "ns/iter",
+            "extra": "iterations: 50226\ncpu: 13629.987138135624 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "67552686+pgValero@users.noreply.github.com",
+            "name": "pgValero",
+            "username": "pgValero"
+          },
+          "distinct": true,
+          "id": "f9361fc43f5a6ab640a9d2648ce181a4b8a3a7f3",
+          "message": "chore(deps): bump undici from 7.30.1 to 7.30.2\n\nBumps [undici](https://github.com/nodejs/undici) from 7.30.1 to 7.30.2.\n- [Release notes](https://github.com/nodejs/undici/releases)\n- [Commits](https://github.com/nodejs/undici/compare/v7.30.1...v7.30.2)\n\n---\nupdated-dependencies:\n- dependency-name: undici\n  dependency-version: 7.30.2\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2026-11-05T12:44:29+01:00",
+          "tree_id": "6028a3b8ae85b1fe34fe41e8ff476939ee98ee41",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/f9361fc43f5a6ab640a9d2648ce181a4b8a3a7f3"
+        },
+        "date": 1793879092752,
         "tool": "googlecpp",
         "benches": [
           {
