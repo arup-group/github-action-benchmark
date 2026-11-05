@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793878889019,
+  "lastUpdate": 1793878891446,
   "entries": {
     "Rust Benchmark": [
       {
@@ -51169,6 +51169,44 @@ window.BENCHMARK_DATA = {
             "range": "± 295.567",
             "unit": "us",
             "extra": "100 samples\n5 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "67552686+pgValero@users.noreply.github.com",
+            "name": "pgValero",
+            "username": "pgValero"
+          },
+          "distinct": true,
+          "id": "7169c9e7e1fc329f7b38685639719712cf0fbfb0",
+          "message": "chore(deps): bump the all_npm group across 1 directory with 9 updates\n\nBumps the all_npm group with 9 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [zod](https://github.com/colinhacks/zod) | `4.6.5` | `4.6.7` |\n| [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) | `26.6.4` | `26.6.5` |\n| [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin) | `8.71.1` | `8.72.0` |\n| [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/parser) | `8.71.1` | `8.72.0` |\n| [eslint](https://github.com/eslint/eslint) | `10.12.0` | `10.13.0` |\n| [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest) | `29.16.6` | `29.17.0` |\n| [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) | `5.5.6` | `5.5.7` |\n| [prettier](https://github.com/prettier/prettier) | `3.9.9` | `3.9.10` |\n| [ts-jest](https://github.com/kulshekhar/ts-jest) | `29.4.14` | `29.4.15` |\n\n\n\nUpdates `zod` from 4.6.5 to 4.6.7\n- [Release notes](https://github.com/colinhacks/zod/releases)\n- [Commits](https://github.com/colinhacks/zod/compare/v4.6.5...v4.6.7)\n\nUpdates `@types/node` from 26.6.4 to 26.6.5\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\nUpdates `@typescript-eslint/eslint-plugin` from 8.71.1 to 8.72.0\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.72.0/packages/eslint-plugin)\n\nUpdates `@typescript-eslint/parser` from 8.71.1 to 8.72.0\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/parser/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.72.0/packages/parser)\n\nUpdates `eslint` from 10.12.0 to 10.13.0\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Commits](https://github.com/eslint/eslint/compare/v10.12.0...v10.13.0)\n\nUpdates `eslint-plugin-jest` from 29.16.6 to 29.17.0\n- [Release notes](https://github.com/jest-community/eslint-plugin-jest/releases)\n- [Changelog](https://github.com/jest-community/eslint-plugin-jest/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/jest-community/eslint-plugin-jest/compare/v29.16.6...v29.17.0)\n\nUpdates `eslint-plugin-prettier` from 5.5.6 to 5.5.7\n- [Release notes](https://github.com/prettier/eslint-plugin-prettier/releases)\n- [Changelog](https://github.com/prettier/eslint-plugin-prettier/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/prettier/eslint-plugin-prettier/compare/v5.5.6...v5.5.7)\n\nUpdates `prettier` from 3.9.9 to 3.9.10\n- [Release notes](https://github.com/prettier/prettier/releases)\n- [Changelog](https://github.com/prettier/prettier/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/prettier/prettier/compare/3.9.9...3.9.10)\n\nUpdates `ts-jest` from 29.4.14 to 29.4.15\n- [Release notes](https://github.com/kulshekhar/ts-jest/releases)\n- [Changelog](https://github.com/kulshekhar/ts-jest/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/kulshekhar/ts-jest/compare/v29.4.14...v29.4.15)\n\n---\nupdated-dependencies:\n- dependency-name: zod\n  dependency-version: 4.6.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: all_npm\n- dependency-name: \"@types/node\"\n  dependency-version: 26.6.5\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: all_npm\n- dependency-name: \"@typescript-eslint/eslint-plugin\"\n  dependency-version: 8.72.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: all_npm\n- dependency-name: \"@typescript-eslint/parser\"\n  dependency-version: 8.72.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: all_npm\n- dependency-name: eslint\n  dependency-version: 10.13.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: all_npm\n- dependency-name: eslint-plugin-jest\n  dependency-version: 29.17.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: all_npm\n- dependency-name: eslint-plugin-prettier\n  dependency-version: 5.5.7\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: all_npm\n- dependency-name: prettier\n  dependency-version: 3.9.10\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: all_npm\n- dependency-name: ts-jest\n  dependency-version: 29.4.15\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: all_npm\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2026-11-05T12:40:49+01:00",
+          "tree_id": "c1c519838688f3153a812229c0d0d1543bcbbc2e",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/7169c9e7e1fc329f7b38685639719712cf0fbfb0"
+        },
+        "date": 1793878882293,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 92.4454,
+            "range": "± 2.96037",
+            "unit": "ns",
+            "extra": "100 samples\n284 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 8.97554,
+            "range": "± 604.254",
+            "unit": "us",
+            "extra": "100 samples\n3 iterations"
           }
         ]
       }
