@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793879112484,
+  "lastUpdate": 1793879115015,
   "entries": {
     "Rust Benchmark": [
       {
@@ -51766,6 +51766,44 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/f9361fc43f5a6ab640a9d2648ce181a4b8a3a7f3"
         },
         "date": 1793879104923,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 93.2757,
+            "range": "± 3.00053",
+            "unit": "ns",
+            "extra": "100 samples\n276 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 8.90533,
+            "range": "± 306.049",
+            "unit": "us",
+            "extra": "100 samples\n3 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "67552686+pgValero@users.noreply.github.com",
+            "name": "pgValero",
+            "username": "pgValero"
+          },
+          "distinct": true,
+          "id": "f9361fc43f5a6ab640a9d2648ce181a4b8a3a7f3",
+          "message": "chore(deps): bump undici from 7.30.1 to 7.30.2\n\nBumps [undici](https://github.com/nodejs/undici) from 7.30.1 to 7.30.2.\n- [Release notes](https://github.com/nodejs/undici/releases)\n- [Commits](https://github.com/nodejs/undici/compare/v7.30.1...v7.30.2)\n\n---\nupdated-dependencies:\n- dependency-name: undici\n  dependency-version: 7.30.2\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2026-11-05T12:44:29+01:00",
+          "tree_id": "6028a3b8ae85b1fe34fe41e8ff476939ee98ee41",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/f9361fc43f5a6ab640a9d2648ce181a4b8a3a7f3"
+        },
+        "date": 1793879114538,
         "tool": "catch2",
         "benches": [
           {
