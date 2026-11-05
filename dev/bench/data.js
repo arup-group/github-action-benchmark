@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793878863708,
+  "lastUpdate": 1793878865987,
   "entries": {
     "Rust Benchmark": [
       {
@@ -19348,6 +19348,48 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/arup-group/github-action-benchmark/commit/00ada8f0fd8515c3cc52cb519f320b94685787d8"
         },
         "date": 1793878856472,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 290.5,
+            "unit": "ns/op",
+            "extra": "4119189 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 36006,
+            "unit": "ns/op",
+            "extra": "33348 times\n4 procs"
+          },
+          {
+            "name": "BenchmarkFib20WithAuxMetric",
+            "value": 36033,
+            "unit": "ns/op\t         4.000 auxMetricUnits",
+            "extra": "33271 times\n4 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "67552686+pgValero@users.noreply.github.com",
+            "name": "pgValero",
+            "username": "pgValero"
+          },
+          "distinct": true,
+          "id": "00ada8f0fd8515c3cc52cb519f320b94685787d8",
+          "message": "chore(deps): bump undici from 7.30.0 to 7.30.1\n\nBumps [undici](https://github.com/nodejs/undici) from 7.30.0 to 7.30.1.\n- [Release notes](https://github.com/nodejs/undici/releases)\n- [Commits](https://github.com/nodejs/undici/compare/v7.30.0...v7.30.1)\n\n---\nupdated-dependencies:\n- dependency-name: undici\n  dependency-version: 7.30.1\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "timestamp": "2026-11-05T12:40:26+01:00",
+          "tree_id": "026da588ccb652e17b1e9ba8c3c96a9caaca30e6",
+          "url": "https://github.com/arup-group/github-action-benchmark/commit/00ada8f0fd8515c3cc52cb519f320b94685787d8"
+        },
+        "date": 1793878865666,
         "tool": "go",
         "benches": [
           {
